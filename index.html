@@ -10,6 +10,17 @@
     <style type="text/css">
       html, body { height: 100%; width: 100%; }
     </style>
+    
+    <script type="text/javascript" src="libs/sea.js"></script>
+    <script type="text/javascript">
+      // seajs 的简单配置
+      seajs.config({
+        base: "./"
+      })
+
+      // 加载入口模块
+      seajs.use("mods/index.js");
+      </script>
   </head>
   <body>
     <div class="am-vertical-align" style="height: 100%; width: 50%; margin: auto;">
