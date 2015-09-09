@@ -48,6 +48,18 @@
 .head_nav a {
     color: white;
 }
+.current {
+    width: 1000px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.current p {
+    margin: 0 auto;
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+}
 .main_frame_sub {
     width: 1000px;
     height: auto;
