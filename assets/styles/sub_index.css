@@ -25,9 +25,9 @@
     margin-left: 435px;
     margin-top: 130px;
     opacity: 0.8;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    -moz-opacity: 0.9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    -moz-opacity: 0.8;
 
 }
 .head_nav ul, .head_nav ul li {
@@ -147,9 +147,33 @@
     color: black;
 }
 .images_list {
-    width: 640px;
+    width: 660px;
+    height: 210px;
     margin: 0 auto;
-    background-color: #5D6A70;
+}
+.images_list .image_block {
+    background-color: white;
+    height: 200px;
+    width: 210px;
+    float: left;
+    margin: 5px;
+}
+.image_block img {
+    margin: 10px 10px 5px 10px;
+    width: 190px;
+    height: 145px;
+}
+.image_block p {
+    height: 40px;
+    width: 190px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.image_block a {
+    color: black;
 }
 .sub_links {
     padding: 5px;
@@ -164,6 +188,8 @@
     font-size: 14px;
 }
 .sub_links img {
+    width: 680px;
+    height: 170px;
     padding: 0 5px;
     margin: 5px auto;
 }
