@@ -117,6 +117,58 @@
     height: auto;
     float: right;
 }
+.right_sub hr {
+    color: #808080;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 136px;
+}
+.right_title {
+    width: 140px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.right_title, .right_title a {
+    color: #808080;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+}
+.right_title a {
+    float:right;
+    font-size: 12px;
+}
+.right_content {
+    width: 140px;
+    margin: 0 5px;
+}
+.right_content ul {
+
+}
+.right_content ul li {
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.right_content ul li img {
+    width: 140px;
+    height: 36px;
+    margin: 2px auto;
+ }
+.right_link {
+    color: black;
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    margin: 2px;
+}
+.right_link a {
+    color: black;
+    font-size: 12px;
+    line-height: 15px;
+}
 .detail_sub {
     background-color: #F1F1F1;
     width: 700px;
