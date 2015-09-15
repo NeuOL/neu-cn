@@ -100,9 +100,11 @@ header {
 			position: absolute;
 			width: 10px;
 			height: 10px;
+			overflow: hidden;
 			border-radius: 10px;
 			left: 0;
-			color:rgba(255, 255, 255, 0);
+			color: #fff;
+			color:rgba(255, 255, 255, 1);
 		}
 	}
 	
@@ -203,6 +205,7 @@ nav {
 }
 .sf-menu ul li {
 	background: #9AAEDB;
+	font-size: 0.9em;
 	
 	a {
 		padding: 0.5em 1em;
@@ -358,6 +361,7 @@ nav {
 	
 	.more {
 		float: right;
+		text-decoration: none;
 	}
 }
 
