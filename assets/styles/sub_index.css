@@ -252,7 +252,6 @@ a {
     margin: 0 auto;
 }
 .sub_links td {
-
     width: 220px;
     height: 30px;
     line-height: 30px;
@@ -264,6 +263,13 @@ a {
     padding-left: 10px;
     color: #5D6A70;
     font-size: small;
+}
+.sub_links .special_length {
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    background: url("../images/special_nav_link.png") no-repeat;
+    background-size: cover;
 }
 #foot {
     margin: 0 auto;
