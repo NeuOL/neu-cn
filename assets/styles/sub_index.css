@@ -3,6 +3,9 @@
 	margin:0;
 	padding:0;
 }
+a {
+    text-decoration: none;
+}
 #subIndex {
     width: 1000px;
     height: auto;
@@ -14,7 +17,7 @@
     height: 180px;
     margin: 0 auto;
     background-image: url("../images/sub_nav.png");
-    background-size: 1000px 180px;
+    background-size: cover;
 }
 .head_nav {
     text-align: center;
@@ -41,7 +44,7 @@
     font-size: small;
     list-style: none;
     background-image: url("../images/linetag.png");
-    background-size: 75px 40px;
+    background-size: cover;
 }
 .head_nav a {
     color: white;
@@ -97,11 +100,11 @@
 }
 .left_sub .left_end {
     background: url("../images/left_end.png") no-repeat;
-    background-size: 150px 50px;
+    background-size: cover;
 }
 .left_sub .left_child {
     background: url("../images/left_child.png") no-repeat;
-    background-size: 150px 50px;
+    background-size: cover;
 }
 .left_sub a {
     text-align: center;
@@ -119,8 +122,7 @@
 }
 .right_sub hr {
     color: #808080;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     width: 136px;
 }
 .right_title {
@@ -256,7 +258,7 @@
     line-height: 30px;
     margin: 5px;
     background: url("../images/nav_link.png") no-repeat;
-    background-size: 220px 30px;
+    background-size: cover;
 }
 .sub_links td a {
     padding-left: 10px;
@@ -266,14 +268,66 @@
 #foot {
     margin: 0 auto;
     width: 1000px;
-    height: 70px;
+    height: 90px;
     background-color: #0E2746;
-    text-align: center;
-    font-size: 14px;
+    color: white;
+}
+#foot a {
+    color: white;
 }
 .foot_nav {
     margin: 0 auto;
+    padding: 5px 0 0 0;
+    width: 830px;
+    line-height: 30px;
+    height: 40px;
+    text-align: center;
 }
-#foot_nav a {
+.line {
+    vertical-align: middle;
     color: white;
+}
+.foot_nav a {
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.foot_nav .line {
+    font-size: 20px;
+}
+.foot_nav hr {
+    color: white;
+}
+.foot_down {
+    width: 830px;
+    margin: 0 auto;
+}
+.foot_info {
+    margin-right: 5px;
+    float: left;
+    font-size: 14px;
+    text-align: left;
+}
+.foot_info .line {
+    font-size: 14px;
+}
+.sub_wechat {
+    width: 160px;
+    height: 40px;
+    float: left;
+}
+.sub_weibo {
+    width: 160px;
+    height: 40px;
+    float: left;
+}
+.sub_wechat a, .sub_weibo a {
+    color: white;
+    font-size: 14px;
+}
+.share_pic {
+    float: left;
+    height: 30px;
+    margin: 5px 2px 5px 0;
 }
