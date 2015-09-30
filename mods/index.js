@@ -1,10 +1,10 @@
-define(["slide","superfish","jquery"],function(require,exports,module){
+define(["slide","nav","jquery"],function(require,exports,module){
 	
 // 	slider
 	var slide = require('slide');
-	var menu = require('superfish');
+	var nav = require('nav');
 	slide.slideInit();
-	menu.menuInit();
+	nav.navInit();
 	
 	exports.slide = function () {
 		
@@ -19,26 +19,18 @@ define(["slide","superfish","jquery"],function(require,exports,module){
 			pauseControls: true,
 			namespace: "slider"
 		});
-		
-		console.log(jQuery);
 	}
-		
-// 	nav
+
 	exports.nav = function(){
-
-	
-	
-		$(".sf-menu").superfish();
-
-
-
+// 		$(".sf-menu").superfish();
 	}
 	
 	exports.navData = function(){
 		
-		console.log(11);
-		var html = "";
-		html += ("<ul class=\"sf-menu\">");
+
+		
+		var html = " <section class='menu' id='smenu'><div style='float:right;background:url(\"./assets/images/nav.png\") no-repeat left center;width:30px;height:40px;'></div>导航</section> ";
+		html += ("<ul id='nav'>");
 
 		html += ("<li> <a href=\"../intro_index.htm\">东大简介</a>");
 		html += ("<ul>");
@@ -117,7 +109,7 @@ define(["slide","superfish","jquery"],function(require,exports,module){
 		html += ("</li>");
 		
 		html += ("<li class=\"last\"><a href=\"../map_index.htm#resources\">校内资源</a>");
-		html += ("<ul style=\"left: -74px;\">");
+		html += ("<ul>");
 		html += ("<li> <a href=\"http://network.neu.edu.cn\" target=\"_blank\">网络中心黑板报</a> </li>");
 		html += ("<li> <a href=\"http://ipgw.neu.edu.cn\" target=\"_blank\">校园网IP控制网关</a> </li>");
 		html += ("<li> <a href=\"http://tree.neu.edu.cn\" target=\"_blank\">校园网用户管理</a> </li>");
@@ -149,8 +141,160 @@ define(["slide","superfish","jquery"],function(require,exports,module){
 		html += ("</ul>");
 		
 		$("nav.menu").html(html);
+	}
+	
+	exports.topicData = function(){
 		
-		console.log($("nav.menu"));
+		var html = "<a href=\"http://zxz.neu.edu.cn\" target=\"_blank\">\
+						<img src=\"./assets/images/sanyansanshi.jpg\" />\
+					</a>\
+					<a href=\"http://uzone.univs.cn/school_2129.html\" target=\"_blank\">\
+						<img src=\"./assets/images/changyeshuxiang.jpg\" />\
+					</a>";
+		
+		$("#topics .news").html(html);
+	}
+	
+	exports.timeline = function(){
+		var $prev = $("#timeline .prev");
+		var $next = $("#timeline .next");
+		var $news = $("#timeline li");
+		
+		if( $news.size()<=4 ){
+			$prev.hide();
+			$next.hide();
+		}
+		
+		
+		$news[0].addClass("show first");
+		$news[1].addClass("show");
+		$news[2].addClass("show");
+		$news[3].addClass("show last");
+		
+		$prev.bind('click', function(){
+			
+		});
+		
+		$next.bind('click', function(){
+			
+		});
+	}
+	
+	exports.timelineData = function(){
+		
+	}
+	
+	exports.iframeBlockStyle = function(){
+/*
+		$("#imageNews iframe").bind('load', function(){
+
+			var doc = this.contentDocument;
+		    
+		    var head = doc.getElementsByTagName('head')[0];
+		    var link = document.createElement('link');
+		    link.rel="stylesheet";
+		    link.type = "text/css";
+		    link.href = 'http://momosdiary.duapp.com/links/main.css';   
+		    head.appendChild(link);
+		});
+		
+		<style type="text/css" media="screen">
+		
+	</style>
+*/
+
+		var style0 = document.createElement('style');
+		    style0.media="screen";
+		    style0.type = "text/css";
+		    style0.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";
+		var style1 = document.createElement('style');
+		    style1.media="screen";
+		    style1.type = "text/css";
+		    style1.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";
+		var style2 = document.createElement('style');
+		    style2.media="screen";
+		    style2.type = "text/css";
+		    style2.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";
+		var style3 = document.createElement('style');
+		    style3.media="screen";
+		    style3.type = "text/css";
+		    style3.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";
+		
+		$("#universityNewsIframe")[0].contentDocument.getElementsByTagName("head")[0].appendChild(style0);
+		$("#media .news iframe")[0].contentDocument.getElementsByTagName("head")[0].appendChild(style1);
+		$("#academyNews .news iframe")[0].contentDocument.getElementsByTagName("head")[0].appendChild(style2);
+		$("#inform .news iframe")[0].contentDocument.getElementsByTagName("head")[0].appendChild(style3);
+
+		$("#imageNews iframe").bind('load', function(){
+			var doc = this.contentDocument;
+			var window = this.contentWindow;
+/*
+		    
+		    var link = doc.getElementsByTagName('link')[1];
+		    link.href = 'http://momosdiary.duapp.com/links/main.css';
+*/
+			
+
+			var style0 = document.createElement('style');
+		    style0.media="screen";
+		    style0.type = "text/css";
+		    style0.innerHTML = "#container{width:auto;margin:0px;position:relative}#container .clear{display:none}#slides{float:left;width:230px}#slide_grident{display:none}.slidesContainer{float:left}.slidesPagination{margin-top:-20px;float:right;position:relative;z-index:20}#slides .clear{display:none}#news_text{float:right;width:210px}#news_text a{text-decoration:none;color:#3e3a39}.img_news_tilte{height:26px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-size:18px;line-height:26px}.img_news_description{font-size:14px} @media screen and (max-width: 1280px){#news_text{width:190px}}/*  @media screen and (max-width: 1200px){#news_text{width:120px}} */";
+		    
+		    doc.getElementsByTagName("head")[0].appendChild(style0);
+
+		    
+		    window.$("img").css({"width":"230px" , "height":"150px"});
+		    window.$(".slidesControl").css({"width":"230px" , "height":"150px"});
+		    window.$(".slidesContainer").css({"width":"230px" , "height":"150px"});
+		});
+
+		
+/*
+		$("#universityNews .news iframe").load(function(){
+
+			var doc = this.contentDocument;
+		    var head = doc.getElementsByTagName('head')[0];
+		    var style = document.createElement('style');
+		    style.media="screen";
+		    style.type = "text/css";
+		    style.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";   
+		    head.appendChild(style);
+		});
+		
+		$("#media .news iframe").bind('load', function(){
+
+			var doc = this.contentDocument;
+		    var head = doc.getElementsByTagName('head')[0];
+		    var style = document.createElement('style');
+		    style.media="screen";
+		    style.type = "text/css";
+		    style.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";   
+		    head.appendChild(style);
+		});
+		
+		$("#academyNews .news iframe").bind('load', function(){
+
+			var doc = this.contentDocument;
+		    var head = doc.getElementsByTagName('head')[0];
+		    var style = document.createElement('style');
+		    style.media="screen";
+		    style.type = "text/css";
+		    style.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";   
+		    head.appendChild(style);
+		});
+		
+		$("#inform .news iframe").bind('load', function(){
+			
+			var doc = this.contentDocument;
+		    var head = doc.getElementsByTagName('head')[0];
+		    var style = document.createElement('style');
+		    style.media="screen";
+		    style.type = "text/css";
+		    style.innerHTML = "body{margin:0}.widget ul{list-style:none;margin:0;padding:0 0}.widget li{line-height:25px;height: 25px;overflow: hidden;}.widget a{font-size:15px;color:#3e3a39;text-decoration:none}.linktitle{float:left}.datetime{float:right;color:#032b83;font-size: 15px;}.clear{clear:both;padding:0;margin:0}";   
+		    head.appendChild(style);
+		});
+*/
+
 	}
 	
 })
