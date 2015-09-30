@@ -191,6 +191,7 @@ exports.slideInit = function(){
               "<a href='#' class='" + slideClassPrefix + n + "'>" + "." + "</a>" +
               "</li>";
           });
+          $pager.css("marginLeft",(50-1280/18/($slide.size()/2))+"%");//
           $pager.append(tabMarkup);
 
           // Inject pager

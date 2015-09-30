@@ -13,15 +13,19 @@ body {
 	text-align: center;
 	width: $w1280;
 // 	height: 720px;
-	background: #c6eeff;
+	background: #e8e8e8;
 }
 
 /*html5*/
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 
+#logo {
+	display: none;
+}
+
 /* header */
 header {
-// 	margin-bottom:2px;
+	top: -40px;
 	position:relative;
 	width:$full;
 	height: 190px;
@@ -36,13 +40,14 @@ header {
 
 #slider {
 	position: relative;
-	width: $full;
+// 	width: $full;
+	height: 231px;
 	overflow:hidden;
 	
 	li {
 		position: absolute;
 		display: none;
-		width: $full;
+// 		width: $full;
 		top: 0;
 		left: 0;
 		
@@ -54,12 +59,12 @@ header {
 	}
 	
 	img {
-		width: $w1280;
 		display: block;
 		float: left;
 		position:relative;
 		z-index:1;
-		width:$full;
+// 		width:$full;
+		height: 231px;
 		border:0;
 	}
 	
@@ -83,33 +88,39 @@ header {
 
 .slider_tabs {
 	margin-top:-60px;
+	margin-left: 40%;
 // 	margin-bottom:60px;
 	position:relative;
 	z-index:20;
 	
 	li {
+		float: left;
 		display: inline-block;
 		position: relative;
-		width: 10px;
-		height: 10px;
+		width: 12px;
+		height: 12px;
 		margin-left: 5px;
-		border: 1px solid #fff;
-		border-radius: 10px;
+		border: 0;
+// 		border-radius: 10px;
 		
 		a {
 			position: absolute;
-			width: 10px;
-			height: 10px;
+			width: 12px;
+			height: 12px;
 			overflow: hidden;
-			border-radius: 10px;
+// 			border-radius: 10px;
 			left: 0;
-			color: #fff;
-			color:rgba(255, 255, 255, 1);
+			color: #979797;
+			color: rgba(151, 151, 151, 0);
+			background:transparent url("../images/tab.png") no-repeat right top;
 		}
 	}
 	
 	.slider_here a {
+		color: #fff;
+		color: rgba(255, 255, 255, 0);
 		background:#FFF;
+		background:transparent url("../images/tab.png") no-repeat left top;
 	}
 }
 
@@ -145,7 +156,6 @@ nav {
 	height: 40px;
 	position: relative;
 	float: right;
-	margin-top: -190px/* -247px */;
 	top: 0;
 	right: 0;
 	background: #000;
@@ -155,81 +165,72 @@ nav {
 	z-index: 50;
 }
 
-/*** Superfish STYLES ***/
-.sf-menu, .sf-menu * {
-	list-style: none;
-}
-.sf-menu li {
-	position: relative;
-	border-right: 1px solid #fff;
-// 	background: #BDD2FF;
-	white-space: nowrap; /* no need for Supersubs plugin */
-	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
-	-webkit-transition: background .2s;
-	transition: background .2s;
-}
-.sf-menu ul {
-	position: absolute;
-	display: none;
-	top: 100%;
-	left: 0;
-	z-index: 50;
-	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
-	min-width: 12em; /* allow long menu items to determine submenu width */
-	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
-}
-.sf-menu > li {
-	height: 40px;
-	float: left;
-}
-.sf-menu li:hover > ul,
-.sf-menu li.sfHover > ul {
+#nav {
 	display: block;
-}
-
-.sf-menu a {
-	display: block;
-	position: relative;
-	padding: .75em 1em;
-	text-decoration: none;
-	zoom: 1; /* IE7 */
-	color: #fff;
-}
-.sf-menu ul ul {
-	top: 0;
-	left: 100%;
-}
-
-.sf-menu .last {
-	border-right: none;
-}
-.sf-menu ul li {
-	background: #9AAEDB;
-	font-size: 0.9em;
+	list-style-type:none;
 	
-	a {
-		padding: 0.5em 1em;
-		color: #1e3c98;
+	li {
+		float:left;
+		_display:inline;
+		position:relative;
+		z-index:60;
+		list-style-type:none;
 		
+		a {
+			display:block;
+			line-height:40px;
+			font-size:15px;
+			color:#fff;
+			padding:0 14px;
+			text-decoration: none;
+		}
+		
+		ul {
+			background:#dddddd;
+			position:absolute;
+			top:40px;
+			width:190px;
+			z-index:2;
+			padding:5px 0;
+			display:none;
+			list-style-type:none;
+			
+			li {
+				float:none;
+				display:block;
+				padding:0;
+				margin:0;
+				list-style-type:none;
+				
+				a {
+					line-height:24px;
+					padding: 0 10px;
+					font-size:14px;
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	li.last ul {
+		left: -77px;
 	}
 }
-.sf-menu li:hover,
-.sf-menu li.sfHover {
-	background: #CFDEFF;
-	/* only transition out, not in */
-	-webkit-transition: none;
-	transition: none;
+
+#smenu {
+	display: none;
 }
+
 
 // Timeline
 #timeline {
 	position: relative;
-	margin-top:11px;
+	margin-top:-29px;
 	z-index: 40;
 	font-size: 0.9em;
 	
 	span {
-		
+		width: 3%;
 		display: inline-block;
 		position: relative;
 		float: left;
@@ -242,7 +243,7 @@ nav {
 		}
 	}
 	span.prev {
-		width: 18px;
+		width: 17px;
 		height: 30px;
 		overflow: hidden;
 		margin-left: 9px;
@@ -252,13 +253,13 @@ nav {
 		width: 17px;
 		height: 30px;
 		overflow: hidden;
-		margin-right: 10px;
 		background: url("../images/prevNext.png") no-repeat right center;
 	}
 	
 	ul {
 		display: inline-block;
 		float: left;
+		width: 94%;
 	}
 	
 	li {
@@ -268,30 +269,33 @@ nav {
 		background: #000;
 		background: rgba(0, 0, 0, 0.5);
 		float: left;
-		margin-right: 2px;
+		margin-right: 0.2%;
 		display: inline-block;
 	}
 	li.show {
-		width: 380px;
+		width: 29.7%;
 		display: inline-block;
 	}
 	li.hide {
 		display: none;
 	}
 	li.first {
-		width: 230px;
+		width: 20%;
 	}
 	li.last {
-		width: 230px;
+		width: 20%;
 		margin-right: 0px;
 	}
 	
 	a {
 		padding: 0.5em 1em;
-		display: block;
-		position: relative;
-		color: #fff;
-		text-decoration: none;
+	    display: block;
+	    position: relative;
+	    color: #fff;
+	    text-decoration: none;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
 		
 		&:hover {
 			text-decoration: underline;
@@ -301,22 +305,22 @@ nav {
 
 // body
 #body {
-// 	width: $full;
-	margin-top: 42px;
+	margin-top: 30px;
 	background: #fff;
-	padding: 5px;
+	padding: 0.5%;
+	overflow: hidden;
 }
 
 #body > div {
 	display: inline-block;
 	vertical-align: top;
+	float: left;
+	margin-right: 0.5%;
 }
 
 #universityNews, #media, #academyNews, #others {
 	border: 1px solid #e0e0e0;
-	width: 480px;
 	display: inline-block;
-	padding: 10px;
 	
 	hr {
 		border-bottom: solid #d5d5d5 2px;
@@ -352,23 +356,36 @@ nav {
 
 .head {
 	text-align: left;
+	overflow: hidden;
 	
 	h3, a, span {
 		display: inline-block;
 		vertical-align: middle;
-// 		float: left;
+		float: left;
+	}
+	
+	h3 {
+		color: #032b83;
 	}
 	
 	.more {
 		float: right;
+		color: #032b83;
 		text-decoration: none;
 	}
 }
 
 #universityNews {
+	width: 36%;
+	height: 375px;
+	padding: 10px 1%;
 	
-	#firstNews {
+	#imageNews {
 		text-align: left;
+		
+		iframe {
+			width: 100%;
+		}
 		
 		img {
 			width: 226px;
@@ -394,16 +411,47 @@ nav {
 			margin-right: 10px;
 		}
 	}
+	
+	.news {
+		height: 173px;
+		
+		iframe {
+			width: 100%;
+			height: 180px;
+		}
+	}
+}
+
+#universityNews + div {
+	width: 36%;
 }
 
 #media, #academyNews {
-	width: 430px;
+	width: 94%;
+	height: 174px;
 	display: block;
+	padding: 10px 3%;
+	
+	iframe {
+		width: 100%;
+		height: 125px;
+	}
+}
+
+#media {
 	margin-bottom: 5px;
 }
 
 #others {
-	width: 270px;
+	width: 22.5%;
+	height: 375px;
+	margin-right: 0 !important;
+	padding: 10px 1%;
+	
+	#inform iframe {
+		width: 100%;
+		height: 75px;
+	}
 	
 	li a {
 		margin-left: 0;
@@ -423,6 +471,12 @@ nav {
 					color: #204496;
 				}
 			}
+		}
+	}
+	
+	#topics {
+		img {
+			width: 100%;
 		}
 	}
 }
@@ -445,14 +499,15 @@ footer {
 	}
 }
 
-#footer_link {
-	width: 1000px;
-	display: block;
+footer > div {
+	width: 100%;
 	margin: 0 auto;
+}
+
+#footer_link {
 	
 	a {
 		display: inline-block;
-// 		margin: 10px 0 8px 0;
 		color: #fff;
 		text-decoration: none;
 	}
@@ -469,7 +524,7 @@ footer {
 
 #footer_left {
 	color: #fff;
-	margin-left: 200px;
+	margin-left: 210px;
 	float: left;
 	
 	a {
@@ -511,4 +566,163 @@ footer {
 	width: 32px;
 	height: 27px;
 	background: url("../images/weixinWeibo.png") no-repeat right center;
+}
+
+
+@media screen and (max-width: 1280px) { 
+	body {
+		width: 1200px;
+	}
+	
+	#footer_left {
+		margin-left: 170px;
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	body {
+		width: 1000px;
+	}
+	
+	
+	#footer_left {
+		margin-left: 70px;
+	}
+}
+
+@media screen and (max-width: 1000px) { 
+	body {
+		width: 800px;
+	}
+	
+	#universityNews {
+		width: 48%;
+	}
+	
+	#universityNews + div {
+		width: 49%;
+		margin-right: 0;
+	}
+	
+	#others {
+		width: 97.7%;
+		height: auto;
+		margin-top: 5px;
+		
+		hr {
+			display: none;
+		}
+		
+		#inform, #links {
+			float: left;
+			width: 35%;
+			padding-right: 1%;
+			margin-right: 1%;
+			border-right: 2px solid #ccc;
+		}
+		
+		#links {
+			width: 30%;
+		}
+		
+		#topics {
+			float: left;
+			width: 30%;
+		}
+	}
+	
+	footer {
+		height: 130px;
+	}
+	
+	#footer_left {
+		margin-left: 0;
+		float: none;
+	}
+	
+	#footer_right {
+		margin-left: 0;
+		float: none;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) { 
+	body {
+		width: 650px;
+	}
+	
+} 
+
+@media screen and (max-width: 650px) { 
+	body {
+		width: 100%;
+	}
+	
+	#logo {
+		width: 100%;
+		display: block;
+	}
+	
+	nav {
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+		top:-40px;
+		margin-top: 40px;
+		
+		#smenu {
+			display:block;
+			line-height:44px;
+			font-size:18px;
+			padding:0 20px;
+			cursor:pointer;
+			color: #13172d;
+			background: #efefef;
+		}
+		
+		#nav {
+			display: none;
+		}
+		
+		#nav > li {
+			width: 100%;
+			float: none;
+			background: #fff;
+			
+			&:hover {
+				background: #b0b0b0;
+			}
+			
+			a {
+				color: #333;
+			}
+		}
+	}
+	
+	#smenu {
+		display: block;
+	}
+	
+	#timeline {
+		span {
+			display: none;
+		}
+	}
+	
+	#body > div {
+		width: 99.5%;
+		margin-bottom: 5px;
+	}
+	
+	#body #universityNews, #body #others {
+		width: 97.5%;
+	}
+	
+}
+
+@media screen and (max-width: 530px) { 
+	footer {
+		height: 160px;
+	}
 }
