@@ -5,7 +5,7 @@ $full : 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
-//	font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
+	font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
 }
 
 body {
@@ -353,6 +353,7 @@ nav {
 			display: inline-block;
 			text-decoration: none;
 			color: #333;
+			margin-left: 2px;
 			vertical-align: middle;
 			
 			&:hover {
@@ -387,13 +388,22 @@ nav {
 	}
 	
 	.more {
-		font-size: 12px;
-		font-weight: bolder;
-		vertical-align: middle;
 		float: right;
-		color: #032b83;
-		text-decoration: none;
-		margin-top: 3px;
+		
+		.more-txt {
+			font-size: 12px;
+			font-weight: bolder;
+			vertical-align: middle;
+			color: #032b83;
+			text-decoration: none;
+			margin-top: 4px;
+		}
+		
+		.icon {
+			width: 25px;
+			height: 25px;
+			background: url("../images/icons.png") no-repeat -21px 0px;
+		}
 	}
 }
 
@@ -445,7 +455,7 @@ nav {
 */
 		li {
 // 			line-height: 21px;
-			margin: 3px 0;
+// 			margin: 3px 0;
 		}
 		
 		li a {
@@ -474,6 +484,10 @@ nav {
 	}
 */
 
+	li .beforeText {
+		height: 23px;
+	}
+
 	li a {
 		width: 340px;
 		white-space: nowrap;
@@ -487,7 +501,7 @@ nav {
 }
 
 #others {
-	width: 22.5%;
+	width: 22.6%;
 	height: 375px;
 	margin-left: 2px;
 	margin-right: 0 !important;
