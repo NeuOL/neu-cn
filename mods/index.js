@@ -1,10 +1,15 @@
-define(["slide","nav","jquery"],function(require,exports,module){
+// define(["slide","nav","jquery"],function(require,exports,module){
+define(function(require,exports,module){
 	
+	var $ = require('jquery');
 // 	slider
 	var slide = require('slide');
-	var nav = require('nav');
+	
 	slide.slideInit();
-	nav.navInit();
+	
+	
+	
+	
 	
 	exports.slide = function () {
 		
@@ -22,7 +27,10 @@ define(["slide","nav","jquery"],function(require,exports,module){
 	}
 
 	exports.nav = function(){
-// 		$(".sf-menu").superfish();
+// 		nav.navInit();
+		var Nav = require('nav');
+		var n = new Nav("nav.menu");
+		n._init();
 	}
 	
 	exports.navData = function(){

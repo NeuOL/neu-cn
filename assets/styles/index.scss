@@ -41,7 +41,7 @@ header {
 #slider {
 	position: relative;
 // 	width: $full;
-	height: 231px;
+	height: 232px;
 	overflow:hidden;
 	
 	li {
@@ -64,7 +64,7 @@ header {
 		position:relative;
 		z-index:1;
 // 		width:$full;
-		height: 231px;
+		height: 232px;
 		border:0;
 	}
 	
@@ -186,7 +186,7 @@ nav {
 		}
 		
 		ul {
-			background:#dddddd;
+			background:#525252;
 			position:absolute;
 			top:40px;
 			width:190px;
@@ -225,7 +225,7 @@ nav {
 // Timeline
 #timeline {
 	position: relative;
-	margin-top:-29px;
+	top:-28px;
 	z-index: 40;
 	font-size: 0.9em;
 	
@@ -305,7 +305,9 @@ nav {
 
 // body
 #body {
-	margin-top: 30px;
+	width: 99%;
+	position: relative;
+	top: -30px;
 	background: #fff;
 	padding: 0.5%;
 	overflow: hidden;
@@ -487,8 +489,8 @@ nav {
 // footer
 footer {
 	background: #032f55;
-// 	text-align: center;
-// 	width: $full;
+	position: relative;
+	top: -30px;
 	height: 80px;
 	padding: 10px;
 	font-size: 0.85em;
@@ -652,6 +654,9 @@ footer > div {
 		width: 650px;
 	}
 	
+	#others {
+		margin-top: 0;
+	}
 } 
 
 @media screen and (max-width: 650px) { 
@@ -683,6 +688,10 @@ footer > div {
 		
 		#nav {
 			display: none;
+			
+			ul {
+				overflow: hidden;
+			}
 		}
 		
 		#nav > li {
