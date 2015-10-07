@@ -63,15 +63,7 @@ define(function(require,exports,module){
 			}
 		}
 		
-		$("#smenu").click(function(){
-			var $nav = $("#nav");
-			if( $nav.is(":visible") ){
-				$nav.slideUp(100);
-			}else{
-				$nav.slideDown(100);
-			}
-		});
-		
+/*
 		$("section.leftNav li i").click(
 			function(){
 				if($(this).siblings("ul").is(":visible")){
@@ -85,62 +77,8 @@ define(function(require,exports,module){
 				}
 			}
 		)
-	
-		//tab
-		$('.swapmenu li').click(function(){
-			var dex=$(this).index();
-			$(this).addClass('current').siblings().removeClass('current');
-			$('#'+$(this).parent().attr("targ")).children().eq(dex).fadeIn().siblings().hide();
+*/
 
-		})
 	}
-
-// exports.navInit = function(){
-
-// $(function(){
-/*
-	$("#smenu").toggle(function(){
-		$("#nav").slideDown(100);
-		},
-		function(){
-		$("#nav").slideUp(100);
-		}
-	)
-*/
-	
-/*
-	$("#submenu").toggle(
-		function(){
-			$(this).next().slideDown(100);
-		},
-		function(){
-			if($("#submenu .menuicon").is(':visible')){
-				$(this).next().slideUp(100)
-			};
-		}
-	)
-*/
-
-/*
-	$("section.leftNav li").each(function(){
-		if($(this).find('ul:first').length>0)
-		{
-			$(this).find('i:first').show();
-			if($(this).hasClass('current'))
-			{
-				$(this).find('i:first').removeClass("thuicon-plus");
-				$(this).find('i:first').addClass("current thuicon-minus");
-			}
-		}
-		else
-		{
-			$(this).find('i:first').hide();
-		}
-	}) 
-*/
-
-// })
-
-// }
 
 })
