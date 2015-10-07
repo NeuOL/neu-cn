@@ -5,7 +5,7 @@ $full : 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
+//	font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
 }
 
 body {
@@ -312,6 +312,8 @@ nav {
 	background: #fff;
 	padding: 0.5%;
 	overflow: hidden;
+	
+	
 }
 
 #body > div {
@@ -335,16 +337,23 @@ nav {
 	
 	li {
 		font-size: 12px;
-		padding: 2px 0;
 		list-style: none;
 		text-align: left;
 		color: #032f55;
 		
+		.beforeText {
+			width: 15px;
+			height: 25px;
+			background: url("../images/icons.png") no-repeat left top;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
 		a {
 			display: inline-block;
-			margin-left: 10px;
 			text-decoration: none;
 			color: #333;
+			vertical-align: middle;
 			
 			&:hover {
 				color: #204496;
@@ -353,6 +362,8 @@ nav {
 		
 		.date {
 			display: inline-block;
+			vertical-align: middle;
+			margin-top: 6px;
 			float: right;
 			color: #333;
 		}
@@ -433,8 +444,8 @@ nav {
 		}
 */
 		li {
-// 			line-height: 1.4;
-			padding: 3px 0;
+// 			line-height: 21px;
+			margin: 3px 0;
 		}
 		
 		li a {
