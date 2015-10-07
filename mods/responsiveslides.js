@@ -44,7 +44,7 @@ exports.slideInit = function(){
       "nav": false,             // Boolean: Show navigation, true or false
       "random": false,          // Boolean: Randomize the order of the slides, true or false
       "pause": false,           // Boolean: Pause on hover, true or false
-      "pauseControls": true,    // Boolean: Pause when hovering controls, true or false
+      "pauseControls": false,    // Boolean: Pause when hovering controls, true or false
       "prevText": "Previous",   // String: Text for the "previous" button
       "nextText": "Next",       // String: Text for the "next" button
       "maxwidth": "",           // Integer: Max-width of the slideshow, in pixels
@@ -89,7 +89,7 @@ exports.slideInit = function(){
         slideClassPrefix = namespace + "_s",
 
         // Pager
-        $pager = $("<ul class='" + namespace + "_tabs' />"),
+        $pager = $(""),
 
         // Styles for visible and hidden slides
         visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2},
@@ -332,9 +332,7 @@ exports.slideInit = function(){
 
         // Navigation
         if (settings.nav) {
-          var navMarkup =
-            "<a href='#' class='" + navClass + " prev'>" + settings.prevText + "</a>" +
-            "<a href='#' class='" + navClass + " next'>" + settings.nextText + "</a>";
+          var navMarkup = "";
 
           // Inject navigation
           if (options.navContainer) {
