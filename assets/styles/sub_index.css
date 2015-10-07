@@ -69,6 +69,10 @@ a {
     line-height: 50px;
     border-bottom: white dashed 1px;
 }
+.left_sub .sub_navigator li:hover {
+    background-image: url("../images/left_hover.png");
+    background-size: cover;
+}
 .left_sub .left_end {
     background-color: #032f55;
 }
@@ -204,11 +208,10 @@ a {
     color: #5D6A70;
 }
 .detail_title {
-    margin: 0 auto;
-}
-.detail_title p {
     color: #808080;
     font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
 }
 .images_list {
     margin: 0 auto;
@@ -325,34 +328,31 @@ a {
         width: 700px;
     }
     .detail_title {
-        width: 600px;
-    }
-    .detail_title p {
-        font-size: 16px;
+        width: 700px;
+        font-size: 20px;
         height: 30px;
-        width: 600px;
         line-height: 30px;
     }
     .images_list {
         width: 700px;
-        height: 217px;
+        height: 223px;
         margin: 0 auto;
     }
     .images_list .image_block {
         background-color: #F1F1F1;
-        height: 215px;
-        width: 218px;
+        height: 221px;
+        width: 231px;
         float: left;
         border: #808080 dashed 1px;
     }
     .image_block img {
         margin: 10px 9px 5px 9px;
-        width: 200px;
-        height: 150px;
+        width: 210px;
+        height: 158px;
     }
     .image_block p {
         height: 40px;
-        width: 200px;
+        width: 210px;
         line-height: 20px;
         font-size: 14px;
     }
@@ -386,20 +386,12 @@ a {
         margin: 0 auto;
     }
     .detail_2 {
-        background-color: #F1F1F1;
-        margin-left: 200px;
         width: 900px;
-        height: auto;
-        color: #5D6A70;
     }
     .detail_title {
-        width: 800px;
+        width: 900px;
         height: 40px;
-    }
-    .detail_title p {
-        font-size: 18px;
-        height: 40px;
-        width: 800px;
+        font-size: 22px;
         line-height: 40px;
     }
     .images_list {
@@ -417,7 +409,7 @@ a {
     }
     .image_block p {
         height: 50px;
-        width: 270px;
+        width: 280px;
         line-height: 25px;
         font-size: 16px;
     }
