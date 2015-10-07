@@ -5,7 +5,7 @@ $full : 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: 'Microsoft YaHei';
+	font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
 }
 
 body {
@@ -478,6 +478,7 @@ nav {
 #others {
 	width: 22.5%;
 	height: 375px;
+	margin-left: 2px;
 	margin-right: 0 !important;
 	padding: 10px 1%;
 	
@@ -499,8 +500,7 @@ nav {
 			text-align: left;
 			
 			a {
-				font-size: 0.8em;
-				margin-left: 10px;
+				font-size: 12px;
 				text-decoration: none;
 				color: #333;
 				
