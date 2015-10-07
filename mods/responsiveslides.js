@@ -8,7 +8,28 @@
 
 /*jslint browser: true, sloppy: true, vars: true, plusplus: true, indent: 2 */
 
-define(["jquery"],function(require,exports){
+define(function(require,exports,module){
+	
+	var $ = require("jquery");
+	
+/*
+	function Slider(container){
+		this.container = $(container);
+		this.length = container.children().size();
+		
+		this.fadeTime = 500;
+		this.waitTime = 4000;
+	}
+	
+	module.exports = Slider;
+	
+	Slider.prototype._init = function(){
+		var $this = container,
+			$pager = $("<ul class='slider_tabs' />");
+			
+			
+	}
+*/
 
 exports.slideInit = function(){
 (function ($, window, i) {

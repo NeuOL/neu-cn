@@ -27,10 +27,16 @@ define(function(require,exports,module){
 	}
 
 	exports.nav = function(){
-// 		nav.navInit();
 		var Nav = require('nav');
 		var n = new Nav("nav.menu");
 		n._init();
+		
+		var _width = window.innerWidth; 
+	    if(_width < 650){
+	        n.removeHover();
+	    }else{
+		    n.addHover();
+	    }
 	}
 	
 	exports.navData = function(){
@@ -158,6 +164,9 @@ define(function(require,exports,module){
 					</a>\
 					<a href=\"http://uzone.univs.cn/school_2129.html\" target=\"_blank\">\
 						<img src=\"./assets/images/changyeshuxiang.jpg\" />\
+					</a>\
+					<a href=\"http://zxz.neu.edu.cn\" target=\"_blank\">\
+						<img src=\"./assets/images/sanyansanshi.jpg\" />\
 					</a>";
 		
 		$("#topics .news").html(html);

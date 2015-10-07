@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-d' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.4
+4 verbose readDependencies loading dependencies from /Users/Momo/GitHub/neu-cn/package.json
+5 warn package.json dpl@0.0.1 No repository field.
+6 warn package.json dpl@0.0.1 No license field.
+7 warn package.json Dependency 'grunt' exists in both dependencies and devDependencies, using 'grunt@^0.4.5' from dependencies
+8 warn package.json Dependency 'grunt-connect' exists in both dependencies and devDependencies, using 'grunt-connect@~0.2.0' from dependencies
+9 verbose install where, deps [ '/Users/Momo/GitHub/neu-cn', [ 'grunt', 'grunt-connect' ] ]
+10 verbose install where, peers [ '/Users/Momo/GitHub/neu-cn', [] ]
+11 verbose installManyTop reading for lifecycle /Users/Momo/GitHub/neu-cn/package.json
+12 info preinstall dpl@0.0.1
+13 verbose readDependencies loading dependencies from /Users/Momo/GitHub/neu-cn/package.json
+14 silly cache add args [ 'grunt@^0.4.5', null ]
+15 verbose cache add spec grunt@^0.4.5
+16 silly cache add args [ 'grunt-connect@~0.2.0', null ]
+17 verbose cache add spec grunt-connect@~0.2.0
+18 silly cache add parsed spec { raw: 'grunt@^0.4.5',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'grunt',
+18 silly cache add   rawSpec: '^0.4.5',
+18 silly cache add   spec: '>=0.4.5 <0.5.0',
+18 silly cache add   type: 'range' }
+19 silly addNamed grunt@>=0.4.5 <0.5.0
+20 verbose addNamed ">=0.4.5 <0.5.0" is a valid semver range for grunt
+21 silly addNameRange { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: false }
+22 silly mapToRegistry name grunt
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/grunt
+26 verbose addNameRange registry:https://registry.npmjs.org/grunt not in flight; fetching
+27 silly cache add parsed spec { raw: 'grunt-connect@~0.2.0',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'grunt-connect',
+27 silly cache add   rawSpec: '~0.2.0',
+27 silly cache add   spec: '>=0.2.0 <0.3.0',
+27 silly cache add   type: 'range' }
+28 silly addNamed grunt-connect@>=0.2.0 <0.3.0
+29 verbose addNamed ">=0.2.0 <0.3.0" is a valid semver range for grunt-connect
+30 silly addNameRange { name: 'grunt-connect',
+30 silly addNameRange   range: '>=0.2.0 <0.3.0',
+30 silly addNameRange   hasData: false }
+31 silly mapToRegistry name grunt-connect
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/grunt-connect
+35 verbose addNameRange registry:https://registry.npmjs.org/grunt-connect not in flight; fetching
+36 verbose request uri https://registry.npmjs.org/grunt
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 15:03:28
+39 verbose request id 5b09da12f4c19ce9
+40 http request GET https://registry.npmjs.org/grunt
+41 verbose request uri https://registry.npmjs.org/grunt-connect
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 15:03:28
+44 http request GET https://registry.npmjs.org/grunt-connect
+45 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+46 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+47 info attempt registry request try #2 at 15:06:22
+48 http request GET https://registry.npmjs.org/grunt-connect
+49 info attempt registry request try #2 at 15:06:23
+50 http request GET https://registry.npmjs.org/grunt
+51 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+52 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+53 info attempt registry request try #3 at 15:08:59
+54 http request GET https://registry.npmjs.org/grunt
+55 info attempt registry request try #3 at 15:08:59
+56 http request GET https://registry.npmjs.org/grunt-connect
+57 verbose stack Error: connect ETIMEDOUT
+57 verbose stack     at exports._errnoException (util.js:746:11)
+57 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1010:19)
+58 verbose cwd /Users/Momo/GitHub/neu-cn
+59 error Darwin 15.0.0
+60 error argv "node" "/usr/local/bin/npm" "install" "-d"
+61 error node v0.12.4
+62 error npm  v2.11.2
+63 error code ETIMEDOUT
+64 error errno ETIMEDOUT
+65 error syscall connect
+66 error network connect ETIMEDOUT
+66 error network This is most likely not a problem with npm itself
+66 error network and is related to network connectivity.
+66 error network In most cases you are behind a proxy or have bad network settings.
+66 error network
+66 error network If you are behind a proxy, please make sure that the
+66 error network 'proxy' config is set properly.  See: 'npm help config'
+67 verbose exit [ 1, true ]
