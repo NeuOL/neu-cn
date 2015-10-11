@@ -266,10 +266,6 @@ nav {
 		overflow: hidden;
 	}
 	
-	ul {
-		
-	}
-	
 	li {
 		width: 280px;//24.85%;
 		overflow: hidden;
@@ -281,12 +277,6 @@ nav {
 		margin: 0 1px;
 		display: inline-block;
 	}
-/*
-	li.hide {
-		display: none;
-	}
-*/
-	
 	
 	a {
 		padding: 0.5em 1em;
@@ -653,15 +643,27 @@ footer > div {
 		width: 1000px;
 	}
 	
+	#timeline li {
+		width: 233px;//24.85%;
+	}
 	
+	#body #universityNews {
+		width: 358px;
+	}
 	#body #universityNews li a {
 		width: 300px;
 	}
 	
+	#body > div {
+		width: 355px;
+	}
 	#body > div li a {
 		width: 280px;
 	}
 	
+	#body #others {
+		width: 220px;
+	}
 	#body #others li a {
 		width: 170px;
 	}

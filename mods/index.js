@@ -175,33 +175,48 @@ define(function(require,exports,module){
 	exports.timeline = function(){
 		var $prev = $("#timeline .prev");
 		var $next = $("#timeline .next");
-		var $newsCon1 = $("#timeline ul:first");
-// 		var $newsCon2 = $("#timeline ul:last");
+		var $newsCon1 = $("#timeline ul");
 		var $news = $("#timeline li");
 		var size = $news.size();
+		var _width = window.innerWidth;
+		var liLength;
+		if( _width < 1200 ){
+			liLength = 235;
+		}else{
+			liLength = 282;
+		}
 		
 		if( size<=4 ){
 			$prev.hide();
 			$next.hide();
 		}
 		
-		$newsCon1.css("width", size*282+"px");
+		$(window).resize(function() {
+			_width = window.innerWidth;
+			if( _width < 1200 ){
+				liLength = 235;
+			}else{
+				liLength = 282;
+			}
+			$newsCon1.animate({marginLeft:"0px"});
+		});
+		
+		$newsCon1.css("width", size*liLength+"px");
 		
 		$prev.bind('click', function(){
 			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
-				$newsCon1.animate({marginLeft:-564+"px"});
+				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"});
 			}else{
-				$newsCon1.animate({marginLeft:'+=282px'});
+				$newsCon1.animate({marginLeft:'+='+liLength+'px'});
 			}
 		});
 		
 		$next.bind('click', function(){
-			console.log( "before"+$newsCon1.css("marginLeft") );
-			if( parseInt($newsCon1.css("marginLeft"))<(-563) ){
+			if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
 				console.log("move");
 				$newsCon1.animate({marginLeft:0+"px"});
 			}else{
-				$newsCon1.animate({marginLeft:'-=282px'});
+				$newsCon1.animate({marginLeft:'-='+liLength+'px'});
 			}
 		});
 	}
