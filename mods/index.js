@@ -175,25 +175,34 @@ define(function(require,exports,module){
 	exports.timeline = function(){
 		var $prev = $("#timeline .prev");
 		var $next = $("#timeline .next");
+		var $newsCon1 = $("#timeline ul:first");
+// 		var $newsCon2 = $("#timeline ul:last");
 		var $news = $("#timeline li");
+		var size = $news.size();
 		
-		if( $news.size()<=4 ){
+		if( size<=4 ){
 			$prev.hide();
 			$next.hide();
 		}
 		
-		
-		$news[0].addClass("show first");
-		$news[1].addClass("show");
-		$news[2].addClass("show");
-		$news[3].addClass("show last");
+		$newsCon1.css("width", size*282+"px");
 		
 		$prev.bind('click', function(){
-			
+			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
+				$newsCon1.animate({marginLeft:-564+"px"});
+			}else{
+				$newsCon1.animate({marginLeft:'+=282px'});
+			}
 		});
 		
 		$next.bind('click', function(){
-			
+			console.log( "before"+$newsCon1.css("marginLeft") );
+			if( parseInt($newsCon1.css("marginLeft"))<(-563) ){
+				console.log("move");
+				$newsCon1.animate({marginLeft:0+"px"});
+			}else{
+				$newsCon1.animate({marginLeft:'-=282px'});
+			}
 		});
 	}
 	
