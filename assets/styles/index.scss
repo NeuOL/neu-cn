@@ -30,7 +30,7 @@ header {
 	width:$full;
 	height: 190px;
 	text-align:center;
-	
+
 	&:hover {
 		.slider_nav {
 			display:block;
@@ -43,21 +43,21 @@ header {
 // 	width: $full;
 	height: 232px;
 	overflow:hidden;
-	
+
 	li {
 		position: absolute;
 		display: none;
 // 		width: $full;
 		top: 0;
 		left: 0;
-		
+
 		&:first-child {
 			position: relative;
 			display: block;
 			float: left;
 		}
 	}
-	
+
 	img {
 		display: block;
 		float: left;
@@ -67,7 +67,7 @@ header {
 		height: 232px;
 		border:0;
 	}
-	
+
 	.caption{
 		display:block;
 		position:absolute;
@@ -92,7 +92,7 @@ header {
 // 	margin-bottom:60px;
 	position:relative;
 	z-index:20;
-	
+
 	li {
 		float: left;
 		display: inline-block;
@@ -102,7 +102,7 @@ header {
 		margin-left: 5px;
 		border: 0;
 // 		border-radius: 10px;
-		
+
 		a {
 			position: absolute;
 			width: 12px;
@@ -115,7 +115,7 @@ header {
 			background:transparent url("../images/tab.png") no-repeat right top;
 		}
 	}
-	
+
 	.slider_here a {
 		color: #fff;
 		color: rgba(255, 255, 255, 0);
@@ -139,7 +139,7 @@ header {
 	background:transparent url("../images/themes.gif") no-repeat left top;
 	margin-top:-30px;
 	display:none;
-	
+
 	&:active {
 		opacity: 1;
 	}
@@ -168,14 +168,14 @@ nav {
 #nav {
 	display: block;
 	list-style-type:none;
-	
+
 	li {
 		float:left;
 		_display:inline;
 		position:relative;
 		z-index:60;
 		list-style-type:none;
-		
+
 		a {
 			display:block;
 			line-height:40px;
@@ -184,7 +184,7 @@ nav {
 			padding:0 14px;
 			text-decoration: none;
 		}
-		
+
 		ul {
 			background: rgba(0,0,0,0.7);
 			position:absolute;
@@ -194,7 +194,7 @@ nav {
 			padding:5px 0;
 			display:none;
 			list-style-type:none;
-			
+
 			li {
 				text-align: left;
 				float:none;
@@ -202,7 +202,7 @@ nav {
 				padding:0;
 				margin:0;
 				list-style-type:none;
-				
+
 				a {
 					line-height:26px;
 					padding: 0 10px;
@@ -212,7 +212,7 @@ nav {
 			}
 		}
 	}
-	
+
 	li.last ul {
 		left: -77px;
 	}
@@ -229,7 +229,7 @@ nav {
 	top:-28px;
 	z-index: 40;
 	font-size: 0.9em;
-	
+
 	span {
 		width: 3%;
 		display: inline-block;
@@ -239,7 +239,7 @@ nav {
 		background:rgba(0,0,0,0.5);
 		color: #fff;
 		z-index: 50;
-		
+
 		&:hover {
 			cursor: pointer;
 		}
@@ -257,7 +257,7 @@ nav {
 		overflow: hidden;
 		background: url("../images/prevNext.png") no-repeat right center;
 	}
-	
+
 	div.contain {
 		display: inline-block;
 		float: left;
@@ -265,7 +265,7 @@ nav {
 		height: 30px;
 		overflow: hidden;
 	}
-	
+
 	li {
 		width: 280px;//24.85%;
 		overflow: hidden;
@@ -277,7 +277,7 @@ nav {
 		margin: 0 1px;
 		display: inline-block;
 	}
-	
+
 	a {
 		padding: 0.5em 1em;
 	    display: block;
@@ -287,7 +287,7 @@ nav {
 	    white-space: nowrap;
 	    text-overflow: ellipsis;
 	    overflow: hidden;
-		
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -302,8 +302,8 @@ nav {
 	background: #fff;
 	padding: 0.5%;
 	overflow: hidden;
-	
-	
+
+
 }
 
 #body > div {
@@ -316,7 +316,7 @@ nav {
 #universityNews, #media, #academyNews, #others {
 	border: 1px solid #e0e0e0;
 	display: inline-block;
-	
+
 	hr {
 		border-bottom: solid #d5d5d5 1px;
 		margin: 8px 0;
@@ -324,13 +324,13 @@ nav {
 		overflow: hidden;
 		float: none;
 	}
-	
+
 	li {
 		font-size: 12px;
 		list-style: none;
 		text-align: left;
 		color: #032f55;
-		
+
 		.beforeText {
 			width: 15px;
 			height: 25px;
@@ -338,19 +338,19 @@ nav {
 			display: inline-block;
 			vertical-align: middle;
 		}
-		
+
 		a {
 			display: inline-block;
 			text-decoration: none;
 			color: #333;
 			margin-left: 2px;
 			vertical-align: middle;
-			
+
 			&:hover {
 				color: #204496;
 			}
 		}
-		
+
 		.date {
 			display: inline-block;
 			vertical-align: middle;
@@ -364,22 +364,22 @@ nav {
 .head {
 	text-align: left;
 	overflow: hidden;
-	
+
 	h3, a, span {
 		display: inline-block;
 		vertical-align: middle;
 		float: left;
 	}
-	
+
 	h3 {
 		font-size: 18px;
 		color: #032b83;
 		vertical-align: middle;
 	}
-	
+
 	.more {
 		float: right;
-		
+
 		.more-txt {
 			font-size: 12px;
 			font-weight: bolder;
@@ -388,7 +388,7 @@ nav {
 			text-decoration: none;
 			margin-top: 4px;
 		}
-		
+
 		.icon {
 			width: 25px;
 			height: 25px;
@@ -401,31 +401,31 @@ nav {
 	width: 36%;
 	height: 375px;
 	padding: 10px 1%;
-	
+
 	#imageNews {
 		text-align: left;
-		
+
 		iframe {
 			width: 100%;
 		}
-		
+
 		img {
 			width: 226px;
 			height: 150px;
 			float: left;
 			margin-right: 10px;
 		}
-		
+
 		h4 {
 			line-height: 1.5em;
 		}
-		
+
 		p {
 			color: #8d8d8d;
 			font-size: 0.8em;
 			line-height: 1.5em;
 		}
-		
+
 		span {
 			color: #8d8d8d;
 			font-size: 0.8em;
@@ -433,10 +433,10 @@ nav {
 			margin-right: 10px;
 		}
 	}
-	
+
 	.news {
 		height: 173px;
-		
+
 /*
 		iframe {
 			width: 100%;
@@ -447,7 +447,7 @@ nav {
 // 			line-height: 21px;
 // 			margin: 3px 0;
 		}
-		
+
 		li a {
 			width: 360px;
 			white-space: nowrap;
@@ -466,7 +466,7 @@ nav {
 	height: 174px;
 	display: block;
 	padding: 10px 3%;
-	
+
 /*
 	iframe {
 		width: 100%;
@@ -496,12 +496,12 @@ nav {
 	margin-left: 2px;
 	margin-right: 0 !important;
 	padding: 10px 1%;
-	
+
 	#inform iframe {
 		width: 100%;
 		height: 75px;
 	}
-	
+
 	li a {
 		margin-left: 0;
 		width: 210px;
@@ -509,23 +509,23 @@ nav {
 	    text-overflow: ellipsis;
 	    overflow: hidden;
 	}
-	
+
 	#links {
 		.news {
 			text-align: left;
-			
+
 			a {
 				font-size: 12px;
 				text-decoration: none;
 				color: #333;
-				
+
 				&:hover {
 					color: #204496;
 				}
 			}
 		}
 	}
-	
+
 	#topics {
 		img {
 			width: 100%;
@@ -546,7 +546,7 @@ footer {
 	height: 80px;
 	padding: 10px;
 	font-size: 12px;
-	
+
 	hr {
 		border-bottom: solid #5a697c 1px;
 		margin: 10px 0;
@@ -559,13 +559,13 @@ footer > div {
 }
 
 #footer_link {
-	
+
 	a {
 		display: inline-block;
 		color: #fff;
 		text-decoration: none;
 	}
-	
+
 	.line {
 		margin: 0 5px;
 	}
@@ -580,11 +580,11 @@ footer > div {
 	color: #fff;
 	margin-left: 220px;
 	float: left;
-	
+
 	a {
 		color: #fff;
 		text-decoration: none;
-		
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -595,13 +595,13 @@ footer > div {
 	color: #fff;
 	margin-left: 20px;
 	float: left;
-	
+
 	a {
 		display: inline-block;
 		vertical-align: middle;
 		float: left;
 		text-decoration: none;
-		
+
 		.text {
 			display: inline-block;
 			vertical-align: top;
@@ -610,15 +610,15 @@ footer > div {
 			color: #fff;
 		}
 	}
-	
-		
+
+
 	.weixin .img {
 		display: inline-block;
 		width: 40px;
 		height: 35px;
 		background: url("../images/icons.png") no-repeat 0 -28px;
 	}
-	
+
 	.weibo .img {
 		display: inline-block;
 		width: 40px;
@@ -628,46 +628,46 @@ footer > div {
 }
 
 
-@media screen and (max-width: 1280px) { 
+@media screen and (max-width: 1280px) {
 	body {
 		width: 1200px;
 	}
-	
+
 	#footer_left {
 		margin-left: 220px;
 	}
 }
 
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) {
 	body {
 		width: 1000px;
 	}
-	
+
 	#timeline li {
 		width: 233px;//24.85%;
 	}
-	
+
 	#body #universityNews {
 		width: 358px;
 	}
 	#body #universityNews li a {
 		width: 300px;
 	}
-	
+
 	#body > div {
 		width: 355px;
 	}
 	#body > div li a {
 		width: 280px;
 	}
-	
+
 	#body #others {
 		width: 220px;
 	}
 	#body #others li a {
 		width: 170px;
 	}
-	
+
 	#footer_left {
 		margin-left: 120px;
 	}
@@ -675,29 +675,29 @@ footer > div {
 
 
 /*
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
 	body {
 		width: 800px;
 	}
-	
+
 	#universityNews {
 		width: 48%;
 	}
-	
+
 	#universityNews + div {
 		width: 49%;
 		margin-right: 0;
 	}
-	
+
 	#others {
 		width: 97.7%;
 		height: auto;
 		margin-top: 5px;
-		
+
 		hr {
 			display: none;
 		}
-		
+
 		#inform, #links {
 			float: left;
 			width: 35%;
@@ -705,26 +705,26 @@ footer > div {
 			margin-right: 1%;
 			border-right: 2px solid #ccc;
 		}
-		
+
 		#links {
 			width: 30%;
 		}
-		
+
 		#topics {
 			float: left;
 			width: 30%;
 		}
 	}
-	
+
 	footer {
 		height: 130px;
 	}
-	
+
 	#footer_left {
 		margin-left: 0;
 		float: none;
 	}
-	
+
 	#footer_right {
 		margin-left: 0;
 		float: none;
@@ -732,33 +732,33 @@ footer > div {
 	}
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
 	body {
 		width: 650px;
 	}
-	
+
 	#others {
 		margin-top: 0;
 	}
-} 
+}
 
-@media screen and (max-width: 650px) { 
+@media screen and (max-width: 650px) {
 	body {
 		width: 100%;
 	}
-	
+
 	#logo {
 		width: 100%;
 		display: block;
 	}
-	
+
 	nav {
 		width: 100%;
 		height: auto;
 		padding-right: 0;
 		top:-40px;
 		margin-top: 40px;
-		
+
 		#smenu {
 			display:block;
 			line-height:44px;
@@ -768,52 +768,52 @@ footer > div {
 			color: #13172d;
 			background: #efefef;
 		}
-		
+
 		#nav {
 			display: none;
-			
+
 			ul {
 				overflow: hidden;
 			}
 		}
-		
+
 		#nav > li {
 			width: 100%;
 			float: none;
 			background: #fff;
-			
+
 			&:hover {
 				background: #b0b0b0;
 			}
-			
+
 			a {
 				color: #333;
 			}
 		}
 	}
-	
+
 	#smenu {
 		display: block;
 	}
-	
+
 	#timeline {
 		span {
 			display: none;
 		}
 	}
-	
+
 	#body > div {
 		width: 99.5%;
 		margin-bottom: 5px;
 	}
-	
+
 	#body #universityNews, #body #others {
 		width: 97.5%;
 	}
-	
+
 }
 
-@media screen and (max-width: 530px) { 
+@media screen and (max-width: 530px) {
 	footer {
 		height: 160px;
 	}

@@ -1,2 +1,733 @@
-*{margin:0;padding:0;border:0;font-family:"Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol"}body{margin:0 auto;text-align:center;width:1200px;background:#e8e8e8}article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}#logo{display:none}header{top:-40px;position:relative;width:100%;height:190px;text-align:center}header:hover .slider_nav{display:block}#slider{position:relative;height:232px;overflow:hidden}#slider li{position:absolute;display:none;top:0;left:0}#slider li:first-child{position:relative;display:block;float:left}#slider img{display:block;float:left;position:relative;z-index:1;height:232px;border:0}#slider .caption{display:block;position:absolute;z-index:2;font-size:20px;text-shadow:none;color:#fff;background:#000;background:rgba(0,0,0,0.8);left:0;right:0;bottom:0;padding:10px 20px;margin:0;max-width:none}.slider_tabs{margin-top:-60px;margin-left:40%;position:relative;z-index:20}.slider_tabs li{float:left;display:inline-block;position:relative;width:12px;height:12px;margin-left:5px;border:0}.slider_tabs li a{position:absolute;width:12px;height:12px;overflow:hidden;left:0;color:#979797;color:rgba(151,151,151,0);background:transparent url("../images/tab.png") no-repeat right top}.slider_tabs .slider_here a{color:#fff;color:rgba(255,255,255,0);background:#FFF;background:transparent url("../images/tab.png") no-repeat left top}.slider_nav{position:absolute;-webkit-tap-highlight-color:transparent;top:50%;left:0;opacity:0.6;z-index:20;text-indent:-9999px;overflow:hidden;text-decoration:none;height:61px;width:38px;background:transparent url("../images/themes.gif") no-repeat left top;margin-top:-30px;display:none}.slider_nav:active{opacity:1}.slider_nav.next{left:auto;background-position:right top;right:0}nav{height:40px;position:relative;float:right;top:0;right:0;background:#000;background:rgba(0,0,0,0.6);padding-right:25px;color:#fff;z-index:50}#nav{display:block;list-style-type:none}#nav li{float:left;_display:inline;position:relative;z-index:60;list-style-type:none}#nav li a{display:block;line-height:40px;font-size:15px;color:#fff;padding:0 14px;text-decoration:none}#nav li ul{background:rgba(0,0,0,0.7);position:absolute;top:40px;width:190px;z-index:2;padding:5px 0;display:none;list-style-type:none}#nav li ul li{text-align:left;float:none;display:block;padding:0;margin:0;list-style-type:none}#nav li ul li a{line-height:26px;padding:0 10px;font-size:14px;color:#fff}#nav li.last ul{left:-77px}#smenu{display:none}#timeline{position:relative;top:-28px;z-index:40;font-size:0.9em}#timeline span{width:3%;display:inline-block;position:relative;float:left;background:#000;background:rgba(0,0,0,0.5);color:#fff;z-index:50}#timeline span:hover{cursor:pointer}#timeline span.prev{width:17px;height:30px;overflow:hidden;margin-left:9px;background:url("../images/prevNext.png") no-repeat left center}#timeline span.next{width:17px;height:30px;overflow:hidden;background:url("../images/prevNext.png") no-repeat right center}#timeline div.contain{display:inline-block;float:left;width:94%;height:30px;overflow:hidden}#timeline li{width:280px;overflow:hidden;height:30px;list-style:none;background:#000;background:rgba(0,0,0,0.5);float:left;margin:0 1px;display:inline-block}#timeline a{padding:0.5em 1em;display:block;position:relative;color:#fff;text-decoration:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}#timeline a:hover{text-decoration:underline}#body{width:99%;position:relative;top:-30px;background:#fff;padding:0.5%;overflow:hidden}#body>div{display:inline-block;vertical-align:top;float:left;margin-right:5px}#universityNews,#media,#academyNews,#others{border:1px solid #e0e0e0;display:inline-block}#universityNews hr,#media hr,#academyNews hr,#others hr{border-bottom:solid #d5d5d5 1px;margin:8px 0;display:block;overflow:hidden;float:none}#universityNews li,#media li,#academyNews li,#others li{font-size:12px;list-style:none;text-align:left;color:#032f55}#universityNews li .beforeText,#media li .beforeText,#academyNews li .beforeText,#others li .beforeText{width:15px;height:25px;background:url("../images/icons.png") no-repeat left top;display:inline-block;vertical-align:middle}#universityNews li a,#media li a,#academyNews li a,#others li a{display:inline-block;text-decoration:none;color:#333;margin-left:2px;vertical-align:middle}#universityNews li a:hover,#media li a:hover,#academyNews li a:hover,#others li a:hover{color:#204496}#universityNews li .date,#media li .date,#academyNews li .date,#others li .date{display:inline-block;vertical-align:middle;margin-top:6px;float:right;color:#333}.head{text-align:left;overflow:hidden}.head h3,.head a,.head span{display:inline-block;vertical-align:middle;float:left}.head h3{font-size:18px;color:#032b83;vertical-align:middle}.head .more{float:right}.head .more .more-txt{font-size:12px;font-weight:bolder;vertical-align:middle;color:#032b83;text-decoration:none;margin-top:4px}.head .more .icon{width:25px;height:25px;background:url("../images/icons.png") no-repeat -21px 0px}#universityNews{width:36%;height:375px;padding:10px 1%}#universityNews #imageNews{text-align:left}#universityNews #imageNews iframe{width:100%}#universityNews #imageNews img{width:226px;height:150px;float:left;margin-right:10px}#universityNews #imageNews h4{line-height:1.5em}#universityNews #imageNews p{color:#8d8d8d;font-size:0.8em;line-height:1.5em}#universityNews #imageNews span{color:#8d8d8d;font-size:0.8em;float:right;margin-right:10px}#universityNews .news{height:173px}#universityNews .news li a{width:360px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}#universityNews+div{width:36%}#media,#academyNews{width:94%;height:174px;display:block;padding:10px 3%}#media li .beforeText,#academyNews li .beforeText{height:23px}#media li a,#academyNews li a{width:340px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}#media{margin-bottom:5px}#others{width:22.6%;height:375px;margin-left:2px;margin-right:0 !important;padding:10px 1%}#others #inform iframe{width:100%;height:75px}#others li a{margin-left:0;width:210px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}#others #links .news{text-align:left}#others #links .news a{font-size:12px;text-decoration:none;color:#333}#others #links .news a:hover{color:#204496}#others #topics img{width:100%;height:45px;margin-top:5px}footer{background:#032f55;position:relative;top:-30px;height:80px;padding:10px;font-size:12px}footer hr{border-bottom:solid #5a697c 1px;margin:10px 0}footer>div{width:100%;margin:0 auto}#footer_link a{display:inline-block;color:#fff;text-decoration:none}#footer_link .line{margin:0 5px}#footer_left,#footer_right{display:inline-block;vertical-align:middle}#footer_left{color:#fff;margin-left:220px;float:left}#footer_left a{color:#fff;text-decoration:none}#footer_left a:hover{text-decoration:underline}#footer_right{color:#fff;margin-left:20px;float:left}#footer_right a{display:inline-block;vertical-align:middle;float:left;text-decoration:none}#footer_right a .text{display:inline-block;vertical-align:top;text-align:left;margin-right:10px;color:#fff}#footer_right .weixin .img{display:inline-block;width:40px;height:35px;background:url("../images/icons.png") no-repeat 0 -28px}#footer_right .weibo .img{display:inline-block;width:40px;height:35px;background:url("../images/icons.png") no-repeat -40px -28px}@media screen and (max-width: 1280px){body{width:1200px}#footer_left{margin-left:220px}}@media screen and (max-width: 1200px){body{width:1000px}#timeline li{width:233px}#body #universityNews{width:358px}#body #universityNews li a{width:300px}#body>div{width:355px}#body>div li a{width:280px}#body #others{width:220px}#body #others li a{width:170px}#footer_left{margin-left:120px}}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 1200px;
+  background: #e8e8e8;
+}
+
+/*html5*/
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block;
+}
+
+#logo {
+  display: none;
+}
+
+/* header */
+header {
+  top: -40px;
+  position: relative;
+  width: 100%;
+  height: 190px;
+  text-align: center;
+}
+header:hover .slider_nav {
+  display: block;
+}
+
+#slider {
+  position: relative;
+  height: 232px;
+  overflow: hidden;
+}
+#slider li {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+}
+#slider li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+#slider img {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 232px;
+  border: 0;
+}
+#slider .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+}
+
+.slider_tabs {
+  margin-top: -60px;
+  margin-left: 40%;
+  position: relative;
+  z-index: 20;
+}
+.slider_tabs li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  border: 0;
+}
+.slider_tabs li a {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  left: 0;
+  color: #979797;
+  color: rgba(151, 151, 151, 0);
+  background: transparent url("../images/tab.png") no-repeat right top;
+}
+.slider_tabs .slider_here a {
+  color: #fff;
+  color: rgba(255, 255, 255, 0);
+  background: #FFF;
+  background: transparent url("../images/tab.png") no-repeat left top;
+}
+
+.slider_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 0;
+  opacity: 0.6;
+  z-index: 20;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes.gif") no-repeat left top;
+  margin-top: -30px;
+  display: none;
+}
+.slider_nav:active {
+  opacity: 1;
+}
+
+.slider_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+/* nav */
+nav {
+  height: 40px;
+  position: relative;
+  float: right;
+  top: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  padding-right: 25px;
+  color: #fff;
+  z-index: 50;
+}
+
+#nav {
+  display: block;
+  list-style-type: none;
+}
+#nav li {
+  float: left;
+  _display: inline;
+  position: relative;
+  z-index: 60;
+  list-style-type: none;
+}
+#nav li a {
+  display: block;
+  line-height: 40px;
+  font-size: 15px;
+  color: #fff;
+  padding: 0 14px;
+  text-decoration: none;
+}
+#nav li ul {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 40px;
+  width: 190px;
+  z-index: 2;
+  padding: 5px 0;
+  display: none;
+  list-style-type: none;
+}
+#nav li ul li {
+  text-align: left;
+  float: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#nav li ul li a {
+  line-height: 26px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #fff;
+}
+#nav li.last ul {
+  left: -77px;
+}
+
+#smenu {
+  display: none;
+}
+
+#timeline {
+  position: relative;
+  top: -28px;
+  z-index: 40;
+  font-size: 0.9em;
+}
+#timeline span {
+  width: 3%;
+  display: inline-block;
+  position: relative;
+  float: left;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 50;
+}
+#timeline span:hover {
+  cursor: pointer;
+}
+#timeline span.prev {
+  width: 17px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 9px;
+  background: url("../images/prevNext.png") no-repeat left center;
+}
+#timeline span.next {
+  width: 17px;
+  height: 30px;
+  overflow: hidden;
+  background: url("../images/prevNext.png") no-repeat right center;
+}
+#timeline div.contain {
+  display: inline-block;
+  float: left;
+  width: 94%;
+  height: 30px;
+  overflow: hidden;
+}
+#timeline li {
+  width: 280px;
+  overflow: hidden;
+  height: 30px;
+  list-style: none;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+  margin: 0 1px;
+  display: inline-block;
+}
+#timeline a {
+  padding: 0.5em 1em;
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#timeline a:hover {
+  text-decoration: underline;
+}
+
+#body {
+  width: 99%;
+  position: relative;
+  top: -30px;
+  background: #fff;
+  padding: 0.5%;
+  overflow: hidden;
+}
+
+#body > div {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin-right: 5px;
+}
+
+#universityNews, #media, #academyNews, #others {
+  border: 1px solid #e0e0e0;
+  display: inline-block;
+}
+#universityNews hr, #media hr, #academyNews hr, #others hr {
+  border-bottom: solid #d5d5d5 1px;
+  margin: 8px 0;
+  display: block;
+  overflow: hidden;
+  float: none;
+}
+#universityNews li, #media li, #academyNews li, #others li {
+  font-size: 12px;
+  list-style: none;
+  text-align: left;
+  color: #032f55;
+}
+#universityNews li .beforeText, #media li .beforeText, #academyNews li .beforeText, #others li .beforeText {
+  width: 15px;
+  height: 25px;
+  background: url("../images/icons.png") no-repeat left top;
+  display: inline-block;
+  vertical-align: middle;
+}
+#universityNews li a, #media li a, #academyNews li a, #others li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+#universityNews li a:hover, #media li a:hover, #academyNews li a:hover, #others li a:hover {
+  color: #204496;
+}
+#universityNews li .date, #media li .date, #academyNews li .date, #others li .date {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 6px;
+  float: right;
+  color: #333;
+}
+
+.head {
+  text-align: left;
+  overflow: hidden;
+}
+.head h3, .head a, .head span {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+}
+.head h3 {
+  font-size: 18px;
+  color: #032b83;
+  vertical-align: middle;
+}
+.head .more {
+  float: right;
+}
+.head .more .more-txt {
+  font-size: 12px;
+  font-weight: bolder;
+  vertical-align: middle;
+  color: #032b83;
+  text-decoration: none;
+  margin-top: 4px;
+}
+.head .more .icon {
+  width: 25px;
+  height: 25px;
+  background: url("../images/icons.png") no-repeat -21px 0px;
+}
+
+#universityNews {
+  width: 36%;
+  height: 375px;
+  padding: 10px 1%;
+}
+#universityNews #imageNews {
+  text-align: left;
+}
+#universityNews #imageNews iframe {
+  width: 100%;
+}
+#universityNews #imageNews img {
+  width: 226px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+}
+#universityNews #imageNews h4 {
+  line-height: 1.5em;
+}
+#universityNews #imageNews p {
+  color: #8d8d8d;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+#universityNews #imageNews span {
+  color: #8d8d8d;
+  font-size: 0.8em;
+  float: right;
+  margin-right: 10px;
+}
+#universityNews .news {
+  height: 173px;
+  /*
+  		iframe {
+  			width: 100%;
+  			height: 180px;
+  		}
+  */
+}
+#universityNews .news li a {
+  width: 360px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#universityNews + div {
+  width: 36%;
+}
+
+#media, #academyNews {
+  width: 94%;
+  height: 174px;
+  display: block;
+  padding: 10px 3%;
+  /*
+  	iframe {
+  		width: 100%;
+  		height: 125px;
+  	}
+  */
+}
+#media li .beforeText, #academyNews li .beforeText {
+  height: 23px;
+}
+#media li a, #academyNews li a {
+  width: 340px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#media {
+  margin-bottom: 5px;
+}
+
+#others {
+  width: 22.6%;
+  height: 375px;
+  margin-left: 2px;
+  margin-right: 0 !important;
+  padding: 10px 1%;
+}
+#others #inform iframe {
+  width: 100%;
+  height: 75px;
+}
+#others li a {
+  margin-left: 0;
+  width: 210px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#others #links .news {
+  text-align: left;
+}
+#others #links .news a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+}
+#others #links .news a:hover {
+  color: #204496;
+}
+#others #topics img {
+  width: 100%;
+  height: 45px;
+  margin-top: 5px;
+}
+
+footer {
+  background: #032f55;
+  position: relative;
+  top: -30px;
+  height: 80px;
+  padding: 10px;
+  font-size: 12px;
+}
+footer hr {
+  border-bottom: solid #5a697c 1px;
+  margin: 10px 0;
+}
+
+footer > div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#footer_link a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+#footer_link .line {
+  margin: 0 5px;
+}
+
+#footer_left, #footer_right {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer_left {
+  color: #fff;
+  margin-left: 220px;
+  float: left;
+}
+#footer_left a {
+  color: #fff;
+  text-decoration: none;
+}
+#footer_left a:hover {
+  text-decoration: underline;
+}
+
+#footer_right {
+  color: #fff;
+  margin-left: 20px;
+  float: left;
+}
+#footer_right a {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  text-decoration: none;
+}
+#footer_right a .text {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 10px;
+  color: #fff;
+}
+#footer_right .weixin .img {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background: url("../images/icons.png") no-repeat 0 -28px;
+}
+#footer_right .weibo .img {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background: url("../images/icons.png") no-repeat -40px -28px;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    width: 1200px;
+  }
+
+  #footer_left {
+    margin-left: 220px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    width: 1000px;
+  }
+
+  #timeline li {
+    width: 233px;
+  }
+
+  #body #universityNews {
+    width: 358px;
+  }
+
+  #body #universityNews li a {
+    width: 300px;
+  }
+
+  #body > div {
+    width: 355px;
+  }
+
+  #body > div li a {
+    width: 280px;
+  }
+
+  #body #others {
+    width: 220px;
+  }
+
+  #body #others li a {
+    width: 170px;
+  }
+
+  #footer_left {
+    margin-left: 120px;
+  }
+}
+/*
+@media screen and (max-width: 1000px) {
+	body {
+		width: 800px;
+	}
+
+	#universityNews {
+		width: 48%;
+	}
+
+	#universityNews + div {
+		width: 49%;
+		margin-right: 0;
+	}
+
+	#others {
+		width: 97.7%;
+		height: auto;
+		margin-top: 5px;
+
+		hr {
+			display: none;
+		}
+
+		#inform, #links {
+			float: left;
+			width: 35%;
+			padding-right: 1%;
+			margin-right: 1%;
+			border-right: 2px solid #ccc;
+		}
+
+		#links {
+			width: 30%;
+		}
+
+		#topics {
+			float: left;
+			width: 30%;
+		}
+	}
+
+	footer {
+		height: 130px;
+	}
+
+	#footer_left {
+		margin-left: 0;
+		float: none;
+	}
+
+	#footer_right {
+		margin-left: 0;
+		float: none;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		width: 650px;
+	}
+
+	#others {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	body {
+		width: 100%;
+	}
+
+	#logo {
+		width: 100%;
+		display: block;
+	}
+
+	nav {
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+		top:-40px;
+		margin-top: 40px;
+
+		#smenu {
+			display:block;
+			line-height:44px;
+			font-size:18px;
+			padding:0 20px;
+			cursor:pointer;
+			color: #13172d;
+			background: #efefef;
+		}
+
+		#nav {
+			display: none;
+
+			ul {
+				overflow: hidden;
+			}
+		}
+
+		#nav > li {
+			width: 100%;
+			float: none;
+			background: #fff;
+
+			&:hover {
+				background: #b0b0b0;
+			}
+
+			a {
+				color: #333;
+			}
+		}
+	}
+
+	#smenu {
+		display: block;
+	}
+
+	#timeline {
+		span {
+			display: none;
+		}
+	}
+
+	#body > div {
+		width: 99.5%;
+		margin-bottom: 5px;
+	}
+
+	#body #universityNews, #body #others {
+		width: 97.5%;
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	footer {
+		height: 160px;
+	}
+}
+*/
+
 /*# sourceMappingURL=index.css.map */
