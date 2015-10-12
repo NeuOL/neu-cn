@@ -1,10 +1,15 @@
-define(["slide","nav","jquery"],function(require,exports,module){
+// define(["slide","nav","jquery"],function(require,exports,module){
+define(function(require,exports,module){
 	
+	var $ = require('jquery');
 // 	slider
 	var slide = require('slide');
-	var nav = require('nav');
+	
 	slide.slideInit();
-	nav.navInit();
+	
+	
+	
+	
 	
 	exports.slide = function () {
 		
@@ -22,7 +27,16 @@ define(["slide","nav","jquery"],function(require,exports,module){
 	}
 
 	exports.nav = function(){
-// 		$(".sf-menu").superfish();
+		var Nav = require('nav');
+		var n = new Nav("nav.menu");
+		n._init();
+		
+		var _width = window.innerWidth; 
+	    if(_width < 650){
+	        n.removeHover();
+	    }else{
+		    n.addHover();
+	    }
 	}
 	
 	exports.navData = function(){
@@ -150,6 +164,9 @@ define(["slide","nav","jquery"],function(require,exports,module){
 					</a>\
 					<a href=\"http://uzone.univs.cn/school_2129.html\" target=\"_blank\">\
 						<img src=\"./assets/images/changyeshuxiang.jpg\" />\
+					</a>\
+					<a href=\"http://zxz.neu.edu.cn\" target=\"_blank\">\
+						<img src=\"./assets/images/sanyansanshi.jpg\" />\
 					</a>";
 		
 		$("#topics .news").html(html);
@@ -158,25 +175,49 @@ define(["slide","nav","jquery"],function(require,exports,module){
 	exports.timeline = function(){
 		var $prev = $("#timeline .prev");
 		var $next = $("#timeline .next");
+		var $newsCon1 = $("#timeline ul");
 		var $news = $("#timeline li");
+		var size = $news.size();
+		var _width = window.innerWidth;
+		var liLength;
+		if( _width < 1200 ){
+			liLength = 235;
+		}else{
+			liLength = 282;
+		}
 		
-		if( $news.size()<=4 ){
+		if( size<=4 ){
 			$prev.hide();
 			$next.hide();
 		}
 		
+		$(window).resize(function() {
+			_width = window.innerWidth;
+			if( _width < 1200 ){
+				liLength = 235;
+			}else{
+				liLength = 282;
+			}
+			$newsCon1.animate({marginLeft:"0px"});
+		});
 		
-		$news[0].addClass("show first");
-		$news[1].addClass("show");
-		$news[2].addClass("show");
-		$news[3].addClass("show last");
+		$newsCon1.css("width", size*liLength+"px");
 		
 		$prev.bind('click', function(){
-			
+			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
+				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"});
+			}else{
+				$newsCon1.animate({marginLeft:'+='+liLength+'px'});
+			}
 		});
 		
 		$next.bind('click', function(){
-			
+			if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
+				console.log("move");
+				$newsCon1.animate({marginLeft:0+"px"});
+			}else{
+				$newsCon1.animate({marginLeft:'-='+liLength+'px'});
+			}
 		});
 	}
 	

@@ -2,20 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>东北大学欢迎您</title>
+	<title>东北大学</title>
 	<link rel="stylesheet" href="assets/styles/index.css" type="text/css" media="screen" charset="utf-8">
-	<!--[if lte IE 8]> 
-		<script> 
+	<!--[if lte IE 8]>
+		<script>
 		   (function() {
-		     if (! 
+		     if (!
 		     /*@cc_on!@*/
 		     0) return;
 		     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
 		     var i= e.length;
-		     while (i--){
-		         document.createElement(e[i])
-		     } 
-		})() 
+		     while ( i ){
+		         document.createElement(e[i]);
+		         i = i-1;
+		     }
+		})()
 		</script>
 	<![endif]-->
 	<script src="libs/sea.js" charset="utf-8"></script>
@@ -30,18 +31,19 @@
 		    "slide": "responsiveslides.js"
 		  }
 		})
-		
+
 		// 加载入口模块
 		seajs.use("./mods/index",function(index){
 			index.slide();
 			index.navData();
-// 			index.nav();
+			index.nav();
+			index.timeline();
 			index.topicData();
-			index.iframeBlockStyle();
+// 			index.iframeBlockStyle();
 		})
 
 	</script>
-	<script src="mods/respond.min.js"></script>
+<!-- 	<script src="./libs/respond.js"></script> -->
 </head>
 <body>
 	<div id="logo">
@@ -70,12 +72,23 @@
 			<li><img src="assets/images/roll_14.jpg"/></li>
 		</ul>
 	</header>
-	<div id="" style="clear: both;"></div>
+<!-- 	<div id="" style="clear: both;"></div> -->
 	<div id="timeline">
+		<div id="" style="clear: both;"></div>
 <!-- 		时间线 -->
 		<span>
 			<span class="prev"></span>
 		</span>
+		<div class="contain">
+		<ul>
+			<li class="show first"><a href="#" title="《光明日报》东北大学孙家学">1.《光明日报》东北大学孙家学</a></li>
+			<li class="show"><a href="#" title="东北大学学生荣获国际大学生数学建模竞赛19项一等奖">2.东北大学学生荣获国际大学生数学建模竞赛19项一等</a></li>
+			<li class="show"><a href="#">3.赵继率队同和平区政府洽谈合作事宜</a></li>
+			<li class="show last"><a href="#">4.中国工程院院士干勇视察</a></li>
+			<li class="hide"><a href="www.baidu.com">5.《三体》获奖</a></li>
+			<li class="hide"><a href="#">6.70周年阅兵仪式</a></li>
+		</ul>
+<!--
 		<ul>
 			<li class="show first"><a href="#" title="《光明日报》东北大学孙家学">《光明日报》东北大学孙家学</a></li>
 			<li class="show"><a href="#" title="东北大学学生荣获国际大学生数学建模竞赛19项一等奖">东北大学学生荣获国际大学生数学建模竞赛19项一等</a></li>
@@ -84,6 +97,8 @@
 			<li class="hide"><a href="#">第四条信息：《三体》获奖</a></li>
 			<li class="hide"><a href="#">第五条信息：70周年阅兵仪式</a></li>
 		</ul>
+-->
+		</div>
 		<span>
 			<span class="next"></span>
 		</span>
@@ -93,37 +108,73 @@
 		<div id="universityNews">
 			<div class="head">
 				<h3>东大新闻</h3>
-				<span>|</span>
-				<a class="more" href="#">进入东北大学新闻网</a>
+				<a class="more" href="#"><span class="more-txt">进入东北大学新闻网</span></a>
 			</div>
 			<hr/>
-			<div id="imageNews">
-				<iframe id="imageNewsIframe" src="http://www.neu.edu.cn/index_image_news.htm" frameborder=0 scrolling=no></iframe>
+			<div id="firstNews">
+				<img src="assets/images/pic_1.jpg">
+				<div>
+					<!-- <h4>东北大学学生荣获国际大学生数学建模竞赛19项一等奖</h4>
+					<p>2015年国际大学生数学建模竞赛成绩近日揭晓，东北大学学生在本次竞赛中荣获74项大奖，包括19项国际一等奖，55项国际二等奖，同级别获奖数量在全国高校名列前茅</p>
+					<span>时间：2015-4-20</span> -->
+				</div>
+				<div style="clear:both"></div>
 			</div>
 			<hr style="margin: 3px 0;"/>
 			<div class="news">
-				<iframe id="universityNewsIframe" src="http://www.neu.edu.cn/index_news.htm" frameborder=0 scrolling=no></iframe>
+<!-- 				<iframe id="universityNewsIframe" src="http://www.neu.edu.cn/index_news.htm" frameborder=0 scrolling=no></iframe> -->
+				<ul>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+				</ul>
 			</div>
 		</div>
 		<div>
 			<div id="media">
 				<div class="head">
 					<h3>媒体东大</h3>
-					<a class="more" href="#">更多>>></a>
+					<a class="more" href="#">
+						<span class="more-txt">更多</span>
+						<span class="icon"></span>
+					</a>
 				</div>
 				<hr/>
 				<div class="news">
-					<iframe id="mediaNewsIframe" src="http://www.neu.edu.cn/index_media.htm" frameborder=0 scrolling=no></iframe>
+<!-- 					<iframe id="mediaNewsIframe" src="http://www.neu.edu.cn/index_media.htm" frameborder=0 scrolling=no></iframe> -->
+					<ul>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					</ul>
 				</div>
 			</div>
 			<div id="academyNews">
 				<div class="head">
 					<h3>学院新闻</h3>
-					<a class="more" href="#">更多>>></a>
+					<a class="more" href="#">
+						<span class="more-txt">更多</span>
+						<span class="icon"></span>
+					</a>
 				</div>
 				<hr/>
 				<div class="news">
-					<iframe id="academyNewsIframe" src="http://www.neu.edu.cn/index_media.htm" frameborder=0 scrolling=no></iframe>
+<!-- 					<iframe id="academyNewsIframe" src="http://www.neu.edu.cn/index_media.htm" frameborder=0 scrolling=no></iframe> -->
+					<ul>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生论坛上作大会报告</a><span class="date">09-15</span></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -131,17 +182,28 @@
 			<div id="inform">
 				<div class="head">
 					<h3>通知公告</h3>
-					<a class="more" href="#">更多>>></a>
+					<a class="more" href="#">
+						<span class="more-txt">更多</span>
+						<span class="icon"></span>
+					</a>
 				</div>
 				<div class="news">
-					<iframe id="informNewsIframe" src="http://www.neu.edu.cn/index_notice.htm" frameborder=0 scrolling=no></iframe>
+<!-- 					<iframe id="informNewsIframe" src="http://www.neu.edu.cn/index_notice.htm" frameborder=0 scrolling=no></iframe> -->
+					<ul>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生</a><span class="date">09-15</span></li>
+						<li><span class="beforeText"></span><a>东北大学学生在韩国大田广域市全球大学生</a><span class="date">09-15</span></li>
+					</ul>
 				</div>
 				<hr/>
 			</div>
 			<div id="links">
 				<div class="head">
 					<h3>快速链接</h3>
-					<a class="more" href="#">更多>>></a>
+					<a class="more" href="#">
+						<span class="more-txt">更多</span>
+						<span class="icon"></span>
+					</a>
 				</div>
 				<div class="news">
 					<a href="http://www.neuzs.com" target="_blank">[东北大学本科招生网]</a>
@@ -154,10 +216,13 @@
 			<div id="topics">
 				<div class="head">
 					<h3>特别专题</h3>
-					<a class="more" href="#">更多>>></a>
+					<a class="more" href="#">
+						<span class="more-txt">更多</span>
+						<span class="icon"></span>
+					</a>
 				</div>
 				<div class="news">
-					
+
 				</div>
 			</div>
 		</div>
@@ -190,14 +255,14 @@
 				</p>
 			</div>
 			<div id="footer_right">
-				<div>
-					<a class="weixin" href="/index_weixin.htm" target="blank"></a>
-					<span>东北大学官方微信<br/>neu-1923</span>
-				</div>
-				<div>
-					<a class="weibo" href="http://weibo.com/neu1923" target="blank"></a>
-					<span>东北大学官方微博<br/>neu1923</span>
-				</div>
+				<a class="weixin" href="/index_weixin.htm" target="blank">
+					<span class="img"></span>
+					<span class="text">东北大学官方微信<br/>neu-1923</span>
+				</a>
+				<a class="weibo" href="http://weibo.com/neu1923" target="blank">
+					<span class="img"></span>
+					<span class="text">东北大学官方微博<br/>neu1923</span>
+				</a>
 			</div>
 		</div>
 	</footer>
