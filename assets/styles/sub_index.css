@@ -8,6 +8,10 @@ a {
 }
 
 
+.title {
+  font-weight: 700;
+}
+
 #subIndex {
     height: auto;
     background-color: white;
@@ -305,7 +309,6 @@ a {
     #navigator2 {
         width: 900px;
         height: 175px;
-        background-image: url("../images/sub_nav.png");
     }
     .head_nav {
         margin-left: 335px;
@@ -369,8 +372,7 @@ a {
     }
     #navigator2 {
         width: 1100px;
-        height: 210px;
-        background-image: url("../images/sub_nav.png");
+        height: 200px;
     }
     .head_nav {
         margin-left: 530px;
