@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
@@ -21,7 +21,8 @@
 		})()
 		</script>
 	<![endif]-->
-	<script src="libs/sea.js" charset="utf-8"></script>
+	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
+	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
 	<script>
 		seajs.config({
 			base: "./mods/",
@@ -32,13 +33,13 @@
 				"slide": "responsiveslides.js",
 				"smallslider": "smallslider.js"
 			}
-		})
+		});
 		seajs.use("./mods/index", function(mod) {
 			mod.slide();
 			mod.nav();
 			mod.timeline();
 			mod.topicData();
-		})
+		});
 	</script>
 	<!-- 	<script src="./libs/respond.js"></script> -->
 </head>

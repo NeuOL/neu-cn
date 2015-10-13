@@ -340,6 +340,11 @@ nav {
 #universityNews, #media, #academyNews, #others {
   border: 1px solid #e0e0e0;
   display: inline-block;
+  background: linear-gradient(top, #f6f4f4, white 3%);
+  background: -o-linear-gradient(top, #f6f4f4, white 3%);
+  background: -ms-linear-gradient(top, #f6f4f4, white 3%);
+  background: -moz-linear-gradient(top, #f6f4f4, white 3%);
+  background: -webkit-linear-gradient(top, #f6f4f4, white 3%);
 }
 #universityNews hr, #media hr, #academyNews hr, #others hr {
   border-bottom: solid #d5d5d5 1px;
