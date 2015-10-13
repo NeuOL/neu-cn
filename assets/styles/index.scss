@@ -23,6 +23,10 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 	display: none;
 }
 
+.container {
+	box-shadow: 0px 30px 30px #cccccc;
+}
+
 /* header */
 header {
 	top: -40px;
@@ -51,7 +55,8 @@ header {
 	float:right;
 	width:195px;
 	h4 {
-
+		font-size: 14px;
+		font-weight: 300;
 	}
 	p {
 		font-size:12px;
@@ -603,8 +608,10 @@ nav {
 // footer
 footer {
 	background: #032f55;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	position: relative;
-	top: -30px;
+	margin-top: -30px;
 	height: 80px;
 	padding: 10px;
 	font-size: 12px;
