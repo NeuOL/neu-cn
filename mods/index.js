@@ -6,11 +6,7 @@ define(function(require,exports,module){
 	var slide = require('slide');
 	
 	slide.slideInit();
-	
-	
-	
-	
-	
+		
 	exports.slide = function () {
 		
 		// Slideshow 
