@@ -20,20 +20,34 @@ module.exports = function(grunt) {
         watch: {
           css: {
             files: 'assets/styles/*.scss',
-            tasks: ['sass']
+            tasks: ['sass', 'includereplace']
           },
-        }
+        },
+
+        includereplace: {
+            dist: {
+              options: {
+                prefix: '<!--',
+                suffix: '-->',
+                includesDir: 'include/'
+              },
+              src: '*.html',
+              dest: 'dist/'
+            }
+          }
 
     });
 
     grunt.loadNpmTasks('grunt-connect');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-include-replace');
 
     grunt.registerTask('server', [
         'connect:demo'
     ]);
     grunt.registerTask('default', [
-        'sass'
+        'sass',
+        'includereplace'
     ]);
 };
