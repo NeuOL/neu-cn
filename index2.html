@@ -36,12 +36,11 @@
 		})
 
 		// 加载入口模块
-		seajs.use("./mods/index", function(index) {
-			index.slide();
-			index.nav();
-			index.timeline();
-			index.topicData();
-			// 			index.iframeBlockStyle();
+		seajs.use("./mods/index", function(mod) {
+			mod.slide();
+			mod.nav();
+			mod.timeline();
+			mod.topicData();
 		})
 	</script>
 	<!-- 	<script src="./libs/respond.js"></script> -->

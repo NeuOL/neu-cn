@@ -122,6 +122,11 @@ define(function(require,exports,module){
 				});
 			}
 		});
+
+		setInterval(function() {
+			$nextWrapper.trigger('click');
+		}, 2500);
+
 	}
 
 	exports.timelineData = function(){
