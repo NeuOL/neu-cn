@@ -1,10 +1,23 @@
-// define(["slide","nav","jquery"],function(require,exports,module){
 define(function(require,exports,module){
 
 	var $ = require('jquery');
 	var slide = require('slide');
+	var smSlider = require('smallslider');
 
 	slide.slideInit();
+	smSlider.initSlider();
+
+		(function __initSlider() {
+			$('#img-slider').smallslider({
+				 switchEffect: 'ease',
+				 switchPath: 'left',
+				 switchMode: 'click',
+				 autoStart: true,
+				 showText: false,
+				 switchTime: 1000
+		 });
+	 })();
+
 
 	exports.slide = function () {
 		$("#slider").responsiveSlides({
@@ -83,7 +96,7 @@ define(function(require,exports,module){
 		var animating = false;
 		$prevWrapper.bind('click', function(){
 			if( animating ) return;
-			animating = true; 
+			animating = true;
 			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
 				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"}, function() {
 					animating = false;
