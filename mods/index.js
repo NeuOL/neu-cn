@@ -62,6 +62,7 @@ define(function(require,exports,module){
 
 	exports.timeline = function(){
 		var $prev = $("#timeline .prev");
+		var $container = $("#timeline .contain");
 		var $prevWrapper = $("#timeline .prev-wrapper");
 		var $nextWrapper = $("#timeline .next-wrapper");
 		var $next = $("#timeline .next");
@@ -123,8 +124,18 @@ define(function(require,exports,module){
 			}
 		});
 
+		var __enter = false;
+		$container.bind('mouseenter', function() {
+				return __enter = true;
+		});
+
+		$container.bind('mouseleave', function() {
+			return __enter = false;
+		});
+
 		setInterval(function() {
-			$nextWrapper.trigger('click');
+			if( !__enter )
+				$nextWrapper.trigger('click');
 		}, 2500);
 
 	}
