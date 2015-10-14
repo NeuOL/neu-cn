@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html dtd>
-=======
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
->>>>>>> 913f5177a0983771b36218dded3a484499b03d1e
 <html>
 
 <head>
@@ -26,8 +22,18 @@
 		</script>
 	<![endif]-->
 	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
-	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
+	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
 	<script>
+		seajs.config({
+			base: "./mods/",
+			alias: {
+				"jquery": "jquery.js",
+				"respond": "respond.min.js",
+				"nav": "nav.js",
+				"slide": "responsiveslides.js",
+				"smallslider": "smallslider.js"
+			}
+		});
 		seajs.use("./mods/index", function(mod) {
 			mod.slide();
 			mod.nav();
@@ -40,6 +46,9 @@
 
 <body>
 	<div class="container">
+		<div id="logo">
+			<img src="assets/images/logo.jpg" />
+		</div>
 		<nav class="menu">
 			<section class="menu" id="smenu">
 				<div style="float:right;background:url(&quot;./assets/images/nav.png&quot;) no-repeat left center;width:30px;height:40px;"></div>导航</section>
