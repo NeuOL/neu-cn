@@ -11,10 +11,7 @@ nav {
   right: 0;
   background: #000000;
   background: rgba(0, 0, 0, 0.6);
-  zoom: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-  /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  filter:alpha(opacity=70);
   /* IE5.5-7 */
   padding-right: 25px;
   color: #fff;
@@ -44,9 +41,7 @@ nav {
   background: #000000;
   background: rgba(0, 0, 0, 0.7);
   zoom: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-  /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  filter:alpha(opacity=70);
   /* IE5.5-7 */
   position: absolute;
   top: 40px;
