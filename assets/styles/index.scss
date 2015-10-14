@@ -405,7 +405,7 @@ header {
 
 #universityNews {
 	width: 36%;
-	height: 400px;
+	height: 500px;
 	padding: 10px 1%;
 
 	.news {
@@ -431,7 +431,7 @@ header {
 
 #media, #academyNews {
 	width: 94%;
-	height: 174px;
+	height: 220px;
 	display: block;
 	padding: 10px 3%;
 
@@ -512,7 +512,7 @@ footer {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	position: relative;
-	margin-top: -30px;
+	margin-top: 0px;
 	height: 80px;
 	padding: 10px;
 	font-size: 12px;
@@ -602,7 +602,7 @@ footer > div {
 	
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1600px) {
 	body {
 		width: 1200px;
 	}
