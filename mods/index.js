@@ -72,8 +72,10 @@ define(function(require,exports,module){
 		var liLength;
 		if( _width < 1200 ){
 			liLength = 235;
-		}else{
+		}else if( _width < 1600 ){
 			liLength = 282;
+		}else{
+			liLength = 376;
 		}
 
 		if( size<=4 ){
@@ -85,8 +87,10 @@ define(function(require,exports,module){
 			_width = window.innerWidth;
 			if( _width < 1200 ){
 				liLength = 235;
-			}else{
+			}else if( _width < 1600 ){
 				liLength = 282;
+			}else{
+				liLength = 376;
 			}
 			$newsCon1.animate({marginLeft:"0px"});
 		});

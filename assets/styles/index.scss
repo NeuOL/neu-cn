@@ -11,16 +11,12 @@ $full : 100%;
 body {
 	margin: 0 auto;
 	text-align: center;
-	width: 1600px;
+	width: 1200px;
 	background: #e8e8e8;
 }
 
 /*html5*/
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
-
-#logo {
-	display: none;
-}
 
 .container {
 	box-shadow: 0px 30px 30px #cccccc;
@@ -31,7 +27,7 @@ header {
 	top: -40px;
 	position:relative;
 	width:$full;
-	height: 300px;
+	height: 250px;
 	text-align:center;
 
 	&:hover {
@@ -45,14 +41,14 @@ header {
 	float: left;
 	margin-bottom: 10px;
 	li {
-		width: 290px;
-		height: 200px;
+		width: 220px;
+		height: 150px;
 	}
 }
 
 .head-news {
 	float:right;
-	width:260px;
+	width:195px;
 	h4 {
 		font-size: 14px;
 		font-weight: 300;
@@ -79,13 +75,15 @@ header {
 #slider {
 	position: relative;
 	width: $full;
-	height: 290px;
+	height: 232px;
 	overflow:hidden;
 
 	li {
 		position: absolute;
-		display: none;
+		display: block;//none
+		float:none;
 		width: $full;
+		height: 227px;
 		top: 0;
 		left: 0;
 
@@ -102,7 +100,7 @@ header {
 		position:relative;
 		z-index:1;
 		width:$full;
-		height: 290px;
+		height: 227px;
 		border:0;
 	}
 
@@ -122,6 +120,71 @@ header {
 		margin:0;
 		max-width:none;
 	}
+}
+
+.slider_tabs {
+	margin-top:-60px;
+	margin-left: 40%;
+// 	margin-bottom:60px;
+	position:relative;
+	z-index:20;
+
+	li {
+		float: left;
+		display: inline-block;
+		position: relative;
+		width: 12px;
+		height: 12px;
+		margin-left: 5px;
+		border: 0;
+// 		border-radius: 10px;
+
+		a {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			overflow: hidden;
+// 			border-radius: 10px;
+			left: 0;
+			color: #979797;
+			color: rgba(151, 151, 151, 0);
+			background:transparent url("../images/tab.png") no-repeat right top;
+		}
+	}
+
+	.slider_here a {
+		color: #fff;
+		color: rgba(255, 255, 255, 0);
+		background:#FFF;
+		background:transparent url("../images/tab.png") no-repeat left top;
+	}
+}
+
+.slider_nav{
+	position:absolute;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	top:50%;
+	left:0;
+	opacity:0.6;
+	z-index:20;
+	text-indent:-9999px;
+	overflow:hidden;
+	text-decoration:none;
+	height:61px;
+	width:38px;
+	background:transparent url("../images/themes.gif") no-repeat left top;
+	margin-top:-30px;
+	display:none;
+
+	&:active {
+		opacity: 1;
+	}
+}
+
+.slider_nav.next{
+	left:auto;
+	background-position:right top;
+	right:0;
 }
 
 /* nav */
@@ -216,7 +279,7 @@ header {
 // Timeline
 #timeline {
 	position: relative;
-	margin-top:-80px;
+	margin-top:-93px;
 	z-index: 40;
 	font-size: 0.9em;
 
@@ -316,9 +379,9 @@ header {
 	background: -moz-linear-gradient(top , rgb(246, 244, 244) , rgb(255, 255, 255) 3%);
 	background: -webkit-linear-gradient(top , rgb(246, 244, 244) , rgb(255, 255, 255) 3%);
 
+
 	hr {
 		border-bottom: solid #d5d5d5 1px;
-		padding: 0;
 		margin: 8px 0;
 		display: block;
 		overflow: hidden;
@@ -405,12 +468,50 @@ header {
 
 #universityNews {
 	width: 36%;
-	height: 500px;
+	height: 375px;
 	padding: 10px 1%;
+
+	#imageNews {
+		text-align: left;
+
+		iframe {
+			width: 100%;
+		}
+
+		img {
+			width: 226px;
+			height: 150px;
+			float: left;
+			margin-right: 10px;
+		}
+
+		h4 {
+			line-height: 1.5em;
+		}
+
+		p {
+			color: #8d8d8d;
+			font-size: 0.8em;
+			line-height: 1.5em;
+		}
+
+		span {
+			color: #8d8d8d;
+			font-size: 0.8em;
+			float: right;
+			margin-right: 10px;
+		}
+	}
 
 	.news {
 		height: 173px;
 
+/*
+		iframe {
+			width: 100%;
+			height: 180px;
+		}
+*/
 		li {
 // 			line-height: 21px;
 // 			margin: 3px 0;
@@ -431,7 +532,7 @@ header {
 
 #media, #academyNews {
 	width: 94%;
-	height: 220px;
+	height: 174px;
 	display: block;
 	padding: 10px 3%;
 
@@ -505,14 +606,12 @@ header {
 
 
 
-
 // footer
 footer {
 	background: #032f55;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	position: relative;
-	margin-top: 0px;
 	height: 80px;
 	padding: 10px;
 	font-size: 12px;
@@ -524,7 +623,9 @@ footer {
 }
 
 footer > div {
-	width: 100%;
+	width: 780px;
+	min-height: 10px;
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -548,7 +649,7 @@ footer > div {
 
 #footer_left {
 	color: #fff;
-	margin-left: 220px;
+// 	margin-left: 220px;
 	float: left;
 
 	a {
@@ -598,355 +699,130 @@ footer > div {
 }
 
 
-@media screen and (max-width: 2000px) {
-
-}
-
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
 	body {
-		width: 1200px;
+		width: 1600px;
 	}
-
+	
 	/* header */
 	header {
-		width:$full;
-		height: 250px;
+		height: 300px;
 	}
-
-	#img-slider {
-		margin-bottom: 10px;
-		li {
-			width: 220px;
-			height: 150px;
-		}
-	}
-
-	.head-news {
-		width:195px;
-		h4 {
-			font-size: 14px;
-		}
-		p {
-			font-size:12px;
-			text-indent:20px;
-			line-height: 1.6;
-			height: 97px;
-		}
-		span {
-			 font-size:12px;
-		}
-	}
-
+	
 	#slider {
-		width: $full;
-
-		li {
-			width: $full;
-		}
-
+		height: 300px;
+	
 		img {
-			width:$full;
-			height: 232px;
-		}
-
-		.caption{
-			font-size:20px;
-			padding:10px 20px;
+			height: 300px;
 		}
 	}
-
-	.slider_tabs {
-		margin-top:-60px;
-		margin-left: 40%;
-
-		li {
-			width: 12px;
-			height: 12px;
-			margin-left: 5px;
-
-			a {
-				width: 12px;
-				height: 12px;
-				left: 0;
-			}
-		}
-	}
-
-	.slider_nav{
-		top:50%;
-		left:0;
-		height:61px;
-		width:38px;
-		margin-top:-30px;
-	}
-
-	/* nav */
-	#nav {
-		height: 40px;
-		top: 0;
-		right: 0;
-		padding-right: 25px;
-
-		li {
-
-			a {
-				line-height:40px;
-				font-size:15px;
-				padding:0 14px;
-			}
-
-			ul {
-				top:40px;
-				width:190px;
-				padding:5px 0;
-
-				li {
-
-					a {
-						line-height:26px;
-						padding: 0 10px;
-						font-size:14px;
-					}
-				}
-
-				li:hover {
-					margin-left: 10px;
-				}
-
-			}
-		}
-
-		li.last ul {
-			left: -77px;
-		}
-	}
-
+	
 	// Timeline
 	#timeline {
-		margin-top:-60px;
-		font-size: 0.9em;
-
-		span {
-			width: 3%;
-		}
-		span.prev {
-			width: 17px;
-			height: 30px;
-			margin-left: 9px;
-		}
-		span.next {
-			width: 17px;
-			height: 30px;
-			margin-left: 5px;
-		}
-
-		div.contain {
-			width: 94%;
-			height: 30px;
-		}
-
+		margin-top:-70px;
+		
 		li {
-			width: 280px;
-			height: 30px;
-			margin: 0 1px;
-		}
-
-		a {
-			padding: 0.5em 1em;
+			width: 376px;
 		}
 	}
-
-	// body
-	#body {
-		width: 99%;
-		top: -30px;
-		padding: 0.5%;
-	}
-
-	#body > div {
-		margin-right: 5px; //0.5%;
-	}
-
-	#universityNews, #media, #academyNews, #others {
-
-		hr {
-			margin: 8px 0;
-		}
-
-		li {
-			font-size: 12px;
-
-			.beforeText {
-				width: 15px;
-				height: 25px;
-			}
-
-			a {
-				margin-left: 2px;
-			}
-
-			.date {
-				margin-top: 6px;
-			}
-		}
-	}
-
-	.head {
-		h3 {
-			font-size: 18px;
-		}
-
-		.more {
-
-			.more-txt {
-				font-size: 12px;
-				margin-top: 5px;
-			}
-
-			.icon {
-				width: 25px;
-				height: 25px;
-			}
-		}
-	}
-
+	
 	#universityNews {
-		width: 36%;
-		height: 375px;
-		padding: 10px 1%;
-
-		#imageNews {
-
-			iframe {
-				width: 100%;
-			}
-
-			img {
-				width: 226px;
-				height: 150px;
-				margin-right: 10px;
-			}
-
-			h4 {
-				line-height: 1.5em;
-			}
-
-			p {
-				font-size: 0.8em;
-				line-height: 1.5em;
-			}
-
-			span {
-				font-size: 0.8em;
-				margin-right: 10px;
+		height: 479px;
+		
+		#img-slider {
+			zoom: 1.4;
+		}
+		
+		.head-news {
+			width: 250px;
+			
+			.news-item {
+				line-height: 25px;
+				
+				p {
+					height: 130px;
+					line-height: 22px;
+				}
 			}
 		}
-
+	
 		.news {
-			height: 173px;
-
+			height: 215px;
+	
 			li a {
-				width: 360px;
+				width: 500px;
+				margin: 7px 0 7px 5px;
 			}
 		}
 	}
-
-	#universityNews + div {
-		width: 36%;
-	}
-
+	
 	#media, #academyNews {
-		width: 94%;
-		height: 174px;
-		padding: 10px 3%;
-
+		height: 226px;
+	
 		li .beforeText {
 			height: 23px;
 		}
-
+	
 		li a {
 			width: 340px;
+			margin: 7px 0 7px 5px;
 		}
 	}
-
+	
 	#media {
 		margin-bottom: 5px;
 	}
-
+	
 	#others {
-		width: 22.6%;
-		height: 375px;
-		margin-left: 2px;
-		margin-right: 0 !important;
-		padding: 10px 1%;
-
-		#inform iframe {
-			width: 100%;
-			height: 75px;
-		}
-
+		height: 479px;
+	
 		li a {
 			margin-left: 0;
 			width: 210px;
+			margin: 7px 0 7px 5px;
 		}
-
+	
 		#links {
 			.news {
-
+	
 				a {
+					display: inline-block;
 					font-size: 12px;
+					margin: 7px 0 7px 5px;
 				}
 			}
 		}
-
+	
 		#topics {
 			img {
 				width: 100%;
-				height: 45px;
+				height: 70px;
 				margin-top: 5px;
 			}
 		}
 	}
-
+	
 	// footer
 	footer {
-		margin-top: -30px;
-		height: 80px;
-		padding: 10px;
+		height: 100px;
+		padding: 30px;
 		font-size: 12px;
-
+	
 		hr {
 			margin: 10px 0;
 		}
+	
 	}
-
+	
 	footer > div {
-		width: 100%;
+		width: 780px;
+		margin: 0 auto;
 	}
+}
 
-	#footer_left {
-		margin-left: 220px;
-	}
-
-	#footer_right {
-		margin-left: 20px;
-
-		a {
-			.text {
-				margin-right: 10px;
-			}
-		}
-
-
-		.weixin .img {
-			width: 40px;
-			height: 35px;
-		}
-
-		.weibo .img {
-			width: 40px;
-			height: 35px;
-		}
+@media screen and (max-width: 1300px) {
+	body {
+		width: 1200px;
 	}
 }
 
@@ -954,13 +830,25 @@ footer > div {
 	body {
 		width: 1000px;
 	}
+	
+	#slider img {
+		width: auto;
+	}
 
 	#timeline li {
-		width: 233px;//24.85%;
+		width: 233px;
 	}
 
 	#body #universityNews {
 		width: 358px;
+		
+		.head-news {
+			width: 127px;
+			
+			p {
+				height: 80px;
+			}
+		}
 	}
 	#body #universityNews li a {
 		width: 300px;
@@ -978,10 +866,6 @@ footer > div {
 	}
 	#body #others li a {
 		width: 170px;
-	}
-
-	#footer_left {
-		margin-left: 120px;
 	}
 }
 
