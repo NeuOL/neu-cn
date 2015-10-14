@@ -40,14 +40,14 @@ header {
 
 #slider {
 	position: relative;
-// 	width: $full;
+	width: $full;
 	height: 232px;
 	overflow:hidden;
 	
 	li {
 		position: absolute;
 		display: none;
-// 		width: $full;
+		width: $full;
 		top: 0;
 		left: 0;
 		
@@ -63,7 +63,7 @@ header {
 		float: left;
 		position:relative;
 		z-index:1;
-// 		width:$full;
+		width:$full;
 		height: 232px;
 		border:0;
 	}
@@ -152,20 +152,18 @@ header {
 }
 
 /* nav */
-nav {
+#nav {
 	height: 40px;
 	position: relative;
 	float: right;
 	top: 0;
 	right: 0;
 	background: #000;
+	filter:alpha(opacity=70);
 	background: rgba(0, 0, 0, 0.6);
 	padding-right: 25px;
 	color: #fff;
 	z-index: 50;
-}
-
-#nav {
 	display: block;
 	list-style-type:none;
 	
@@ -186,6 +184,8 @@ nav {
 		}
 		
 		ul {
+			background: #000;
+			filter:alpha(opacity=70);
 			background: rgba(0,0,0,0.7);
 			position:absolute;
 			top:40px;
@@ -236,6 +236,7 @@ nav {
 		position: relative;
 		float: left;
 		background: #000;
+		filter:alpha(opacity=50);
 		background:rgba(0,0,0,0.5);
 		color: #fff;
 		z-index: 50;
@@ -272,6 +273,7 @@ nav {
 		height: 30px;
 		list-style: none;
 		background: #000;
+		filter:alpha(opacity=50);
 		background: rgba(0, 0, 0, 0.5);
 		float: left;
 		margin: 0 1px;

@@ -204,7 +204,7 @@ define(function(require,exports,module){
 		$newsCon1.css("width", size*liLength+"px");
 		
 		$prev.bind('click', function(){
-			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
+			if( parseInt($newsCon1.css("marginLeft"))>=(0) ){
 				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"});
 			}else{
 				$newsCon1.animate({marginLeft:'+='+liLength+'px'});

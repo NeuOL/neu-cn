@@ -13,19 +13,19 @@ define(function(require,exports,module){
 		var NavWaitSlide;
 		$('#nav > li').hover(
 			function(){
-				$(this).find('a:first').addClass("hover");
+// 				$(this).find('a:first').addClass("hover");
 				var current_li=$(this),
 					targ=$(current_li).find('ul:first');
-				NavWaitSlide = setTimeout(function() { 
+// 				NavWaitSlide = setTimeout(function() { 
 					if(!$(targ).is(':visible')){
 						$(targ).slideDown(200);
 					}
-				},100)
+// 				},100)
 			},
 			function(){
-				clearTimeout(NavWaitSlide);
+// 				clearTimeout(NavWaitSlide);
 				$(this).find('ul').hide();
-				$(this).find('a:first').removeClass("hover");
+// 				$(this).find('a:first').removeClass("hover");
 			}
 		);
 	}
@@ -35,10 +35,11 @@ define(function(require,exports,module){
 	}
 	
 	Nav.prototype._init = function(){
+/*
 		var NavWaitSlide;
 		$('#nav > li').hover(
 			function(){
-				$(this).find('a:first').addClass("hover");
+// 				$(this).find('a:first').addClass("hover");
 				var current_li=$(this),
 					targ=$(current_li).find('ul:first');
 				NavWaitSlide = setTimeout(function() { 
@@ -53,6 +54,8 @@ define(function(require,exports,module){
 				$(this).find('a:first').removeClass("hover");
 			}
 		);
+*/
+		this.addHover();
 		
 		//ie6
 		if ( !-[1,] ){ //is IE
