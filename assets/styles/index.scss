@@ -197,17 +197,14 @@ header {
 	float: right;
 	top: 0;
 	right: 0;
-<<<<<<< HEAD
 	background: #000;
 	filter:alpha(opacity=70);
 	background: rgba(0, 0, 0, 0.6);
-=======
-	background: #000000;
-	background:rgba(0,0,0,0.6);
-	zoom:1;
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
->>>>>>> 913f5177a0983771b36218dded3a484499b03d1e
+//	background: #000000;
+// 	background:rgba(0,0,0,0.6);
+// 	zoom:1;
+// 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
 	padding-right: 25px;
 	color: #fff;
 	z-index: 50;
@@ -231,19 +228,15 @@ header {
 		}
 
 		ul {
-<<<<<<< HEAD
 			background: #000;
 			filter:alpha(opacity=70);
 			background: rgba(0,0,0,0.7);
-=======
-			background: #000000;
-			background:rgba(0,0,0,0.7);
-			zoom:1;
-			-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
+//			background: #000000;
+// 			background:rgba(0,0,0,0.7);
+// 			zoom:1;
+// 			-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
+// 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
 
-
->>>>>>> 913f5177a0983771b36218dded3a484499b03d1e
 			position:absolute;
 			top:40px;
 			width:190px;
@@ -299,14 +292,8 @@ header {
 		position: relative;
 		float: left;
 		background: #000;
-<<<<<<< HEAD
 		filter:alpha(opacity=50);
 		background:rgba(0,0,0,0.5);
-=======
-		background: #000;
-		opacity: .5;
-		filter: alpha(opacity=50);
->>>>>>> 913f5177a0983771b36218dded3a484499b03d1e
 		color: #fff;
 		z-index: 50;
 
