@@ -18,6 +18,17 @@ define(function(require,exports,module){
 		 });
 	 })();
 
+  // Judge ie6
+	(function() {
+		var isIE=!!window.ActiveXObject;
+		var isIE6=isIE&&!window.XMLHttpRequest;
+		if( isIE6 ) {
+			document.documentElement.style.display = "none";
+			alert("您的浏览器版本太低，请升级浏览器!点击确认跳转至旧版。");
+			window.location.href = "./version2015";
+		}
+	})();
+
 
 	exports.slide = function () {
 		$("#slider").responsiveSlides({
