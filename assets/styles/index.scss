@@ -29,6 +29,10 @@ header {
 	width:$full;
 	height: 250px;
 	text-align:center;
+	
+	ul {
+		padding: 0;
+	}
 
 	&:hover {
 		.slider_nav {
