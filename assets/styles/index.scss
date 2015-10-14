@@ -410,7 +410,7 @@ header {
 
 	.news {
 		height: 173px;
-		
+
 		li {
 // 			line-height: 21px;
 // 			margin: 3px 0;
@@ -599,20 +599,20 @@ footer > div {
 
 
 @media screen and (max-width: 2000px) {
-	
+
 }
 
 @media screen and (max-width: 1300px) {
 	body {
 		width: 1200px;
 	}
-	
+
 	/* header */
 	header {
 		width:$full;
 		height: 250px;
 	}
-	
+
 	#img-slider {
 		margin-bottom: 10px;
 		li {
@@ -620,7 +620,7 @@ footer > div {
 			height: 150px;
 		}
 	}
-	
+
 	.head-news {
 		width:195px;
 		h4 {
@@ -636,35 +636,34 @@ footer > div {
 			 font-size:12px;
 		}
 	}
-	
+
 	#slider {
 		width: $full;
-		height: 232px;
-	
+
 		li {
 			width: $full;
 		}
-	
+
 		img {
 			width:$full;
 			height: 232px;
 		}
-	
+
 		.caption{
 			font-size:20px;
 			padding:10px 20px;
 		}
 	}
-	
+
 	.slider_tabs {
 		margin-top:-60px;
 		margin-left: 40%;
-	
+
 		li {
 			width: 12px;
 			height: 12px;
 			margin-left: 5px;
-	
+
 			a {
 				width: 12px;
 				height: 12px;
@@ -672,7 +671,7 @@ footer > div {
 			}
 		}
 	}
-	
+
 	.slider_nav{
 		top:50%;
 		left:0;
@@ -680,53 +679,53 @@ footer > div {
 		width:38px;
 		margin-top:-30px;
 	}
-	
+
 	/* nav */
 	#nav {
 		height: 40px;
 		top: 0;
 		right: 0;
 		padding-right: 25px;
-	
+
 		li {
-	
+
 			a {
 				line-height:40px;
 				font-size:15px;
 				padding:0 14px;
 			}
-	
+
 			ul {
 				top:40px;
 				width:190px;
 				padding:5px 0;
-	
+
 				li {
-	
+
 					a {
 						line-height:26px;
 						padding: 0 10px;
 						font-size:14px;
 					}
 				}
-	
+
 				li:hover {
 					margin-left: 10px;
 				}
-	
+
 			}
 		}
-	
+
 		li.last ul {
 			left: -77px;
 		}
 	}
-	
+
 	// Timeline
 	#timeline {
 		margin-top:-60px;
 		font-size: 0.9em;
-	
+
 		span {
 			width: 3%;
 		}
@@ -740,166 +739,166 @@ footer > div {
 			height: 30px;
 			margin-left: 5px;
 		}
-	
+
 		div.contain {
 			width: 94%;
 			height: 30px;
 		}
-	
+
 		li {
 			width: 280px;
 			height: 30px;
 			margin: 0 1px;
 		}
-	
+
 		a {
 			padding: 0.5em 1em;
 		}
 	}
-	
+
 	// body
 	#body {
 		width: 99%;
 		top: -30px;
 		padding: 0.5%;
 	}
-	
+
 	#body > div {
 		margin-right: 5px; //0.5%;
 	}
-	
+
 	#universityNews, #media, #academyNews, #others {
-	
+
 		hr {
 			margin: 8px 0;
 		}
-	
+
 		li {
 			font-size: 12px;
-	
+
 			.beforeText {
 				width: 15px;
 				height: 25px;
 			}
-	
+
 			a {
 				margin-left: 2px;
 			}
-	
+
 			.date {
 				margin-top: 6px;
 			}
 		}
 	}
-	
+
 	.head {
 		h3 {
 			font-size: 18px;
 		}
-	
+
 		.more {
-	
+
 			.more-txt {
 				font-size: 12px;
 				margin-top: 5px;
 			}
-	
+
 			.icon {
 				width: 25px;
 				height: 25px;
 			}
 		}
 	}
-	
+
 	#universityNews {
 		width: 36%;
 		height: 375px;
 		padding: 10px 1%;
-	
+
 		#imageNews {
-	
+
 			iframe {
 				width: 100%;
 			}
-	
+
 			img {
 				width: 226px;
 				height: 150px;
 				margin-right: 10px;
 			}
-	
+
 			h4 {
 				line-height: 1.5em;
 			}
-	
+
 			p {
 				font-size: 0.8em;
 				line-height: 1.5em;
 			}
-	
+
 			span {
 				font-size: 0.8em;
 				margin-right: 10px;
 			}
 		}
-	
+
 		.news {
 			height: 173px;
-	
+
 			li a {
 				width: 360px;
 			}
 		}
 	}
-	
+
 	#universityNews + div {
 		width: 36%;
 	}
-	
+
 	#media, #academyNews {
 		width: 94%;
 		height: 174px;
 		padding: 10px 3%;
-	
+
 		li .beforeText {
 			height: 23px;
 		}
-	
+
 		li a {
 			width: 340px;
 		}
 	}
-	
+
 	#media {
 		margin-bottom: 5px;
 	}
-	
+
 	#others {
 		width: 22.6%;
 		height: 375px;
 		margin-left: 2px;
 		margin-right: 0 !important;
 		padding: 10px 1%;
-	
+
 		#inform iframe {
 			width: 100%;
 			height: 75px;
 		}
-	
+
 		li a {
 			margin-left: 0;
 			width: 210px;
 		}
-	
+
 		#links {
 			.news {
-	
+
 				a {
 					font-size: 12px;
 				}
 			}
 		}
-	
+
 		#topics {
 			img {
 				width: 100%;
@@ -908,42 +907,42 @@ footer > div {
 			}
 		}
 	}
-	
+
 	// footer
 	footer {
 		margin-top: -30px;
 		height: 80px;
 		padding: 10px;
 		font-size: 12px;
-	
+
 		hr {
 			margin: 10px 0;
 		}
 	}
-	
+
 	footer > div {
 		width: 100%;
 	}
-	
+
 	#footer_left {
 		margin-left: 220px;
 	}
-	
+
 	#footer_right {
 		margin-left: 20px;
-	
+
 		a {
 			.text {
 				margin-right: 10px;
 			}
 		}
-	
-	
+
+
 		.weixin .img {
 			width: 40px;
 			height: 35px;
 		}
-	
+
 		.weibo .img {
 			width: 40px;
 			height: 35px;

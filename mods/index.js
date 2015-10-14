@@ -92,7 +92,7 @@ define(function(require,exports,module){
 		});
 
 		$newsCon1.css("width", size*liLength+"px");
-		
+
 		var animating = false;
 		$prevWrapper.bind('click', function(){
 			if( animating ) return;

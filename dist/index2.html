@@ -22,18 +22,8 @@
 		</script>
 	<![endif]-->
 	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
-	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
+	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
 	<script>
-		seajs.config({
-			base: "./mods/",
-			alias: {
-				"jquery": "jquery.js",
-				"respond": "respond.min.js",
-				"nav": "nav.js",
-				"slide": "responsiveslides.js",
-				"smallslider": "smallslider.js"
-			}
-		});
 		seajs.use("./mods/index", function(mod) {
 			mod.slide();
 			mod.nav();
@@ -46,9 +36,6 @@
 
 <body>
 	<div class="container">
-		<div id="logo">
-			<img src="assets/images/logo.jpg" />
-		</div>
 		<nav class="menu">
 			<section class="menu" id="smenu">
 				<div style="float:right;background:url(&quot;./assets/images/nav.png&quot;) no-repeat left center;width:30px;height:40px;"></div>导航</section>
