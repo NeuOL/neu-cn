@@ -92,13 +92,7 @@ define(function(require,exports,module){
 		});
 
 		$newsCon1.css("width", size*liLength+"px");
-<<<<<<< HEAD
 		
-		$prev.bind('click', function(){
-			if( parseInt($newsCon1.css("marginLeft"))>=(0) ){
-				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"});
-=======
-
 		var animating = false;
 		$prevWrapper.bind('click', function(){
 			if( animating ) return;
@@ -107,7 +101,6 @@ define(function(require,exports,module){
 				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"}, function() {
 					animating = false;
 				});
->>>>>>> 913f5177a0983771b36218dded3a484499b03d1e
 			}else{
 				$newsCon1.animate({marginLeft:'+='+liLength+'px'}, function() {
 					animating = false;

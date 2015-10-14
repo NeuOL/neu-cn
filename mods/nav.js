@@ -13,19 +13,14 @@ define(function(require,exports,module){
 		var NavWaitSlide;
 		$('#nav > li').hover(
 			function(){
-// 				$(this).find('a:first').addClass("hover");
 				var current_li=$(this),
 					targ=$(current_li).find('ul:first');
-// 				NavWaitSlide = setTimeout(function() { 
 					if(!$(targ).is(':visible')){
 						$(targ).slideDown(200);
 					}
-// 				},100)
 			},
 			function(){
-// 				clearTimeout(NavWaitSlide);
 				$(this).find('ul').hide();
-// 				$(this).find('a:first').removeClass("hover");
 			}
 		);
 	}
@@ -35,26 +30,6 @@ define(function(require,exports,module){
 	}
 	
 	Nav.prototype._init = function(){
-/*
-		var NavWaitSlide;
-		$('#nav > li').hover(
-			function(){
-// 				$(this).find('a:first').addClass("hover");
-				var current_li=$(this),
-					targ=$(current_li).find('ul:first');
-				NavWaitSlide = setTimeout(function() { 
-					if(!$(targ).is(':visible')){
-						$(targ).slideDown(200);
-					}
-				},100)
-			},
-			function(){
-				clearTimeout(NavWaitSlide);
-				$(this).find('ul').hide();
-				$(this).find('a:first').removeClass("hover");
-			}
-		);
-*/
 		this.addHover();
 		
 		//ie6
@@ -65,22 +40,6 @@ define(function(require,exports,module){
 				$(".ie6 span").click(function(){$(".ie6").slideUp()});
 			}
 		}
-		
-/*
-		$("section.leftNav li i").click(
-			function(){
-				if($(this).siblings("ul").is(":visible")){
-					$(this).removeClass("current  thuicon-minus");
-					$(this).addClass("thuicon-plus");
-					$(this).siblings("ul").slideUp('fast');
-				}else{
-					$(this).removeClass("thuicon-plus");
-					$(this).addClass("current thuicon-minus");
-					$(this).siblings("ul").slideDown('fast');
-				}
-			}
-		)
-*/
 
 	}
 
