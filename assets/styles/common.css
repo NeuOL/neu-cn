@@ -1,3 +1,8 @@
+.box-fixed-top {
+  position: fixed;
+  top: 0;
+}
+
 nav {
   height: 40px;
   position: relative;
