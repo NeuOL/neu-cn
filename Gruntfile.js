@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         watch: {
           css: {
             files: 'assets/styles/*.scss',
-            tasks: ['sass', 'includereplace']
+            tasks: ['includereplace']
           },
         },
 
@@ -33,6 +33,7 @@ module.exports = function(grunt) {
               },
               src: '*.html',
               dest: 'dist/'
+
             }
           }
 
