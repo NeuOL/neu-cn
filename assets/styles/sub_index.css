@@ -211,6 +211,17 @@ a {
     height: auto;
     color: #5D6A70;
 }
+.detail_title p {
+    padding-top: 10px;
+}
+.passage {
+    padding: 20px;
+    line-height: 1.7;
+}
+.passage p {
+    margin: 8px 0px;
+    text-indent: 25px;
+}
 .detail_title {
     color: #808080;
     font-weight: bolder;
