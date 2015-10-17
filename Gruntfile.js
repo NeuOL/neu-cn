@@ -18,8 +18,8 @@ module.exports = function(grunt) {
           }
         },
         watch: {
-          css: {
-            files: 'assets/styles/*.scss',
+          html: {
+            files: '*.html',
             tasks: ['includereplace']
           },
         },
@@ -48,7 +48,6 @@ module.exports = function(grunt) {
         'connect:demo'
     ]);
     grunt.registerTask('default', [
-        'sass',
         'includereplace'
     ]);
 };

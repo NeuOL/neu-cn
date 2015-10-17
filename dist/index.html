@@ -1,11 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
-	<meta charset="utf-8">
-	<title>东北大学</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>东北大学 - Northeastern University</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link rel="stylesheet" href="assets/styles/index.css" type="text/css" media="screen" charset="utf-8">
 	<link rel="stylesheet" href="assets/styles/smallslider.css" type="text/css" media="screen" charset="utf-8">
+	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
+	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		seajs.use("./mods/main", function(mod) {
+			mod.slide();
+			mod.nav();
+			mod.timeline();
+			mod.topicData();
+		});
+	</script>
 	<!--[if lte IE 8]>
 		<script>
 		   (function() {
@@ -21,16 +31,6 @@
 		})()
 		</script>
 	<![endif]-->
-	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
-	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
-	<script>
-		seajs.use("./mods/index", function(mod) {
-			mod.slide();
-			mod.nav();
-			mod.timeline();
-			mod.topicData();
-		});
-	</script>
 	<!-- 	<script src="./libs/respond.js"></script> -->
 </head>
 
@@ -40,43 +40,43 @@
   <section class="menu" id="smenu">
     <div style="float:right;background:url("./assets/images/nav.png") no-repeat left center;width:30px;height:40px;"></div>导航</section>
   <ul id="nav">
-    <li> <a href="../intro_index.htm" class="">东大简介</a>
+    <li> <a href="./intro_info.html" class="">东大简介</a>
       <ul style="display: none;">
-        <li> <a href="../intro_info.htm">东大简介</a> </li>
-        <li> <a href="../history_zhangxueliang.htm">张学良老校长</a> </li>
-        <li> <a href="../history_history.htm">光辉校史</a> </li>
-        <li> <a href="../intro_leader.htm">现任领导</a> </li>
-        <li> <a href="../intro_academician.htm">院士风采</a> </li>
-        <li> <a href="../intro_guide.htm">校园导游</a> </li>
-        <li> <a href="http://www.neu.edu.cn/files/info_title.htm">校标校名校训校歌</a> </li>
+        <li> <a href="./intro_info.html">东大简介</a> </li>
+        <li> <a href="./history_zhangxueliang.html">张学良老校长</a> </li>
+        <li> <a href="./history.html">光辉校史</a> </li>
+        <li> <a href="./intro_leader.html">现任领导</a> </li>
+        <li> <a href="./intro_academician.html">院士风采</a> </li>
+        <li> <a href="./intro_guide.html">校园导游</a> </li>
+        <li> <a href="./info_title.html">校标校名校训校歌</a> </li>
       </ul>
     </li>
-    <li><a href="../org_index.htm">组织结构</a>
+    <li><a href="./org_index.html">组织结构</a>
       <ul>
-        <li><a href="../org_index.htm#college">院系导航</a></li>
-        <li><a href="../org_index.htm#management">管理部门</a></li>
-        <li><a href="../org_index.htm#direct">直属部门</a></li>
+        <li><a href="./org_index.html#collegeNav">院系导航</a></li>
+        <li><a href="./org_index.html#controlDepart">管理部门</a></li>
+        <li><a href="./org_index.html#straightDepart">直属部门</a></li>
       </ul>
     </li>
-    <li> <a href="../teach_res_index.htm">教学科研</a>
+    <li> <a href="./edu_manage.html">教学科研</a>
       <ul>
-        <li> <a href="../edu_manage.htm" target="_self">教务系统</a> </li>
+        <li> <a href="./edu_manage.html" target="_self">教务系统</a> </li>
         <li> <a href="http://www.neu.edu.cn/indexsource/2009_course.htm" target="_blank">精品课程</a> </li>
         <li> <a href="http://aao.neu.edu.cn" target="_blank">教学研究</a> </li>
         <li> <a href="http://kjc.neu.edu.cn" target="_blank">科研项目</a> </li>
         <li> <a href="http://cxzx.neu.edu.cn" target="_blank">创新基地</a> </li>
-        <li> <a href="../edu_lab.htm" target="_self">国家重点实验室</a> </li>
-        <li> <a href="../edu_evaluation.htm" target="_self">本科教学质量报告</a> </li>
-        <li> <a href="../2014_teachingachievement.htm" target="_self">2014年教学成果奖申报</a> </li>
+        <li> <a href="./edu_lab.html" target="_self">国家重点实验室</a> </li>
+        <li> <a href="./edu_evaluation.html" target="_self">本科教学质量报告</a> </li>
+        <li> <a href="./2014_teachingachievement.html" target="_self">2014年教学成果奖申报</a> </li>
       </ul>
     </li>
-    <li> <a href="../teachers_index.htm">师资队伍</a>
+    <li> <a href="./teachers_intr.html">师资队伍</a>
       <ul>
-        <li> <a href="../teachers_intr.htm">师资介绍</a> </li>
+        <li> <a href="./teachers_intr.html">师资介绍</a> </li>
         <li> <a href="http://202.118.27.233/want_ads/want_ads.asp" target="_blank">人才招聘</a> </li>
       </ul>
     </li>
-    <li> <a href="../international_index.htm">国际合作</a>
+    <li> <a href="http://int.neu.edu.cn/cn/index.asp" target="_blank">国际合作</a>
       <ul>
         <li> <a href="http://int.neu.edu.cn/cn/index.asp" target="_blank">交流合作</a> </li>
         <li> <a href="http://www.sie.neu.edu.cn/en/index.asp" target="_blank">来华留学</a> </li>
@@ -84,7 +84,7 @@
         <li> <a href="http://int.neu.edu.cn/cn/pages/Agreement_schools.asp" target="_blank">协议院校</a> </li>
       </ul>
     </li>
-    <li> <a href="../map_index.htm#direct">快速链接</a>
+    <li> <a href="./map_index.html#direct">快速链接</a>
       <ul>
         <li> <a href="http://www.neualumni.org.cn/" target="_blank">校友总会</a> </li>
         <li> <a href="http://xdh.neualumni.org.cn/" target="_blank">校董会</a> </li>
@@ -110,7 +110,7 @@
         <li> <a href="http://president.neu.edu.cn/" target="_blank">校长信箱</a> </li>
       </ul>
     </li>
-    <li class="last"><a href="../map_index.htm#resources">校内资源</a>
+    <li class="last"><a href="./map_index.html#resources">校内资源</a>
       <ul>
         <li> <a href="http://network.neu.edu.cn" target="_blank">网络中心黑板报</a> </li>
         <li> <a href="http://ipgw.neu.edu.cn" target="_blank">校园网IP控制网关</a> </li>
@@ -128,15 +128,15 @@
         <li> <a href="http://wsus.neu.edu.cn/" target="_blank">Windows补丁升级</a> </li>
         <li> <a href="http://mirror.neu.edu.cn/" target="_blank">开源软件镜像</a> </li>
         <li> <a href="http://hpc.neu.edu.cn/" target="_blank">高性能计算平台</a> </li>
-        <li> <a href="http://ntp.neu.edu.cn/">网络授时服务</a> </li>
+        <li> <a href="http://ntp.neu.edu.cn/" target="_blank">网络授时服务</a> </li>
         <li> <a href="http://search.neu.edu.cn/" target="_blank">Web搜索引擎</a> </li>
         <li> <a href="http://202.118.1.125/" target="_blank">FTP搜索引擎</a> </li>
-        <li> <a href="http://www.neu.edu.cn/files/info_calender.htm">校历</a> </li>
-        <li> <a href="http://www.neu.edu.cn/files/info_phonenumber.htm">常用电话</a> </li>
+        <li> <a href="http://www.neu.edu.cn/files/info_calender.html">校历</a> </li>
+        <li> <a href="http://www.neu.edu.cn/files/info_phonenumber.html">常用电话</a> </li>
         <li> <a href="ftp://ftp.neu.edu.cn/" target="_blank">校内FTP</a> </li>
         <li> <a href="http://geoip.neu.edu.cn/" target="_blank">IP地址归属查询</a> </li>
         <li> <a href="http://219.216.96.35/" target="_blank">校园地图[导游]</a> </li>
-        <li> <a href="../about_index.htm">关于我们</a> </li>
+        <li> <a href="./about_index.html">关于我们</a> </li>
       </ul>
     </li>
   </ul>
@@ -224,7 +224,7 @@
 			<div id="universityNews">
 				<div class="head">
 					<h3>东大新闻</h3>
-					<a class="more" href="#">
+					<a class="more" href="http://neunews.neu.edu.cn/campus/" target="_blank">
 						<span class="more-txt">进入东北大学新闻网</span>
 					</a>
 				</div>
@@ -484,11 +484,11 @@
     <div id="footer_left">
       <p>校址：辽宁省沈阳市和平区文化路3号巷11号 | 邮编：110819 | 辽ICP备05001360号</p>
       <p>Northeastern University 2011 | 技术支持：
-        <a href="http://cnc.neu.edu.cn/" target="_blank">计算中心[网络中心]</a> | <a href="http://network.neu.edu.cn/archives/704" target="_blank">反馈</a> | <a href="http://www.neu.edu.cn/version2006/" target="_blank">旧版入口</a>
+        <a href="http://cnc.neu.edu.cn/" target="_blank">计算中心[网络中心]</a> | <a href="http://network.neu.edu.cn/archives/704" target="_blank">反馈</a> | <a href="http://www.neu.edu.cn/version2015/" target="_blank">旧版入口</a>
       </p>
     </div>
     <div id="footer_right">
-      <a class="weixin" href="/index_weixin.htm" target="blank">
+      <a class="weixin" href="./index_weixin.html" target="blank">
         <span class="img"></span>
         <span class="text">东北大学官方微信
           <br/>neu-1923</span>

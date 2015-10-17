@@ -10,3 +10,9 @@ p {
 a {
     text-decoration: none;
 }
+
+#slider:hover {
+  cursor: pointer;
+}
+
+.right_title .sub_more { font-size: 12px !important; }
