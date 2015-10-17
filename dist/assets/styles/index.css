@@ -182,7 +182,6 @@ header:hover .slider_nav {
   top: 0;
   right: 0;
   background: #000;
-  filter: alpha(opacity=70);
   background: rgba(0, 0, 0, 0.6);
   padding-right: 25px;
   color: #fff;
@@ -207,7 +206,6 @@ header:hover .slider_nav {
 }
 #nav li ul {
   background: #000;
-  filter: alpha(opacity=70);
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 40px;
@@ -255,7 +253,7 @@ header:hover .slider_nav {
   position: relative;
   float: left;
   background: #000;
-  filter: alpha(opacity=50);
+  /*filter: alpha(opacity=50);*/
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   z-index: 50;
@@ -270,7 +268,7 @@ header:hover .slider_nav {
   margin-left: 9px;
   background: url("../images/prevNext.png") no-repeat left center;
   opacity: 1;
-  filter: alpha(opacity=100);
+  /*filter: alpha(opacity=100);*/
 }
 #timeline span.next {
   width: 17px;
@@ -279,7 +277,7 @@ header:hover .slider_nav {
   overflow: hidden;
   background: url("../images/prevNext.png") no-repeat right center;
   opacity: 1;
-  filter: alpha(opacity=100);
+  /*filter: alpha(opacity=100);*/
 }
 #timeline div.contain {
   display: inline-block;
@@ -294,7 +292,7 @@ header:hover .slider_nav {
   height: 30px;
   list-style: none;
   background: #000;
-  filter: alpha(opacity=50);
+  /*filter: alpha(opacity=50);*/
   background: rgba(0, 0, 0, 0.5);
   float: left;
   margin: 0 1px;
