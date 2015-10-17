@@ -70,6 +70,19 @@ header:hover .slider_nav {
   display: none;
 }
 
+.news-item a {
+  text-decoration: none;
+}
+
+.news-item a:hover h4 {
+  color: #204496;
+  /*text-decoration:underline;*/
+}
+
+.news-item a:visited {
+  color: #000000;
+}
+
 #slider {
   position: relative;
   width: 100%;
