@@ -55,6 +55,8 @@ exports.slideInit = function(){
       "after": $.noop           // Function: After callback
     }, options);
 
+		$("#slider").show();
+
     return this.each(function () {
 
       // Index for namespacing

@@ -563,6 +563,10 @@ footer > div {
   margin: 0 auto;
 }
 
+#slider {
+  display: none;
+}
+
 #slider li {
   display: none;
 }
