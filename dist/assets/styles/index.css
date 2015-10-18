@@ -429,6 +429,9 @@ header:hover .slider_nav {
   text-decoration: none;
   margin-top: 5px;
 }
+.head .more .more-txt:hover {
+	text-decoration: underline;
+}
 .head .more .icon {
   width: 25px;
   height: 25px;
@@ -567,6 +570,9 @@ footer > div {
   display: inline-block;
   color: #fff;
   text-decoration: none;
+}
+#footer_link a:hover {
+	text-decoration: underline;
 }
 #footer_link .line {
   margin: 0 5px;
