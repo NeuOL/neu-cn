@@ -56,8 +56,8 @@ define(function(require,exports,module){
 */
 	function resetAll() {
 		$(document).ready(function() {
-			alert(document.getElementsByClassName("left_sub")[0].height());
-			if (document.getElementsByClassName("left_sub")[0].height() > document.getElementsByClassName("detail_2")[0].height()) {
+			//alert(document.getElementsByClassName("left_sub")[0].offsetHeight);
+			if (document.getElementsByClassName("left_sub")[0].offsetHeight > document.getElementsByClassName("detail_2")[0].offsetHeight) {
 				document.getElementsByClassName("embed_left")[0].style.display = "none";
 			}
 		});
