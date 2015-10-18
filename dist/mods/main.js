@@ -54,22 +54,6 @@ define(function(require,exports,module){
 	}
 	resetAll();
 */
-	function resetAll() {
-		$(document).ready(function() {
-<<<<<<< HEAD
-			console.log($(".left_sub").height());
-			console.log($(".detail_2").height());
-			if ($(".left_sub").height() > $(".detail_2").height()) {
-				$(".embed_left").css("display", "none");
-=======
-			//alert(document.getElementsByClassName("left_sub")[0].offsetHeight);
-			if (document.getElementsByClassName("left_sub")[0].offsetHeight > document.getElementsByClassName("detail_2")[0].offsetHeight) {
-				document.getElementsByClassName("embed_left")[0].style.display = "none";
->>>>>>> 24a2a2fbcc58047d1abd145c28fa1638bc871c54
-			}
-		});
-	}
-	resetAll();
 
 	exports.slide = function () {
 		$("#slider").responsiveSlides({
