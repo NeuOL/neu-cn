@@ -54,6 +54,16 @@ define(function(require,exports,module){
 	}
 	resetAll();
 */
+	function resetAll() {
+		$(document).ready(function() {
+			alert($(".left_sub").height());
+			if ($(".left_sub").height() > $(".detail_2").height()) {
+				$(".embed_left").css("display", "none");
+				$(".embed_left_2").css("display", "none");
+			}
+		});
+	}
+	resetAll();
 
 	exports.slide = function () {
 		$("#slider").responsiveSlides({
