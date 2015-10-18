@@ -223,6 +223,7 @@ footer hr {
 footer > div {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 #footer_link a {
