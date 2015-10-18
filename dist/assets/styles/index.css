@@ -563,14 +563,6 @@ footer > div {
   margin: 0 auto;
 }
 
-#slider {
-  display: none;
-}
-
-#slider li {
-  display: none;
-}
-
 #footer_link a {
   display: inline-block;
   color: #fff;

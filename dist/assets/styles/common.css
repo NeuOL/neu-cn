@@ -22,14 +22,6 @@ nav {
   z-index: 50;
 }
 
-#slider {
-  display: none;
-}
-
-#slider li {
-  display: none;
-}
-
 #nav {
   display: block;
   list-style-type: none;
