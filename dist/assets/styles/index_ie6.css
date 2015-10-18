@@ -1,0 +1,19 @@
+#body {
+	margin-top: 30px;
+}
+
+#body hr , footer hr {
+	margin:  0;
+}
+
+.head-news h4 {
+  font-weight:bold;
+}
+
+.news .text {
+	float: left;
+}
+
+.news .date {
+	float: right;
+}
