@@ -9,10 +9,11 @@ a {
   text-decoration: none;
 }
 
-hr {
+body hr {
   /*height:1px;*/
-  height: 0;
-  border:1px solid #ccc;
+  height: 0px;
+  border: none;
+  /*border: 1px solid #eee;*/
 }
 
 body {

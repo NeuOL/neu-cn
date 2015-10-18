@@ -30,10 +30,10 @@ define(function(require,exports,module){
 	})();
 
 	// Reset all
+	$("#slider").bind('click', function() {
+		window.location.href="./index.html";
+	});
 /*	function resetAll() {
-		$("#slider").bind('click', function() {
-			window.location.href="./index.html";
-		});
 		if( $("#foot").length > 0 ) {
 			var offsetTop = $("#foot").offset().top;
 			if(offsetTop < 1500) {
@@ -56,7 +56,7 @@ define(function(require,exports,module){
 */
 	function resetAll() {
 		$(document).ready(function() {
-			alert($(".left_sub").height());
+			// alert($(".left_sub").height());
 			if ($(".left_sub").height() > $(".detail_2").height()) {
 				$(".embed_left").css("display", "none");
 				$(".embed_left_2").css("display", "none");

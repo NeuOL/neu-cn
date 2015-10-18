@@ -207,7 +207,7 @@ header:hover .slider_nav {
 
 footer {
   text-align: center;
-  background: #032f55;
+  /*background: #032f55;*/
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   position: relative;
@@ -224,6 +224,10 @@ footer > div {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+#footer_link {
+  margin-top: 7px;
 }
 
 #footer_link a {
