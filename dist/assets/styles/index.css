@@ -13,6 +13,7 @@ body hr {
   /*height:1px;*/
   height: 0px;
   border: none;
+  color: #e0e0e0;
   /*border: 1px solid #eee;*/
 }
 
@@ -467,12 +468,7 @@ header:hover .slider_nav {
 }
 #universityNews .news {
   height: 173px;
-  /*
-  		iframe {
-  			width: 100%;
-  			height: 180px;
-  		}
-  */
+  margin-top: -8px;
 }
 #universityNews .news li a {
   width: 360px;
@@ -561,7 +557,7 @@ footer hr {
 }
 
 footer > div {
-  width: 780px;
+  width: 800px;
   min-height: 10px;
   text-align: center;
   margin: 0 auto;
@@ -582,6 +578,7 @@ footer > div {
 }
 
 #footer_left {
+  margin-left:10px;
   color: #fff;
   float: left;
 }
@@ -595,8 +592,8 @@ footer > div {
 
 #footer_right {
   color: #fff;
-  margin-left: 20px;
-  float: left;
+  margin-left: 10px;
+  /*float: left;*/
 }
 #footer_right a {
   display: inline-block;
@@ -666,6 +663,7 @@ footer > div {
   }
   #universityNews .news {
     height: 215px;
+    margin-top:20px;
   }
   #universityNews .news li a {
     width: 500px;
@@ -765,7 +763,7 @@ footer > div {
   }
 
   #body #others li a {
-    width: 170px;
+    width: 166px;
   }
 }
 /*
