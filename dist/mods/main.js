@@ -73,7 +73,7 @@ define(function(require,exports,module){
 		var n = new Nav("nav.menu");
 		n._init();
 
-		var _width = window.innerWidth;
+		var _width = document.documentElement.clientWidth;
 	    if(_width < 650){
 	        n.removeHover();
 	    }else{
@@ -104,14 +104,16 @@ define(function(require,exports,module){
 		var $newsCon1 = $("#timeline ul");
 		var $news = $("#timeline li");
 		var size = $news.size();
-		var _width = window.innerWidth;
-		var liLength;
+		var _width = document.documentElement.clientWidth;
+		var liLength = 282;
 		if( _width < 1200 ){
 			liLength = 235;
 		}else if( _width < 1600 ){
 			liLength = 282;
-		}else{
+		}else if( _width>=1600 ){
 			liLength = 376;
+		}else if( !_width ){
+			liLength = 282;
 		}
 
 		if( size<=4 ){
@@ -121,7 +123,7 @@ define(function(require,exports,module){
 
 		$(window).resize(function() {
 			resetAll();
-			_width = window.innerWidth;
+			_width = document.documentElement.clientWidth;
 			if( _width < 1200 ){
 				liLength = 235;
 			}else if( _width < 1600 ){
