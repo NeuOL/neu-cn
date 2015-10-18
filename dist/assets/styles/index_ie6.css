@@ -1,0 +1,15 @@
+#body {
+	margin-top: 30px;
+}
+
+#body hr , footer hr {
+	margin:  0;
+}
+
+.news .text {
+	float: left;
+}
+
+.news .date {
+	float: right;
+}
