@@ -57,6 +57,7 @@ define(function(require,exports,module){
 	function resetAll() {
 		$(document).ready(function() {
 			console.log($(".left_sub").height());
+			alert($(".left_sub").height());
 			console.log($(".detail_2").height());
 			if ($(".left_sub").height() > $(".detail_2").height()) {
 				$(".embed_left").css("display", "none");
