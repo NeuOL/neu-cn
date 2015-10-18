@@ -173,11 +173,11 @@ exports.slideInit = function(){
       }
 
       // Hide all slides, then show first one
-			var rd = parseInt(Math.random() * $slide.size());
+			// var rd = parseInt(Math.random() * $slide.size());
       $slide
         .hide()
         .css(hidden)
-        .eq(rd)
+        .eq(0)
         .addClass(visibleClass)
         .css(visible)
         .show();
