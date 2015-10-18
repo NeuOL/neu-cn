@@ -36,7 +36,7 @@ define(function(require,exports,module){
 		});
 		if( $("#foot").length > 0 ) {
 			var offsetTop = $("#foot").offset().top;
-			if(offsetTop < 1300) {
+			if(offsetTop < 1500) {
 				$(".embed_left").css("display", "none");
 				$(".embed_left_2").css("display", "none");
 			}
@@ -45,7 +45,7 @@ define(function(require,exports,module){
 
 		}
 
-		console.log( $(".main_frame_sub").height() );
+		// console.log( $(".main_frame_sub").height() );
 		if( $(".main_frame_sub").height() < 517 ) {
 			$(".main_frame_sub").height("520");
 			$(".passage").height("430");
@@ -155,7 +155,7 @@ define(function(require,exports,module){
 			if( animating ) return;
 			animating = true;
 			if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
-				console.log("move");
+				// console.log("move");
 				$newsCon1.animate({marginLeft:0+"px"}, function() {
 					animating = false;
 				});

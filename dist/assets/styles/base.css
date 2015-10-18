@@ -11,6 +11,15 @@ p {
 /*Temp, Remember to Delete*/
 a {
     text-decoration: none;
+    cursor:pointer;
+}
+
+img {
+  border: 0;
+}
+
+.more {
+  text-decoration: none;
 }
 
 #slider:hover {
