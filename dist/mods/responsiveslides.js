@@ -55,7 +55,7 @@ exports.slideInit = function(){
       "after": $.noop           // Function: After callback
     }, options);
 
-		$("#slider").show();
+		$("#slider").css("display", "block");
 
     return this.each(function () {
 
