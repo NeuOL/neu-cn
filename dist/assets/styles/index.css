@@ -694,8 +694,8 @@ footer > div {
   }
 
   footer {
-    height: 100px;
-    padding: 30px;
+    height: 80px;
+    padding: 40px 20px;
     font-size: 12px;
   }
   footer hr {
