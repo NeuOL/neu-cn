@@ -30,7 +30,7 @@ define(function(require,exports,module){
 	})();
 
 	// Reset all
-	function resetAll() {
+/*	function resetAll() {
 		$("#slider").bind('click', function() {
 			window.location.href="./index.html";
 		});
@@ -53,7 +53,17 @@ define(function(require,exports,module){
 		}
 	}
 	resetAll();
-
+*/
+	function resetAll() {
+		$(document).ready(function() {
+			console.log($(".left_sub").height());
+			console.log($(".detail_2").height());
+			if ($(".left_sub").height() > $(".detail_2").height()) {
+				$(".embed_left").css("display", "none");
+			}
+		});
+	}
+	resetAll();
 
 	exports.slide = function () {
 		$("#slider").responsiveSlides({

@@ -5,6 +5,16 @@
   font-family: "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI Symbol";
 }
 
+a {
+  text-decoration: none;
+}
+
+hr {
+  /*height:1px;*/
+  height: 0;
+  border:1px solid #ccc;
+}
+
 body {
   margin: 0 auto;
   text-align: center;
