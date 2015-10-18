@@ -51,20 +51,21 @@ header:hover .slider_nav {
 }
 .head-news h4 {
   font-size: 14px;
-  font-weight: 300;
+  font-weight:400;
+  line-height: 23px;
 }
 .head-news p {
   font-size: 12px;
   text-indent: 20px;
-  line-height: 1.6;
-  color: #898989;
-  height: 97px;
+  line-height: 21px;
+  color: #777;
+  height: 88px;
   overflow: hidden;
 }
 .head-news span {
   font-size: 12px;
   float: right;
-  color: #898989;
+  color: #777;
 }
 .head-news .news-item {
   display: none;
@@ -351,7 +352,7 @@ header:hover .slider_nav {
 }
 #universityNews hr, #media hr, #academyNews hr, #others hr {
   border-bottom: solid #d5d5d5 1px;
-  margin: 8px 0;
+  margin: 7px 0;
   display: block;
   overflow: hidden;
   float: none;
