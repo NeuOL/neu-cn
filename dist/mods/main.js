@@ -4,9 +4,10 @@ define(function(require,exports,module){
 	var slide = require('slide');
 	var smSlider = require('smallslider');
 
+	__initSlider();
 	slide.slideInit();
-	smSlider.initSlider();
-
+	function __initSlider() {
+		smSlider.initSlider();
 		(function __initSlider() {
 			$('#img-slider').smallslider({
 				 switchEffect: 'ease',
@@ -17,6 +18,14 @@ define(function(require,exports,module){
 				 switchTime: 1000
 		 });
 	 })();
+
+	 if( $(".news-item")[0]  ) {
+		 if( $(".news-item")[0].style.display !== 'block' ) {
+				__initSlider();
+		 }
+	 }
+
+	}
 
   // Judge ie6
 	(function() {

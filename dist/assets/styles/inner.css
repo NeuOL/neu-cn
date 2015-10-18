@@ -76,6 +76,15 @@ a {
     font-size: 16px;
     background-color: #032f55;
 }
+.sub_navigator {
+  padding: 0px;
+  margin: 0px;
+}
+.sub_navigator a {
+  display: inline;
+  padding: -20px;
+  margin: 0px;
+}
 .left_sub .left_end {
     background-color: #032f55;
 }
@@ -132,7 +141,8 @@ a {
 }
 .right_content ul li {
     width: 195px;
-    height: 25px;
+    height: 25px !important;
+    line-height: 25px !important;
     margin: 0 auto;
     padding: 0;
     list-style: none;

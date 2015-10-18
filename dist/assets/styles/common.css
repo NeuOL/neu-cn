@@ -3,6 +3,10 @@
   top: 0;
 }
 
+ul {
+  list-style:none;
+}
+
 nav {
   height: 40px;
   position: relative;
