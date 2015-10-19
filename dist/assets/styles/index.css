@@ -471,13 +471,18 @@ header:hover .slider_nav {
 }
 #universityNews .news {
   height: 173px;
-  margin-top: -8px;
+  margin-top: 0px;
 }
 #universityNews .news li a {
   width: 360px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 26px;
+}
+#universityNews .news .more .icon {
+	float: right;
+	margin-top: -5px;
 }
 
 #universityNews + div {
@@ -504,12 +509,7 @@ header:hover .slider_nav {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-height: 24px;
-}
-
-#media .more .icon, #academyNews .more .icon {
-	float: right;
-	margin-top: -5px;
+  line-height: 23px;
 }
 
 #media {
