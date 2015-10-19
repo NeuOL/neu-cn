@@ -198,7 +198,7 @@ define(function(require,exports,module){
 		setInterval(function() {
 			if( !__enter )
 				$nextWrapper.trigger('click');
-		}, 2500);
+		}, 5000);
 
 	}
 
