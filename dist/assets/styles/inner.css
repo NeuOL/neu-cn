@@ -6,7 +6,9 @@
 a {
     text-decoration: none;
 }
-
+body {
+    background-color: #e8e8e8;
+}
 .title {
   font-weight: 700;
 }
@@ -238,13 +240,19 @@ body .es-table td:nth-last-child(2) { width: 100px; }
     line-height: 1.8;
     min-height: 430px;
 }
-.passage a { color:#075F9E; }
-.passage a:visited { color:#075F9E; }
+.passage a { color:#032B83; }
+.passage a:visited { color:#032B83; }
 .passage p {
     margin: 8px 0px;
     text-indent: 25px;
 }
-.passage .nav_list_wrap { margin-left: 40%; }
+.passage .nav_list_wrap { margin-left: 35%; }
+.nav_list_wrap .nav_list a {
+    font-size: 16px;
+}
+.nav_list_wrap .maincontent2 {
+    font-size: 18px;
+}
 .detail_title {
     color: #808080;
     font-weight: bolder;
