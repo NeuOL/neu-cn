@@ -277,10 +277,11 @@ header:hover .slider_nav {
 #timeline span {
   width: 3%;
   display: inline-block;
-  position: relative;
+  position: static;
   float: left;
   background: #000;
-  /*filter: alpha(opacity=50);*/
+  filter: alpha(opacity=50);
+  zoom: 1;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   z-index: 50;
@@ -319,7 +320,8 @@ header:hover .slider_nav {
   height: 30px;
   list-style: none;
   background: #000;
-  /*filter: alpha(opacity=50);*/
+  filter: alpha(opacity=50);
+  position: static;
   background: rgba(0, 0, 0, 0.5);
   float: left;
   margin: 0 1px;
