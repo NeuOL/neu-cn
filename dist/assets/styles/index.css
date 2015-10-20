@@ -268,9 +268,29 @@ header:hover .slider_nav {
   display: none;
 }
 
+#english {
+	width: 120px;
+	display: block;
+	position: relative;
+	margin-left: 1050px;
+	margin-top: -122px;
+	margin-bottom: 3px;
+	*margin-bottom: 0;
+	padding: 5px 10px;
+	color: #ccc;
+	font-size: 12px;
+	background: #000;
+	/*filter: alpha(opacity=50);*/
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+}
+#english:hover {
+	color:#fff;
+}
+
 #timeline {
   position: relative;
-  margin-top: -93px;
+/*   margin-top: -93px; */
   z-index: 40;
   font-size: 0.9em;
 }
@@ -438,6 +458,7 @@ header:hover .slider_nav {
 	width: 25px;
 	height: 25px;
 	background: url("../images/icons.png") no-repeat -21px 0px;
+	*margin-top: -2px;
 }
 
 #universityNews {
@@ -482,9 +503,15 @@ header:hover .slider_nav {
   overflow: hidden;
   line-height: 26px;
 }
+#universityNews .news .more .more-txt {
+	float: right;
+	margin-top: 3px;
+	*margin-top: 5px;
+}
 #universityNews .news .more .icon {
 	float: right;
-	margin-top: -5px;
+	margin-top: -2px;
+	margin-top: -3px\0;
 }
 
 #universityNews + div {
@@ -651,9 +678,14 @@ footer > div {
   #slider img {
     height: 290px;
   }
+  
+  #english {
+	margin-top: -99px;
+	margin-left: 1450px;
+  }
 
   #timeline {
-    margin-top: -70px;
+    margin-top: 0px;
   }
   #timeline li {
     width: 376px;
@@ -681,7 +713,8 @@ footer > div {
   }
   #universityNews .news li a {
     width: 500px;
-    margin: 7px 0 7px 5px;
+/*     margin: 7px 0 7px 5px; */
+	line-height: 30px;
   }
 
   #media, #academyNews {
@@ -691,8 +724,9 @@ footer > div {
     height: 23px;
   }
   #media li a, #academyNews li a {
-    width: 340px;
-    margin: 7px 0 7px 5px;
+    width: 460px;
+/*     margin: 7px 0 7px 5px; */
+    line-height: 32px;
   }
 
   #media {
@@ -704,7 +738,7 @@ footer > div {
   }
   #others li a {
     margin-left: 0;
-    width: 210px;
+    width: 280px;
     margin: 7px 0 7px 5px;
   }
   #others #links .news a {
@@ -744,6 +778,10 @@ footer > div {
 
   #slider img {
     width: auto;
+  }
+  
+  #english {
+	margin-left: 850px;
   }
 
   #timeline li {
