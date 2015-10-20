@@ -268,9 +268,29 @@ header:hover .slider_nav {
   display: none;
 }
 
+#english {
+	width: 120px;
+	display: block;
+	position: relative;
+	margin-left: 1050px;
+	margin-top: -122px;
+	margin-bottom: 3px;
+	*margin-bottom: 0;
+	padding: 5px 10px;
+	color: #ccc;
+	font-size: 12px;
+	background: #000;
+	/*filter: alpha(opacity=50);*/
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+}
+#english:hover {
+	color:#fff;
+}
+
 #timeline {
   position: relative;
-  margin-top: -93px;
+/*   margin-top: -93px; */
   z-index: 40;
   font-size: 0.9em;
 }
@@ -656,9 +676,14 @@ footer > div {
   #slider img {
     height: 290px;
   }
+  
+  #english {
+	margin-top: -99px;
+	margin-left: 1450px;
+  }
 
   #timeline {
-    margin-top: -70px;
+    margin-top: 0px;
   }
   #timeline li {
     width: 376px;
@@ -751,6 +776,10 @@ footer > div {
 
   #slider img {
     width: auto;
+  }
+  
+  #english {
+	margin-left: 850px;
   }
 
   #timeline li {
