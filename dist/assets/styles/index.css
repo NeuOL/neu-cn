@@ -436,6 +436,7 @@ header:hover .slider_nav {
 	width: 25px;
 	height: 25px;
 	background: url("../images/icons.png") no-repeat -21px 0px;
+	*margin-top: -2px;
 }
 
 #universityNews {
@@ -480,9 +481,15 @@ header:hover .slider_nav {
   overflow: hidden;
   line-height: 26px;
 }
+#universityNews .news .more .more-txt {
+	float: right;
+	margin-top: 3px;
+	*margin-top: 5px;
+}
 #universityNews .news .more .icon {
 	float: right;
-	margin-top: -5px;
+	margin-top: -2px;
+	margin-top: -3px\0;
 }
 
 #universityNews + div {
@@ -679,7 +686,8 @@ footer > div {
   }
   #universityNews .news li a {
     width: 500px;
-    margin: 7px 0 7px 5px;
+/*     margin: 7px 0 7px 5px; */
+	line-height: 30px;
   }
 
   #media, #academyNews {
@@ -690,7 +698,8 @@ footer > div {
   }
   #media li a, #academyNews li a {
     width: 340px;
-    margin: 7px 0 7px 5px;
+/*     margin: 7px 0 7px 5px; */
+    line-height: 32px;
   }
 
   #media {
