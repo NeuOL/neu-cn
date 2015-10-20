@@ -697,7 +697,7 @@ footer > div {
     height: 23px;
   }
   #media li a, #academyNews li a {
-    width: 340px;
+    width: 460px;
 /*     margin: 7px 0 7px 5px; */
     line-height: 32px;
   }
@@ -711,7 +711,7 @@ footer > div {
   }
   #others li a {
     margin-left: 0;
-    width: 210px;
+    width: 280px;
     margin: 7px 0 7px 5px;
   }
   #others #links .news a {
