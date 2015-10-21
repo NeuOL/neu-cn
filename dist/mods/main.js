@@ -47,7 +47,16 @@ define(function(require,exports,module){
 				var offsetTop = $("#foot").offset() && $("#foot").offset().top;
 				if(offsetTop >= 1300) {
 					$(".embed_left").css("display", "block");
-					$(".embed_left_2").css("display", "block");
+					if($(".right_sub").css("display") != "none") {
+					//	alert($(".right_sub").css("display"));
+						$(".embed_left_2").css("display", "none");
+					} else {
+						$(".embed_left_2").css("display", "block");
+					}
+				}
+				else {
+					$(".embed_left").css("display", "none");
+					$(".embed_left_2").css("display", "none");
 				}
 			}
 		});
