@@ -94,7 +94,7 @@ exports.slideInit = function(){
         $pager = $(""),
 
         // Styles for visible and hidden slides
-        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2},
+        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2, "visibility": "visible"},
         hidden = {"float": "none", "position": "absolute", "opacity": 0, "zIndex": 1},
 
         // Detect transition support
@@ -174,11 +174,13 @@ exports.slideInit = function(){
         $this.css("max-width", maxw);
       }
 
-      // Hide all slides, then show first one
+      // Hide all slides, then show randomly.
+			// By Eric.
+			var rd = parseInt(Math.random() * length);
       $slide
         .hide()
         .css(hidden)
-        .eq(0)
+        .eq(rd)
         .addClass(visibleClass)
         .css(visible)
         .show();

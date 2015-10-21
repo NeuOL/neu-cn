@@ -7,10 +7,14 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: #e8e8e8;
+    background-color: #424344;
 }
 .title {
   font-weight: 700;
+}
+
+#slider {
+  visibility: hidden;
 }
 
 #subIndex {
