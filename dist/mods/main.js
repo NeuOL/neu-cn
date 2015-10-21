@@ -46,8 +46,8 @@ define(function(require,exports,module){
 			if($("#foot")) {
 				var offsetTop = $("#foot").offset() && $("#foot").offset().top;
 				if(offsetTop >= 1300) {
-					$(".embed_left").css("visibility", "visible");
-					$(".embed_left_2").css("visibility", "visible");
+					$(".embed_left").css("display", "block");
+					$(".embed_left_2").css("display", "block");
 				}
 			}
 		});

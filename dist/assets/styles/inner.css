@@ -172,7 +172,8 @@ body {
     margin: 0 auto;
 }
 .embed_left {
-  visibility: hidden;
+  /*visibility: hidden;*/
+  display: none;
 }
 .detail_sub {
     background-color: #F1F1F1;
