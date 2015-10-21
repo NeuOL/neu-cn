@@ -19,8 +19,9 @@ body {
 
 #subIndex {
     height: auto;
-    background-color: white;
+    background-color: #ffffff;
     margin: 0 auto;
+    box-shadow: 0px 0px 20px #1b1b1b;
 }
 #navigator {
     margin: 0 auto;
