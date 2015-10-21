@@ -22,7 +22,7 @@ body {
   text-align: center;
   width: 1200px;
   /*background: #e8e8e8;*/
-  background: #424344;
+  background: #747d93;
 }
 
 /*html5*/
@@ -31,7 +31,7 @@ article, aside, dialog, footer, header, section, footer, nav, figure, menu {
 }
 
 .container {
-  box-shadow: 0px 0px 20px #1b1b1b;
+  box-shadow: 0px 0px 10px #1b1b1b;
 }
 
 /* header */
@@ -79,7 +79,7 @@ header:hover .slider_nav {
   text-indent: 20px;
   line-height: 21px;
   color: #777;
-  height: 88px;
+  height:85px;
   overflow: hidden;
 }
 .head-news span {
@@ -675,7 +675,7 @@ footer > div {
   background: url("../images/icons.png") no-repeat -40px -28px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
   body {
     width: 1600px;
   }

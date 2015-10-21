@@ -17,3 +17,14 @@
 .news .date {
 	float: right;
 }
+#universityNews .more {
+  width: 120px;
+  margin-top: -5px;
+}
+#media li .date {
+	width: 40px;
+}
+
+#academyNews li .date, #others li .date, #media li .date {
+	width: 40px;
+}

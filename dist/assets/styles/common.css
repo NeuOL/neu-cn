@@ -13,13 +13,10 @@ nav {
   float: right;
   top: 0px;
   right: 0;
-  background: #000000;
-  background: rgba(0, 0, 0, 0.6);
-  /*filter:alpha(opacity=70);*/
-  /* IE5.5-7 */
   padding-right: 25px;
   color: #fff;
   z-index: 50;
+  background: url("../images/opacity60.png") repeat;
 }
 
 #nav {
@@ -42,11 +39,7 @@ nav {
   text-decoration: none;
 }
 #nav li ul {
-  background: #000000;
-  background: rgba(0, 0, 0, 0.7);
   zoom: 1;
-  /*filter:alpha(opacity=70);*/
-  /* IE5.5-7 */
   position: absolute;
   top: 40px;
   width: 190px;
@@ -54,6 +47,7 @@ nav {
   padding: 5px 0;
   display: none;
   list-style-type: none;
+  background: url("../images/opacity70.png") repeat;
 }
 #nav li ul li {
   text-align: left;
@@ -221,7 +215,7 @@ footer {
 }
 footer hr {
   border-bottom: solid #5a697c 1px;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 footer > div {
