@@ -33,7 +33,7 @@ define(function(require,exports,module){
 		var isIE6=isIE&&!window.XMLHttpRequest;
 		if( isIE6 ) {
 			// document.documentElement.style.display = "none";
-			alert("您的浏览器版本太低，请升级浏览器!");
+			alert("您的浏览器版本太低，导致页面显示问题，请升级浏览器。");
 		}
 	})();
 
