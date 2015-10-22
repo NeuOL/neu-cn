@@ -32,9 +32,8 @@ define(function(require,exports,module){
 		var isIE=!!window.ActiveXObject;
 		var isIE6=isIE&&!window.XMLHttpRequest;
 		if( isIE6 ) {
-			document.documentElement.style.display = "none";
-			alert("您的浏览器版本太低，请升级浏览器!点击确认跳转至旧版。");
-			window.location.href = "./version2015";
+			// document.documentElement.style.display = "none";
+			alert("您的浏览器版本太低，请升级浏览器!");
 		}
 	})();
 
@@ -46,7 +45,7 @@ define(function(require,exports,module){
 			if($("#foot")) {
 				var offsetTop = $("#foot").offset() && $("#foot").offset().top;
 				//alert(offsetTop);
-				if(offsetTop >= 1300) {
+				if(offsetTop >= 1000) {
 					$(".embed_left").css("display", "block");
 					if($(".right_sub").css("display") != "none") {
 					//	alert($(".right_sub").css("display"));

@@ -252,12 +252,13 @@ body hr {
     font-size: small;
 }
 .sub_links .special_length {
-    width: 660px;
+    width: 400px;
     height: 30px;
     line-height: 30px;
     margin: 5px;
     background: url("../images/special_nav_link.png") no-repeat;
     background-size: cover;
+    background-position: 100% 100%;
 }
 .detail_2 {
     background-color: #F1F1F1;
@@ -273,8 +274,8 @@ body hr {
     line-height: 1.8;
     min-height: 430px;
 }
-.passage a { color:#032B83; }
-.passage a:visited { color:#032B83; }
+.passage a { color: #104471; }
+.passage a:visited { color: #104471; }
 .passage p {
     margin: 8px 0px;
     text-indent: 25px;
