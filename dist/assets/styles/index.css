@@ -680,7 +680,6 @@ footer > div {
     width: 1600px;
   }
 
-  /* header */
   header {
     height: 290px;
   }
@@ -726,8 +725,7 @@ footer > div {
   }
   #universityNews .news li a {
     width: 500px;
-/*     margin: 7px 0 7px 5px; */
-	line-height: 30px;
+	  line-height: 30px;
   }
 
   #media, #academyNews {
@@ -738,7 +736,6 @@ footer > div {
   }
   #media li a, #academyNews li a {
     width: 460px;
-/*     margin: 7px 0 7px 5px; */
     line-height: 32px;
   }
 
@@ -767,7 +764,7 @@ footer > div {
 
   footer {
     height: 80px;
-    padding: 40px 20px;
+    /*padding: 40px 20px;*/
     font-size: 12px;
   }
   footer hr {
@@ -831,150 +828,3 @@ footer > div {
     width: 166px;
   }
 }
-/*
-@media screen and (max-width: 1000px) {
-	body {
-		width: 800px;
-	}
-
-	#universityNews {
-		width: 48%;
-	}
-
-	#universityNews + div {
-		width: 49%;
-		margin-right: 0;
-	}
-
-	#others {
-		width: 97.7%;
-		height: auto;
-		margin-top: 5px;
-
-		hr {
-			display: none;
-		}
-
-		#inform, #links {
-			float: left;
-			width: 35%;
-			padding-right: 1%;
-			margin-right: 1%;
-			border-right: 2px solid #ccc;
-		}
-
-		#links {
-			width: 30%;
-		}
-
-		#topics {
-			float: left;
-			width: 30%;
-		}
-	}
-
-	footer {
-		height: 130px;
-	}
-
-	#footer_left {
-		margin-left: 0;
-		float: none;
-	}
-
-	#footer_right {
-		margin-left: 0;
-		float: none;
-		margin-top: 10px;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	body {
-		width: 650px;
-	}
-
-	#others {
-		margin-top: 0;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	body {
-		width: 100%;
-	}
-
-	#logo {
-		width: 100%;
-		display: block;
-	}
-
-	nav {
-		width: 100%;
-		height: auto;
-		padding-right: 0;
-		top:-40px;
-		margin-top: 40px;
-
-		#smenu {
-			display:block;
-			line-height:44px;
-			font-size:18px;
-			padding:0 20px;
-			cursor:pointer;
-			color: #13172d;
-			background: #efefef;
-		}
-
-		#nav {
-			display: none;
-
-			ul {
-				overflow: hidden;
-			}
-		}
-
-		#nav > li {
-			width: 100%;
-			float: none;
-			background: #fff;
-
-			&:hover {
-				background: #b0b0b0;
-			}
-
-			a {
-				color: #333;
-			}
-		}
-	}
-
-	#smenu {
-		display: block;
-	}
-
-	#timeline {
-		span {
-			display: none;
-		}
-	}
-
-	#body > div {
-		width: 99.5%;
-		margin-bottom: 5px;
-	}
-
-	#body #universityNews, #body #others {
-		width: 97.5%;
-	}
-
-}
-
-@media screen and (max-width: 530px) {
-	footer {
-		height: 160px;
-	}
-}
-*/
-
-/*# sourceMappingURL=index.css.map */
