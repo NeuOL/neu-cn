@@ -517,6 +517,7 @@ header:hover .slider_nav {
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 26px;
+  letter-spacing: 1px;
 }
 #universityNews .news .more .more-txt {
 	float: right;
