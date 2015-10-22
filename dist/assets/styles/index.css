@@ -432,7 +432,7 @@ header:hover .slider_nav {
 #universityNews li .date, #media li .date, #academyNews li .date, #others li .date {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 6px;
+  margin-top: 5px;
   float: right;
   color: #333;
 }
