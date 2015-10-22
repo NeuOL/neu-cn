@@ -27,6 +27,26 @@ body {
     margin: 0 auto;
     background-size: cover;
 }
+#english {
+    width: 120px;
+    display: block;
+    position: relative;
+    margin-left: 900px;
+    margin-top: -122px;
+    margin-bottom: 3px;
+    padding: 5px 10px;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    /*background: #000;*/
+    /*filter: alpha(opacity=50);*/
+    /*background: rgba(0, 0, 0, 0.5);*/
+  background: url("../images/opacity.png") repeat;
+    z-index: 5;
+}
+#english:hover {
+    color:#fff;
+}
 .head_nav ul, .head_nav ul li {
     margin: 0;
     padding: 0;
@@ -170,6 +190,7 @@ body {
 .embed_left, .embed_left_2 {
     width: 195px;
     margin: 0 auto;
+    display: none;
 }
 .embed_left {
   /*visibility: hidden;*/
@@ -380,6 +401,11 @@ body hr {
         width: 900px;
         height: 165px;
     }
+    #english {
+        margin-left: 750px;
+        margin-top: -110px;
+        margin-bottom: 3px;
+    }
     .main_frame_sub {
         width: 900px;
     }
@@ -439,6 +465,11 @@ body hr {
     #navigator {
         width: 1100px;
         height: 200px;
+    }
+    #english {
+        margin-left: 950px;
+        margin-top: -80px;
+        margin-bottom: 3px;
     }
     .main_frame_sub {
         width: 1100px;

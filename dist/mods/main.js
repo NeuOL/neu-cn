@@ -45,6 +45,7 @@ define(function(require,exports,module){
 		$(document).ready(function() {
 			if($("#foot")) {
 				var offsetTop = $("#foot").offset() && $("#foot").offset().top;
+				//alert(offsetTop);
 				if(offsetTop >= 1300) {
 					$(".embed_left").css("display", "block");
 					if($(".right_sub").css("display") != "none") {
