@@ -35,7 +35,6 @@
 }
 
 #media .news ul li, #academyNews li {
-  margin: 0px;
+    margin: 0px;
 	margin-bottom: 11px;
-	/*line-height: 15px;*/
 }
