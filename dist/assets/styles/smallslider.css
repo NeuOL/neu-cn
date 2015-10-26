@@ -13,6 +13,12 @@
   position: relative;
   width: 220px;
 }
+
+@media screen and (min-width: 1700px) {
+    .smallslider {
+      width: 308px;
+    }
+}
 .smallslider h3 {
   color: #EEE;
   font-size: 12px;
