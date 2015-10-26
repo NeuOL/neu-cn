@@ -9,15 +9,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/inner.css" />
     <script type="text/javascript" src="./libs/respond.js"></script>
     <script type="text/javascript" src="./libs/sea.js"></script>
-    <script type="text/javascript" src="./mods/config.js"></script>
-    <script>
-  		seajs.use("./mods/main", function(mod) {
-  			mod.slide();
-  			mod.nav();
-  			mod.timeline();
-  			mod.topicData();
-  		});
-  	</script>
     <!--[if lte IE 8]>
       <script>
          (function() {
@@ -244,7 +235,7 @@
               </li>
           </ul>
             <div class="embed_left_2">
-                
+
                 <div class="right_part">
                     <div class="right_title">快速入口</div>
                     <div class="right_content quick_links">
@@ -267,7 +258,7 @@
             </div>
         </div>
         <div class="right_sub">
-            
+
             <div class="right_part">
                 <div class="right_title">快速入口</div>
                 <div class="right_content quick_links">
@@ -289,7 +280,6 @@
             </div>
         </div>
         <div class="detail_sub">
-        <!-- >>>>>>>>>>>>>>>> -->
             <div class="detail_title">
                 <p>[党委书记] 孙家学</p>
             </div>
@@ -303,7 +293,6 @@
 
                 </div>
             </div>
-        <!-- >>>>>>>>>>>>>>>> -->
         </div>
     </div>
     <div id="foot">
@@ -352,7 +341,14 @@
 
     </div>
 </div>
-
+<script type="text/javascript" src="./mods/config.js"></script>
+<script>
+    seajs.use("./mods/main", function(mod) {
+        mod.slide();
+        mod.nav();
+        mod.timeline();
+        mod.topicData();
+    });
+</script>
 </body>
 </html>
-
