@@ -4,7 +4,7 @@ define(function(require,exports,module){
 	var slide = require('slide');
 	var smSlider = require('smallslider');
 
-	__initSlider();
+	(function() {__initSlider();
 	slide.slideInit();
 	function __initSlider() {
 		smSlider.initSlider();
@@ -24,15 +24,14 @@ define(function(require,exports,module){
 				__initSlider();
 		 }
 	 }
-
 	}
+})();
 
   	// Judge ie6
 	(function() {
 		var isIE=!!window.ActiveXObject;
 		var isIE6=isIE&&!window.XMLHttpRequest;
 		if( isIE6 ) {
-			// document.documentElement.style.display = "none";
 			alert("您的浏览器版本太低，导致页面显示问题，请升级浏览器。");
 		}
 	})();
@@ -48,7 +47,6 @@ define(function(require,exports,module){
 				if(offsetTop >= 1000) {
 					$(".embed_left").css("display", "block");
 					if($(".right_sub").css("display") != "none") {
-					//	alert($(".right_sub").css("display"));
 						$(".embed_left_2").css("display", "none");
 					} else {
 						$(".embed_left_2").css("display", "block");
@@ -91,15 +89,7 @@ define(function(require,exports,module){
 
 	exports.topicData = function(){
 
-		var html = "<a href=\"http://zxz.neu.edu.cn\" target=\"_blank\">\
-						<img src=\"./assets/images/sanyansanshi.jpg\" />\
-					</a>\
-					<a href=\"http://uzone.univs.cn/school_2129.html\" target=\"_blank\">\
-						<img src=\"./assets/images/changyeshuxiang.jpg\" />\
-					</a>\
-					<a href=\"http://zxz.neu.edu.cn\" target=\"_blank\">\
-						<img src=\"./assets/images/sanyansanshi.jpg\" />\
-					</a>";
+		var html = "";
 
 		$("#topics .news").html(html);
 	}
