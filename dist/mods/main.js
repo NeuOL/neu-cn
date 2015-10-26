@@ -17,6 +17,8 @@ define(function(require,exports,module){
 				 showText: false,
 				 switchTime: 1000
 		 });
+
+		 $("#slider").css("visibility", "visible");
 	 })();
 
 	 if( $(".news-item")[0]  ) {
