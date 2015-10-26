@@ -24,10 +24,54 @@ define(function(require,exports,module){
 				__initSlider();
 		 }
 	 }
+
+	 // Load compat_ie.css for IE 7
+	 if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=="7." && document.getElementById("compat")) {
+
+		 var compat_styles = "_<style> \
+		 					#body {margin-top: 30px;} \
+							 	#body hr , footer hr {\
+							 	margin:  0;\
+							}\
+							 .head-news h4 { \
+							   font-weight:bold;\
+						   } \
+							 .news .text {\
+							 	float: left;\
+							}\
+							 .news .date {\
+							 	float: right;\
+							}\
+							 #universityNews .more {\
+							   width: 120px;\
+							   margin-top: -5px;\
+						   }\
+							 #media li .date {\
+							 	width: 40px;\
+							}\
+							 #academyNews li .date, #others li .date, #media li .date {\
+							 	width: 40px;\
+							}\
+							 #media ul {\
+							 	zoom:1;\
+							 	overflow:hidden;\
+							}\
+							 #media .news ul li, #academyNews li {\
+							     margin: 0px;\
+							 	margin-bottom: 11px;\
+							} \
+							</style>";
+
+		var div = document.getElementById("compat");
+		div.innerHTML = compat_styles;
+		div.removeChild(div.firstChild);
+		// alert(compat_styles);
+		//  $("body").append(compat_styles);
+	 }
+
 	}
 
 	})();
-
 
   	// Judge ie6
 	(function() {

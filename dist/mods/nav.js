@@ -1,14 +1,14 @@
 // define(["jquery"],function(require,exports){
 define(function(require,exports,module){
-	
+
 	var $ = require('jquery');
-	
+
 	function Nav(container){
 		this.container = $(container);
 	}
-	
+
 	module.exports = Nav;
-	
+
 	Nav.prototype.addHover = function(){
 		var NavWaitSlide;
 		$('#nav > li').hover(
@@ -24,14 +24,14 @@ define(function(require,exports,module){
 			}
 		);
 	}
-	
+
 	Nav.prototype.removeHover = function(){
 		$('#nav > li').unbind("mouseenter").unbind("mouseleave");
 	}
-	
+
 	Nav.prototype._init = function(){
 		this.addHover();
-		
+
 		//ie6
 		if ( !-[1,] ){ //is IE
 			if( !window.XMLHttpRequest ){ //is IE6
