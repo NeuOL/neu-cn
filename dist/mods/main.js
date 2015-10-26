@@ -127,7 +127,7 @@ define(function(require,exports,module){
 				$(v).css("height", h);
 				$(v).css("width", w);
 			});
-			$.smallsliderConvert(w, h);
+			$.smallsliderConvert && $.smallsliderConvert(w, h);
 		} else {
 			var   w = 220
 				, h = 150;
@@ -143,7 +143,7 @@ define(function(require,exports,module){
 				$(v).css("height", h);
 				$(v).css("width", w);
 			});
-			$.smallsliderConvert(w, h);
+			$.smallsliderConvert && $.smallsliderConvert(w, h);
 		}
 	}
 
