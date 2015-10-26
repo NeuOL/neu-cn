@@ -12,17 +12,8 @@
 	<link rel="stylesheet" href="assets/styles/smallslider.css" type="text/css" media="screen" charset="utf-8">
 	<script src="libs/respond.js"></script>
 	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
+	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
 	<script>
-		seajs.config({
-		  base: "./mods/",
-		  alias: {
-			"jquery": "jquery.js",
-			"respond": "respond.min.js",
-			"nav": "nav.js",
-			"slide": "responsiveslides.js",
-			"smallslider": "smallslider.js"
-		  }
-		});
 		seajs.use("./mods/main", function(mod) {
 			mod.slide();
 			mod.nav();
@@ -50,8 +41,6 @@
 <body>
 	<div class="container">
 		<nav class="menu">
-  <section class="menu" id="smenu">
-    <div style="float:right;background:url("./assets/images/nav.png") no-repeat left center;width:30px;height:40px;"></div>导航</section>
   <ul id="nav">
     <li> <a href="./intro_info.html" class="">东大简介</a>
       <ul style="display: none;">
