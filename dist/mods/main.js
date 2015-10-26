@@ -25,7 +25,13 @@ define(function(require,exports,module){
 		 }
 	 }
 	}
-})();
+
+	if(navigator.appName=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0") {
+		$("#slider").height(290);
+	}
+
+	})();
+
 
   	// Judge ie6
 	(function() {
