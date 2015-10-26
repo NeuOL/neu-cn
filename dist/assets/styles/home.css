@@ -697,6 +697,10 @@ footer > div {
     height: 290px;
   }
 
+  #slider li {
+    height: 290px;
+  }
+
   #english {
 	margin-top: -99px;
 	margin-left: 1450px;
