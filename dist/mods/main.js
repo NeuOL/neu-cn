@@ -19,8 +19,6 @@ define(function(require,exports,module){
 		 });
 	 })();
 
-	 alert("js ok");
-
 	 if( $(".news-item")[0]  ) {
 		 if( $(".news-item")[0].style.display !== 'block' ) {
 				__initSlider();
@@ -107,75 +105,75 @@ define(function(require,exports,module){
 	}
 
 	exports.timeline = function(){
-		// var $prev = $("#timeline .prev");
-		// var $container = $("#timeline .contain");
-		// var $prevWrapper = $("#timeline .prev-wrapper");
-		// var $nextWrapper = $("#timeline .next-wrapper");
-		// var $next = $("#timeline .next");
-		// var $newsCon1 = $("#timeline ul");
-		// var $news = $("#timeline li");
-		// var size = $news.size();
-		// var _width = document.documentElement.clientWidth;
-		// var liLength = 282;
-		// if( _width < 1200 ){
-		// 	liLength = 235;
-		// }else if( _width < 1600 ){
-		// 	liLength = 282;
-		// }else if( _width>=1600 ){
-		// 	liLength = 376;
-		// }else if( !_width ){
-		// 	liLength = 282;
-		// }
-		//
-		// if( size<=4 ){
-		// 	$prev.hide();
-		// 	$next.hide();
-		// }
-		//
-		// $(window).resize(function() {
-		// 	resetAll();
-		// 	_width = document.documentElement.clientWidth;
-		// 	if( _width < 1200 ){
-		// 		liLength = 235;
-		// 	}else if( _width < 1600 ){
-		// 		liLength = 282;
-		// 	}else{
-		// 		liLength = 376;
-		// 	}
-		// 	$newsCon1.animate({marginLeft:"0px"});
-		//
-		// 	$newsCon1.css("width", (size*liLength+20)+"px");
-		// 	$nextWrapper.bind('click', function(){
-		// 		if( animating ) return;
-		// 		animating = true;
-		// 		if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
-		// 			// console.log("move");
-		// 			$newsCon1.animate({marginLeft:0+"px"}, function() {
-		// 				animating = false;
-		// 			});
-		// 		}else{
-		// 			$newsCon1.animate({marginLeft:'-='+liLength+'px'}, function() {
-		// 				animating = false;
-		// 			});
-		// 		}
-		// 	});
-		// });
-		//
-		// $newsCon1.css("width", (size*liLength+20)+"px");
-		//
-		// var animating = false;
-		// $prevWrapper.bind('click', function(){
-		// 	if( animating ) return;
-		// 	animating = true;
-		// 	if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
-		// 		$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"}, function() {
-		// 			animating = false;
-		// 		});
-		// 	}else{
-		// 		$newsCon1.animate({marginLeft:'+='+liLength+'px'}, function() {
-		// 			animating = false;
-		// 		});
-		// 	}
+		var $prev = $("#timeline .prev");
+		var $container = $("#timeline .contain");
+		var $prevWrapper = $("#timeline .prev-wrapper");
+		var $nextWrapper = $("#timeline .next-wrapper");
+		var $next = $("#timeline .next");
+		var $newsCon1 = $("#timeline ul");
+		var $news = $("#timeline li");
+		var size = $news.size();
+		var _width = document.documentElement.clientWidth;
+		var liLength = 282;
+		if( _width < 1200 ){
+			liLength = 235;
+		}else if( _width < 1600 ){
+			liLength = 282;
+		}else if( _width>=1600 ){
+			liLength = 376;
+		}else if( !_width ){
+			liLength = 282;
+		}
+
+		if( size<=4 ){
+			$prev.hide();
+			$next.hide();
+		}
+
+		$(window).resize(function() {
+			resetAll();
+			_width = document.documentElement.clientWidth;
+			if( _width < 1200 ){
+				liLength = 235;
+			}else if( _width < 1600 ){
+				liLength = 282;
+			}else{
+				liLength = 376;
+			}
+			$newsCon1.animate({marginLeft:"0px"});
+
+			$newsCon1.css("width", (size*liLength+20)+"px");
+			$nextWrapper.bind('click', function(){
+				if( animating ) return;
+				animating = true;
+				if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
+					// console.log("move");
+					$newsCon1.animate({marginLeft:0+"px"}, function() {
+						animating = false;
+					});
+				}else{
+					$newsCon1.animate({marginLeft:'-='+liLength+'px'}, function() {
+						animating = false;
+					});
+				}
+			});
+		});
+
+		$newsCon1.css("width", (size*liLength+20)+"px");
+
+		var animating = false;
+		$prevWrapper.bind('click', function(){
+			if( animating ) return;
+			animating = true;
+			if( parseInt($newsCon1.css("marginLeft"))>(-1) ){
+				$newsCon1.animate({marginLeft:(-liLength*(size-4))+"px"}, function() {
+					animating = false;
+				});
+			}else{
+				$newsCon1.animate({marginLeft:'+='+liLength+'px'}, function() {
+					animating = false;
+				});
+			}
 		});
 
 		$nextWrapper.bind('click', function(){
