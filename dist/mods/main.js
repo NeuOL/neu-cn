@@ -6,7 +6,8 @@ define(function(require,exports,module){
 
 	// Solve IE 7 blocking
 	if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE7.0") {
-		setTimeout(init, 10);
+		// setTimeout(init, 10);
+		alert("test");
 	} else {
 		init();
 	}
