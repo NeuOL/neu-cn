@@ -46,6 +46,7 @@
 .smallslider-btns {
   position: absolute;
   z-index: 103;
+  zoom: 1;
 }
 .smallslider-btns .current-btn {
   /*background-color: #C00100;*/
