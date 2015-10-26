@@ -65,8 +65,6 @@ define(function(require,exports,module){
 		var div = document.getElementById("compat");
 		div.innerHTML = compat_styles;
 		div.removeChild(div.firstChild);
-		// alert(compat_styles);
-		//  $("body").append(compat_styles);
 	 }
 
 	}
