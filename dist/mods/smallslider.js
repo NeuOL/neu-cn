@@ -22,14 +22,23 @@ define(["jquery"],function(require,exports){
                   _this.sliderTimer = null;
 
 
+                  $.smallsliderConvert = function(w, h) {
+                      _this.width = w;
+                      _this.height = h;
+                      var width = _this.itemNums * _this.width;
+                      _this.$ul.css({
+                          'width': width
+                      });
+                  }
+
                   // 初始化对象
                   _this.init = function () {
                       _this.$ul = _this.$elm.find('>ul'); // 为子元素 ul
                       _this.$lis = _this.$elm.find('li'); // 为所有 ul 下子元素 li 数组
                       _this.$ims = _this.$elm.find('img'); // 为所有 li 下子元素 img 数组
                       _this.itemNums = _this.$lis.length;
-                      _this.width = _this.$elm.width();
-                      _this.height = _this.$elm.height();
+                      _this.width = options.width;
+                      _this.height = options.height;
                       _this.current = 0; // 当前的 index 索引
 
                       _this.switchNews(this.current);
@@ -371,6 +380,7 @@ define(["jquery"],function(require,exports){
                   _this.stopSlider = function () {
                       // if(_this.opts.switchEffect=='fadeOut') _this.$lis.stop();
                       // else if(_this.opts.switchEffect=='ease') _this.$ul.stop();
+                      console.log("stoped");
                       if (_this.sliderTimer) {
                           clearTimeout(_this.sliderTimer);
                       }
@@ -390,8 +400,8 @@ define(["jquery"],function(require,exports){
                   switchEase: 'easeOutQuart', // 可选值列表如下
                   switchTime: 600, // 切换时间，单位毫秒，1秒=1000毫秒
                   buttonPosition: 'rightBottom', // 按钮位置表示，共有四个值：leftTop，leftBottom，rightTop，rightBottom
-                  buttonOffsetX: 10, // 水平方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
-                  buttonOffsetY: 4, // 竖直方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
+                  buttonOffsetX: 17, // 水平方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
+                  buttonOffsetY: 10, // 竖直方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
                   buttonSpace: 4, // 按钮之间的间隔 单位为像素，但不要加px
                   showText: true, // 是否显示标题，如果不显示，则只显示按钮
                   showButtons: true, // 是否显示按钮，默认显示

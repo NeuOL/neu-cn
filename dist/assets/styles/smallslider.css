@@ -12,6 +12,18 @@
   overflow: hidden;
   position: relative;
   width: 220px;
+  /*width: 317px;*/
+  /*height: 200px;*/
+}
+#img-slider li {
+  width: 220px;
+  height: 150px;
+}
+.smallslider li img {
+  border: 0;
+  vertical-align: top;
+  height: 150px;
+  width: 100%;
 }
 .smallslider h3 {
   color: #EEE;
@@ -32,12 +44,6 @@
   color: #F60;
   text-decoration: underline;
 }
-.smallslider li img {
-  border: 0;
-  vertical-align: top;
-  height: 150px;
-  width: 100%;
-}
 .smallslider ul {
   list-style-type: none;
   margin: 0;
@@ -49,8 +55,6 @@
   zoom: 1;
 }
 .smallslider-btns .current-btn {
-  /*background-color: #C00100;*/
-  /*border: 1px solid #A00100;*/
   color: #ff0000;
 }
 .smallslider-btns span {
