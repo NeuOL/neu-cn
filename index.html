@@ -10,7 +10,8 @@
 	<link href="assets/styles/compat_ie.css" rel="stylesheet" type="text/css">
 	<![endif]-->
 	<link rel="stylesheet" href="assets/styles/smallslider.css" type="text/css" media="screen" charset="utf-8">
-	<script src="libs/respond.js"></script>
+	<script src="libs/respond.js" type="text/javascript"></script>
+	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
 	<!--[if lte IE 8]>
 		<script>
 		   (function() {
@@ -136,16 +137,14 @@
 		</div>
 		<!--include("footer.html")-->
 	</div>
+	<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		seajs.use("./mods/main", function(mod) {
+			mod.slide();
+			mod.nav();
+			mod.timeline();
+		});
+	</script>
 </body>
-
-<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
-<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
-<script>
-	seajs.use("./mods/main", function(mod) {
-		mod.slide();
-		mod.nav();
-		mod.timeline();
-	});
-</script>
 
 </html>

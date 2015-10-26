@@ -10,15 +10,6 @@
   <link rel="stylesheet" type="text/css" href="./assets/styles/inner.css" />
   <script type="text/javascript" src="./libs/respond.js"></script>
   <script type="text/javascript" src="./libs/sea.js"></script>
-  <script type="text/javascript" src="./mods/config.js"></script>
-  <script>
-    seajs.use("./mods/main", function(mod) {
-      mod.slide();
-      mod.nav();
-      mod.timeline();
-      mod.topicData();
-    });
-  </script>
   <!--[if lte IE 8]>
       <script>
          (function() {
@@ -88,7 +79,7 @@
         </div>
       </div>
       <div class="right_sub">
-        
+
         <div class="right_part">
           <div class="right_title">快速入口</div>
           <div class="right_content quick_links">
@@ -164,7 +155,14 @@
       <!--include("footer.html")-->
     </div>
   </div>
-
+  <script type="text/javascript" src="./mods/config.js"></script>
+  <script>
+    seajs.use("./mods/main", function(mod) {
+      mod.slide();
+      mod.nav();
+      mod.timeline();
+      mod.topicData();
+    });
+  </script>
 </body>
-
 </html>
