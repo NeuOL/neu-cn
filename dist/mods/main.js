@@ -4,29 +4,36 @@ define(function(require,exports,module){
 	var slide = require('slide');
 	var smSlider = require('smallslider');
 
-	alert("123");
+	// Solve IE 7 blocking
+	if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE7.0") {
+		setTimeout(init, 10);
+	} else {
+		init();
+	}
 
-	__initSlider();
-	slide.slideInit();
-	function __initSlider() {
-		smSlider.initSlider();
-		(function __initSlider() {
-			$('#img-slider').smallslider({
-				 switchEffect: 'ease',
-				 switchPath: 'left',
-				 switchMode: 'click',
-				 autoStart: true,
-				 showText: false,
-				 switchTime: 1000
-		 });
-	 })();
+	function init() {
+		__initSlider();
+		slide.slideInit();
+		function __initSlider() {
+			smSlider.initSlider();
+			(function __initSlider() {
+				$('#img-slider').smallslider({
+					 switchEffect: 'ease',
+					 switchPath: 'left',
+					 switchMode: 'click',
+					 autoStart: true,
+					 showText: false,
+					 switchTime: 1000
+			 });
+		 })();
 
-	 if( $(".news-item")[0]  ) {
-		 if( $(".news-item")[0].style.display !== 'block' ) {
-				__initSlider();
+		 if( $(".news-item")[0]  ) {
+			 if( $(".news-item")[0].style.display !== 'block' ) {
+					__initSlider();
+			 }
 		 }
-	 }
 
+		}
 	}
 
   	// Judge ie6
