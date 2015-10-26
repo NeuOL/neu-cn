@@ -141,9 +141,25 @@ define(function(require,exports,module){
 				liLength = 376;
 			}
 			$newsCon1.animate({marginLeft:"0px"});
+			
+			$newsCon1.css("width", (size*liLength+20)+"px");
+			$nextWrapper.bind('click', function(){
+				if( animating ) return;
+				animating = true;
+				if( parseInt($newsCon1.css("marginLeft"))<(-liLength*(size-4)+1) ){
+					// console.log("move");
+					$newsCon1.animate({marginLeft:0+"px"}, function() {
+						animating = false;
+					});
+				}else{
+					$newsCon1.animate({marginLeft:'-='+liLength+'px'}, function() {
+						animating = false;
+					});
+				}
+			});
 		});
 
-		$newsCon1.css("width", size*liLength+"px");
+		$newsCon1.css("width", (size*liLength+20)+"px");
 
 		var animating = false;
 		$prevWrapper.bind('click', function(){
