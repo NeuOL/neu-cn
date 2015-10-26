@@ -30,7 +30,8 @@ define(["jquery"],function(require,exports){
                           'width': width
                       });
                       _this.stopSlider();
-                      _this.startSlider(1);
+                      _this.slideTo(_this.current);
+
                   }
 
 
@@ -403,7 +404,7 @@ define(["jquery"],function(require,exports){
                   switchTime: 600, // 切换时间，单位毫秒，1秒=1000毫秒
                   buttonPosition: 'rightBottom', // 按钮位置表示，共有四个值：leftTop，leftBottom，rightTop，rightBottom
                   buttonOffsetX: 10, // 水平方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
-                  buttonOffsetY: 4, // 竖直方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
+                  buttonOffsetY: 10, // 竖直方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px
                   buttonSpace: 4, // 按钮之间的间隔 单位为像素，但不要加px
                   showText: true, // 是否显示标题，如果不显示，则只显示按钮
                   showButtons: true, // 是否显示按钮，默认显示

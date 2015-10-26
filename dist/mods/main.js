@@ -112,23 +112,24 @@ define(function(require,exports,module){
 	function convertSliderSize() {
 		var _width = document.documentElement.clientWidth;
 
-		if (_width > 1700) {
-			var w   = 310
+		if (_width >= 1690) {
+			var   w = 310
 				, h = 200;
 
 			var _css = {
-				"width": w,
-				"height": h
+				"width": w + "px",
+				"height": h + "px"
 			};
 
 			$(".smallslider").css(_css);
 			$("#img-slider li").css(_css);
 			$.each( $(".smallslider li img"), function(k, v) {
 				$(v).css("height", h);
+				$(v).css("width", w);
 			});
 			$.smallsliderConvert(w, h);
 		} else {
-			var w   = 220
+			var   w = 220
 				, h = 150;
 
 			var _css = {
@@ -140,6 +141,7 @@ define(function(require,exports,module){
 			$("#img-slider li").css(_css);
 			$.each( $(".smallslider li img"), function(k, v) {
 				$(v).css("height", h);
+				$(v).css("width", w);
 			});
 			$.smallsliderConvert(w, h);
 		}
