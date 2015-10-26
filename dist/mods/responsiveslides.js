@@ -146,9 +146,9 @@ exports.slideInit = function(){
       }
 
       // Hide all slides, then show randomly.
-			// By Eric.
-			var rd = parseInt(Math.random() * length);
-			$("#slider").css("visibility","visible");
+	  // By Eric.
+	  var rd = parseInt(Math.random() * length);
+	  $("#slider").css("visibility","visible");
       $slide
         .hide()
         .css(hidden)
