@@ -4,6 +4,8 @@ define(function(require,exports,module){
 	var slide = require('slide');
 	var smSlider = require('smallslider');
 
+	alert("123");
+
 	__initSlider();
 	slide.slideInit();
 	function __initSlider() {
@@ -141,7 +143,7 @@ define(function(require,exports,module){
 				liLength = 376;
 			}
 			$newsCon1.animate({marginLeft:"0px"});
-			
+
 			$newsCon1.css("width", (size*liLength+20)+"px");
 			$nextWrapper.bind('click', function(){
 				if( animating ) return;
