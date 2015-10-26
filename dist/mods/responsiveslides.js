@@ -1,35 +1,7 @@
-/*! ResponsiveSlides.js v1.54
- * http://responsiveslides.com
- * http://viljamis.com
- *
- * Copyright (c) 2011-2012 @viljamis
- * Available under the MIT license
- */
-
-/*jslint browser: true, sloppy: true, vars: true, plusplus: true, indent: 2 */
-
 define(function(require,exports,module){
 
 	var $ = require("jquery");
 
-/*
-	function Slider(container){
-		this.container = $(container);
-		this.length = container.children().size();
-
-		this.fadeTime = 500;
-		this.waitTime = 4000;
-	}
-
-	module.exports = Slider;
-
-	Slider.prototype._init = function(){
-		var $this = container,
-			$pager = $("<ul class='slider_tabs' />");
-
-
-	}
-*/
 
 exports.slideInit = function(){
 (function ($, window, i) {
@@ -82,7 +54,6 @@ exports.slideInit = function(){
 
         // Namespacing
         namespace = settings.namespace,
-//         namespace = namespace + i,
 
         // Classes
         navClass = namespace + "_nav",
@@ -94,8 +65,8 @@ exports.slideInit = function(){
         $pager = $(""),
 
         // Styles for visible and hidden slides
-        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2},
-        hidden = {"float": "none", "position": "absolute", "opacity": 0, "zIndex": 1},
+        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2, "filter": "alpha(opacity=100)"},
+        hidden = {"float": "none", "position": "absolute", "opacity": 0, "zIndex": 1, "filter": "alpha(opacity=0)"},
 
         // Detect transition support
         supportsTransitions = (function () {
@@ -174,11 +145,14 @@ exports.slideInit = function(){
         $this.css("max-width", maxw);
       }
 
-      // Hide all slides, then show first one
+      // Hide all slides, then show randomly.
+			// By Eric.
+			var rd = parseInt(Math.random() * length);
+			$("#slider").css("visibility","visible");
       $slide
         .hide()
         .css(hidden)
-        .eq(0)
+        .eq(rd)
         .addClass(visibleClass)
         .css(visible)
         .show();
@@ -188,7 +162,6 @@ exports.slideInit = function(){
         $slide
           .show()
           .css({
-            // -ms prefix isn't needed as IE10 uses prefix free version
             "-webkit-transition": "opacity " + fadeTime + "ms ease-in-out",
             "-moz-transition": "opacity " + fadeTime + "ms ease-in-out",
             "-o-transition": "opacity " + fadeTime + "ms ease-in-out",

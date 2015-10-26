@@ -7,20 +7,45 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: #e8e8e8;
+    background-color: #747d93;
 }
 .title {
   font-weight: 700;
 }
 
+#slider {
+  visibility: hidden;
+}
+
 #subIndex {
     height: auto;
-    background-color: white;
+    background-color: #ffffff;
     margin: 0 auto;
+    box-shadow: 0px 0px 10px #1b1b1b;
 }
 #navigator {
     margin: 0 auto;
     background-size: cover;
+}
+#english {
+    width: 120px;
+    display: block;
+    position: relative;
+    margin-left: 900px;
+    margin-top: -122px;
+    margin-bottom: 3px;
+    padding: 5px 10px;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    /*background: #000;*/
+    /*filter: alpha(opacity=50);*/
+    /*background: rgba(0, 0, 0, 0.5);*/
+  background: url("../images/opacity.png") repeat;
+    z-index: 5;
+}
+#english:hover {
+    color:#fff;
 }
 .head_nav ul, .head_nav ul li {
     margin: 0;
@@ -39,7 +64,6 @@ body {
     color: white;
 }
 .left_sub {
-    background-color: #075F9E;
     width: 195px;
     height: auto;
     float: left;
@@ -80,6 +104,7 @@ body {
 .sub_navigator {
   padding: 0px;
   margin: 0px;
+  background-color: #075F9E;
 }
 .sub_navigator a {
   display: inline;
@@ -93,14 +118,11 @@ body {
     background-color: #075F9E;
 }
 .left_sub .left_current {
-    /*background-image: url("../images/left_hover.png");*/
-    /*background-size: cover;*/
     background-color: #032f55;
 }
 .left_sub a {
     text-align: center;
     color: white;
-    /*font-size: 14px;*/
     margin: 0 auto;
     height: 50px;
     line-height: 50px;
@@ -135,7 +157,6 @@ body {
 .right_content {
     width: 195px;
     margin: 0 auto;
-    /*border-bottom: solid #e0e0e0 2px;*/
 }
 .right_content ul {
 
@@ -169,6 +190,11 @@ body {
 .embed_left, .embed_left_2 {
     width: 195px;
     margin: 0 auto;
+    display: none;
+}
+.embed_left {
+  /*visibility: hidden;*/
+  display: none;
 }
 .detail_sub {
     background-color: #F1F1F1;
@@ -204,6 +230,13 @@ body .es-table td { border: 1px solid #ccc; }
 body .es-table td:first-child { width: 30px; }
 body .es-table td:last-child { width: 30px; }
 body .es-table td:nth-last-child(2) { width: 100px; }
+body hr {
+    padding: 0;
+    height: 0px;
+    border: none;
+    border-bottom: solid #5a697c 1px;
+    /*margin: 10px 0;*/
+}
 
 .sub_links td {
     width: 220px;
@@ -219,12 +252,13 @@ body .es-table td:nth-last-child(2) { width: 100px; }
     font-size: small;
 }
 .sub_links .special_length {
-    width: 660px;
+    width: 400px;
     height: 30px;
     line-height: 30px;
     margin: 5px;
     background: url("../images/special_nav_link.png") no-repeat;
     background-size: cover;
+    background-position: 100% 100%;
 }
 .detail_2 {
     background-color: #F1F1F1;
@@ -240,8 +274,8 @@ body .es-table td:nth-last-child(2) { width: 100px; }
     line-height: 1.8;
     min-height: 430px;
 }
-.passage a { color:#032B83; }
-.passage a:visited { color:#032B83; }
+.passage a { color: #104471; }
+.passage a:visited { color: #104471; }
 .passage p {
     margin: 8px 0px;
     text-indent: 25px;
@@ -278,12 +312,17 @@ body .es-table td:nth-last-child(2) { width: 100px; }
 }
 #foot {
     margin: 0 auto;
+    margin-top: -5px;
     height: 100px;
     background-color: #032f55;
     color: white;
+    box-shadow: 0px 0px 10px #1b1b1b;
 }
 #foot a {
     color: white;
+}
+#foot a:hover {
+  text-decoration: underline;
 }
 .foot_nav {
     margin: 0 auto;
@@ -366,6 +405,11 @@ body .es-table td:nth-last-child(2) { width: 100px; }
         width: 900px;
         height: 165px;
     }
+    #english {
+        margin-left: 750px;
+        margin-top: -110px;
+        margin-bottom: 3px;
+    }
     .main_frame_sub {
         width: 900px;
     }
@@ -426,6 +470,11 @@ body .es-table td:nth-last-child(2) { width: 100px; }
         width: 1100px;
         height: 200px;
     }
+    #english {
+        margin-left: 950px;
+        margin-top: -80px;
+        margin-bottom: 3px;
+    }
     .main_frame_sub {
         width: 1100px;
     }
@@ -439,7 +488,7 @@ body .es-table td:nth-last-child(2) { width: 100px; }
         width: 900px;
     }
     .detail_title {
-        width: 900px;
+        width: 700px;
         height: 40px;
         font-size: 22px;
         line-height: 40px;
