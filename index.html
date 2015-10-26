@@ -11,26 +11,6 @@
 	<![endif]-->
 	<link rel="stylesheet" href="assets/styles/smallslider.css" type="text/css" media="screen" charset="utf-8">
 	<script src="libs/respond.js"></script>
-	<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
-	<!-- <script src="mods/config.js" charset="utf-8" type="text/javascript"></script> -->
-	<script>
-		seajs.config({
-		  base: "./mods/",
-		  alias: {
-		    "jquery": "jquery.js",
-		    "respond": "respond.min.js",
-		    "nav": "nav.js",
-		    "slide": "responsiveslides.js",
-		    "smallslider": "smallslider.js"
-		  }
-		});
-
-		seajs.use("./mods/main", function(mod) {
-			mod.slide();
-			mod.nav();
-			mod.timeline();
-		});
-	</script>
 	<!--[if lte IE 8]>
 		<script>
 		   (function() {
@@ -157,5 +137,15 @@
 		<!--include("footer.html")-->
 	</div>
 </body>
+
+<script src="libs/sea.js" charset="utf-8" type="text/javascript"></script>
+<script src="mods/config.js" charset="utf-8" type="text/javascript"></script>
+<script>
+	seajs.use("./mods/main", function(mod) {
+		mod.slide();
+		mod.nav();
+		mod.timeline();
+	});
+</script>
 
 </html>
