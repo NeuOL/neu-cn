@@ -714,6 +714,8 @@ footer > div {
   }
   #universityNews #img-slider {
     zoom: 1.4;
+    -moz-transform: scale(1.3);
+    -moz-transform-origin: 0% 0%;
   }
   #universityNews .head-news {
     width: 250px;

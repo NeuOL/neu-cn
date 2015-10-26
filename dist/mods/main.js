@@ -27,7 +27,7 @@ define(function(require,exports,module){
 
 	}
 
-  // Judge ie6
+  	// Judge ie6
 	(function() {
 		var isIE=!!window.ActiveXObject;
 		var isIE6=isIE&&!window.XMLHttpRequest;
