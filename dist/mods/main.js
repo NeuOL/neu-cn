@@ -8,6 +8,8 @@ define(function(require,exports,module){
 	__initSlider();
 	slide.slideInit();
 	function __initSlider() {
+		if( $(".container").length <= 0 )
+			return;
 		smSlider.initSlider();
 		(function __initSlider() {
 			$('#img-slider').smallslider({
@@ -110,9 +112,12 @@ define(function(require,exports,module){
 
 	convertSliderSize();
 	function convertSliderSize() {
-		var _width = document.documentElement.clientWidth;
+		if( $(".container").length <= 0 )
+			return;
 
-		if (_width >= 1690) {
+		var _width = document.documentElement.clientWidth;
+		if ($(".container").width() > 1500) {
+			console.log(1)
 			var   w = 310
 				, h = 200;
 
