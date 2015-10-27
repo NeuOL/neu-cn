@@ -117,7 +117,6 @@ define(function(require,exports,module){
 
 		var _width = document.documentElement.clientWidth;
 		if ($(".container").width() > 1500) {
-			console.log(1)
 			var   w = 310
 				, h = 200;
 
