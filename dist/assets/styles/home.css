@@ -59,7 +59,9 @@ header:hover .slider_nav {
   float: left;
 /*   margin-bottom: 10px; */
 }
-
+#media .news .text {
+    width: 477px;
+}
 .head-news {
   float: right;
   width: 195px;
