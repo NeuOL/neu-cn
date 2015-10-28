@@ -31,9 +31,7 @@ define(function(require,exports,module){
 	 }
 
 	 // Load compat_ie.css for IE 7
-	 if(navigator.appName == "Microsoft Internet Explorer"
-	 	&& ( navigator.appVersion.match(/7./i)=="7." )
-		&& document.getElementById("compat")) {
+	 if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=="7." && document.getElementById("compat")) {
 
 		 var compat_styles = "_<style> \
 		 					#body {margin-top: 30px;} \
