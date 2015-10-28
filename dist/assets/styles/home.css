@@ -59,9 +59,11 @@ header:hover .slider_nav {
   float: left;
 /*   margin-bottom: 10px; */
 }
-#media .news .text {
-    width: 477px;
+#img-slider li {
+  width: 220px;
+  height: 150px;
 }
+
 .head-news {
   float: right;
   width: 195px;
@@ -71,7 +73,7 @@ header:hover .slider_nav {
   font-weight:400;
   line-height: 23px;
   max-height: 52px;
-  height: 48px;
+  height: 50px;
   overflow: hidden;
 }
 .head-news p {
@@ -713,6 +715,11 @@ footer > div {
 
   #universityNews {
     height: 479px;
+  }
+  #universityNews #img-slider {
+    zoom: 1.4;
+    -moz-transform: scale(1.3);
+    -moz-transform-origin: 0% 0%;
   }
   #universityNews .head-news {
     width: 250px;

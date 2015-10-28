@@ -3,7 +3,7 @@
 	width: 480px;
 	display: inline-block;
 	padding: 10px;
-	
+
 	hr {
 		border-bottom: solid #d5d5d5 2px;
 		margin: 8px 0;
@@ -11,24 +11,24 @@
 		overflow: hidden;
 		float: none;
 	}
-	
+
 	li {
 		font-size: 0.9em;
 		margin: 0.5em 0;
 		list-style: none;
 		text-align: left;
 		color: #032f55;
-		
+
 		a {
 			margin-left: 10px;
 			text-decoration: none;
 			color: #333;
-			
+
 			&:hover {
 				color: #204496;
 			}
 		}
-		
+
 		.date {
 			float: right;
 			color: #333;
