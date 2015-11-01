@@ -26,4 +26,8 @@ img {
   cursor: pointer;
 }
 
+.f-logo {
+	display: none;
+}
+
 .right_title .sub_more { font-size: 12px !important; }

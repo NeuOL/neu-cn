@@ -44,6 +44,9 @@ define(function(require,exports,module){
 							 .news .text {\
 							 	float: left;\
 							}\
+							.news { \
+								margin-top: -5px; \
+							} \
 							 .news .date {\
 							 	float: right;\
 							}\
@@ -57,13 +60,13 @@ define(function(require,exports,module){
 							 #academyNews li .date, #others li .date, #media li .date {\
 							 	width: 40px;\
 							}\
-							 #media ul {\
+							 #media ul, #academyNews ul {\
 							 	zoom:1;\
 							 	overflow:hidden;\
 							}\
-							 #media .news ul li, #academyNews li {\
-							     margin: 0px;\
-							 	margin-bottom: 11px;\
+							 #media .news ul li, #academyNews .news ul li {\
+							    margin: 0px;\
+							 	margin-top: 11px;\
 							} \
 							</style>";
 
